@@ -177,4 +177,29 @@ static float tmp[1080][1920];
 void gaussian_loopFusion(unsigned short in[1080][1920], unsigned short out[1080][1920])
 {
     //TODO
+ /* matrix */
+ /* W 1920
+	   H 1080
+		     j -> W
+		   _ _ _ _ _  1920
+		  |
+	i-> H |  x
+		  |
+		1080
+	*/
+ int i,j;
+
+ for ( i = 0; i < 1080; ++i) {
+  for ( j = 0; j < 1920; ++j) {
+   //limitation de bord pour calcul en lignes
+   tmp[i][j] = k[0] * in[((i<1)?1:i) - 1][j] + k[1] * in[i][j]
+     + k[2] * in[((i>1918)?1918:i) + 1][j];
+
+   //limitation de bord pour calcul en colonnes
+   out[i][j] = k[0] * tmp[i][((j<1)?1:j) - 1] + k[1] * tmp[i][j]
+     + k[2] * tmp[i][((j>1918)?1918:j) + 1];
+  }
+ }
+
+
 }

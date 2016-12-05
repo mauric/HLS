@@ -4,13 +4,13 @@ target triple = "x86_64-unknown-linux-gnu"
 
 %"struct.std::ios_base::Init" = type <{ i8 }>
 
-@.str = private constant [10 x i8] c"ap_memory\00", align 1 ; <[10 x i8]*> [#uses=2]
-@.str1 = private constant [1 x i8] zeroinitializer, align 1 ; <[1 x i8]*> [#uses=2]
+@tmp = internal global [1080 x [1920 x float]] zeroinitializer, align 32 ; <[1080 x [1920 x float]]*> [#uses=4]
 @llvm.global_ctors.0 = appending global [1 x i32] [i32 65535] ; <[1 x i32]*> [#uses=0]
 @llvm.global_ctors.1 = appending global [1 x void ()*] [void ()* @_GLOBAL__I__Z19gaussian_fixedPointPA1920_tS0_] ; <[1 x void ()*]*> [#uses=0]
 @llvm.global_dtors.0 = appending global [1 x i32] [i32 65535] ; <[1 x i32]*> [#uses=0]
 @llvm.global_dtors.1 = appending global [1 x void ()*] [void ()* @_GLOBAL__D__Z19gaussian_fixedPointPA1920_tS0_] ; <[1 x void ()*]*> [#uses=0]
-@tmp = internal global [1080 x [1920 x float]] zeroinitializer, align 32 ; <[1080 x [1920 x float]]*> [#uses=4]
+@.str = private constant [10 x i8] c"ap_memory\00", align 1 ; <[10 x i8]*> [#uses=2]
+@.str1 = private constant [1 x i8] zeroinitializer, align 1 ; <[1 x i8]*> [#uses=2]
 
 declare void @_ssdm_op_SpecMem(...) nounwind
 

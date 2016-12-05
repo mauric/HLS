@@ -12,11 +12,11 @@
   <warningLogs>
     <logs>
       <synLog>
-        <logs message="@W [RTMG-276] Only power-on reset is supported for RAM 'gaussian_sep_tmp'." projectName="gaussian" solutionName="solution1" date="2016-12-05T11:03:05.212+0100" type="Warning"/>
-        <logs message="@W [RTGEN-101] Legalizing port name 'gaussian/out' to 'gaussian/out_r'." projectName="gaussian" solutionName="solution1" date="2016-12-05T11:03:03.771+0100" type="Warning"/>
-        <logs message="@W [RTGEN-101] Legalizing port name 'gaussian/in' to 'gaussian/in_r'." projectName="gaussian" solutionName="solution1" date="2016-12-05T11:03:03.754+0100" type="Warning"/>
-        <logs message="@W [RTGEN-101] Legalizing port name 'gaussian_sep/out' to 'gaussian_sep/out_r'." projectName="gaussian" solutionName="solution1" date="2016-12-05T11:03:03.744+0100" type="Warning"/>
-        <logs message="@W [RTGEN-101] Legalizing port name 'gaussian_sep/in' to 'gaussian_sep/in_r'." projectName="gaussian" solutionName="solution1" date="2016-12-05T11:03:03.733+0100" type="Warning"/>
+        <logs message="@W [RTMG-276] Only power-on reset is supported for RAM 'gaussian_sep_tmp'." projectName="gaussian" solutionName="solution1" date="2016-12-05T11:38:49.694+0100" type="Warning"/>
+        <logs message="@W [RTGEN-101] Legalizing port name 'gaussian/out' to 'gaussian/out_r'." projectName="gaussian" solutionName="solution1" date="2016-12-05T11:38:48.393+0100" type="Warning"/>
+        <logs message="@W [RTGEN-101] Legalizing port name 'gaussian/in' to 'gaussian/in_r'." projectName="gaussian" solutionName="solution1" date="2016-12-05T11:38:48.377+0100" type="Warning"/>
+        <logs message="@W [RTGEN-101] Legalizing port name 'gaussian_sep/out' to 'gaussian_sep/out_r'." projectName="gaussian" solutionName="solution1" date="2016-12-05T11:38:47.835+0100" type="Warning"/>
+        <logs message="@W [RTGEN-101] Legalizing port name 'gaussian_sep/in' to 'gaussian_sep/in_r'." projectName="gaussian" solutionName="solution1" date="2016-12-05T11:38:47.816+0100" type="Warning"/>
       </synLog>
       <simLog/>
       <mgLog/>
