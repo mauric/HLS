@@ -15,7 +15,7 @@ __SIM_FFT__ = 1
 
 ObjDir = /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/csim/build/obj
 
-HLS_SOURCES = /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/test/test.cpp /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src/gaussian.cpp /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src/gaussian_1line.cpp /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src/gaussian_3x3.cpp /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src/gaussian_caching.cpp /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src/gaussian_fixedPoint.cpp /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src/gaussian_loopFusion.cpp /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src/gaussian_scalarized.cpp /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src/gaussian_sep.cpp
+HLS_SOURCES = /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/test/test.cpp /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src/gaussian_sep.cpp /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src/gaussian_scalarized.cpp /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src/gaussian_loopFusion.cpp /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src/gaussian_fixedPoint.cpp /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src/gaussian_caching.cpp /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src/gaussian_3x3.cpp /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src/gaussian_1line.cpp /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src/gaussian.cpp
 
 TARGET := csim.exe
 
@@ -60,34 +60,34 @@ $(ObjDir)/test.o: /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Viva
 	$(Echo) "   Compiling /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/test/test.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
 	$(Verb)  $(CC) -c $(IFLAG)    $(DFLAG)  $< -o $@ ; \
 
-$(ObjDir)/gaussian.o: /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src/gaussian.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src/gaussian.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) -c $(IFLAG)    $(DFLAG)  $< -o $@ ; \
-
-$(ObjDir)/gaussian_1line.o: /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src/gaussian_1line.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src/gaussian_1line.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) -c $(IFLAG)    $(DFLAG)  $< -o $@ ; \
-
-$(ObjDir)/gaussian_3x3.o: /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src/gaussian_3x3.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src/gaussian_3x3.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) -c $(IFLAG)    $(DFLAG)  $< -o $@ ; \
-
-$(ObjDir)/gaussian_caching.o: /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src/gaussian_caching.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src/gaussian_caching.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) -c $(IFLAG)    $(DFLAG)  $< -o $@ ; \
-
-$(ObjDir)/gaussian_fixedPoint.o: /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src/gaussian_fixedPoint.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src/gaussian_fixedPoint.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) -c $(IFLAG)    $(DFLAG)  $< -o $@ ; \
-
-$(ObjDir)/gaussian_loopFusion.o: /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src/gaussian_loopFusion.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src/gaussian_loopFusion.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+$(ObjDir)/gaussian_sep.o: /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src/gaussian_sep.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src/gaussian_sep.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
 	$(Verb)  $(CC) -c $(IFLAG)    $(DFLAG)  $< -o $@ ; \
 
 $(ObjDir)/gaussian_scalarized.o: /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src/gaussian_scalarized.cpp $(ObjDir)/.dir
 	$(Echo) "   Compiling /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src/gaussian_scalarized.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
 	$(Verb)  $(CC) -c $(IFLAG)    $(DFLAG)  $< -o $@ ; \
 
-$(ObjDir)/gaussian_sep.o: /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src/gaussian_sep.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src/gaussian_sep.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+$(ObjDir)/gaussian_loopFusion.o: /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src/gaussian_loopFusion.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src/gaussian_loopFusion.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(CC) -c $(IFLAG)    $(DFLAG)  $< -o $@ ; \
+
+$(ObjDir)/gaussian_fixedPoint.o: /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src/gaussian_fixedPoint.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src/gaussian_fixedPoint.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(CC) -c $(IFLAG)    $(DFLAG)  $< -o $@ ; \
+
+$(ObjDir)/gaussian_caching.o: /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src/gaussian_caching.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src/gaussian_caching.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(CC) -c $(IFLAG)    $(DFLAG)  $< -o $@ ; \
+
+$(ObjDir)/gaussian_3x3.o: /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src/gaussian_3x3.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src/gaussian_3x3.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(CC) -c $(IFLAG)    $(DFLAG)  $< -o $@ ; \
+
+$(ObjDir)/gaussian_1line.o: /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src/gaussian_1line.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src/gaussian_1line.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(CC) -c $(IFLAG)    $(DFLAG)  $< -o $@ ; \
+
+$(ObjDir)/gaussian.o: /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src/gaussian.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src/gaussian.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
 	$(Verb)  $(CC) -c $(IFLAG)    $(DFLAG)  $< -o $@ ; \
