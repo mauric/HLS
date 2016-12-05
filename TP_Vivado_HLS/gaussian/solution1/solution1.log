@@ -7,4 +7,84 @@ Copyright (C) 2013 Xilinx Inc. All rights reserved.
 
 @I [SYN-201] Setting up clock 'default' with a period of 10ns.
 @I [HLS-10] Setting target device to 'xc7z010clg400-1'
-@I [SIM-1] CSim file generation done with 0 errors.
+@I [HLS-10] Importing test bench file 'test/test.cpp' ... 
+@I [HLS-10] Analyzing design file 'src/gaussian.cpp' ... 
+@I [HLS-10] Analyzing design file 'src/gaussian_1line.cpp' ... 
+@I [HLS-10] Analyzing design file 'src/gaussian_3x3.cpp' ... 
+@I [HLS-10] Analyzing design file 'src/gaussian_caching.cpp' ... 
+@I [HLS-10] Analyzing design file 'src/gaussian_fixedPoint.cpp' ... 
+@I [HLS-10] Analyzing design file 'src/gaussian_loopFusion.cpp' ... 
+@I [HLS-10] Analyzing design file 'src/gaussian_scalarized.cpp' ... 
+@I [HLS-10] Analyzing design file 'src/gaussian_sep.cpp' ... 
+@I [HLS-10] 'globals.h' is skipped compilation; only files with extensions '.c|.C|.cc|.cpp|.c++|.cp|.cxx' are compiled.
+@I [HLS-10] Validating synthesis directives ...
+@I [HLS-10] Checking synthesizability ...
+@I [HLS-10] Starting code transformations ...
+@I [HLS-111] Elapsed time: 1.91 seconds; current memory usage: 48.9 MB.
+@I [HLS-10] Starting hardware synthesis ...
+@I [HLS-10] Synthesizing 'gaussian' ...
+@W [RTGEN-101] Legalizing port name 'gaussian_1line/in' to 'gaussian_1line/in_r'.
+@W [RTGEN-101] Legalizing port name 'gaussian_1line/out' to 'gaussian_1line/out_r'.
+@W [RTGEN-101] Legalizing port name 'gaussian/in' to 'gaussian/in_r'.
+@W [RTGEN-101] Legalizing port name 'gaussian/out' to 'gaussian/out_r'.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'gaussian_1line' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [SCHED-11] Starting scheduling ...
+@I [SCHED-11] Finished scheduling.
+@I [HLS-111] Elapsed time: 0.15 seconds; current memory usage: 49.7 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'gaussian_1line' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [BIND-100] Starting micro-architecture binding ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding resource limited operations ...
+@I [BIND-100] Finished micro-architecture binding.
+@I [HLS-111] Elapsed time: 0.02 seconds; current memory usage: 50.5 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'gaussian' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [SCHED-11] Starting scheduling ...
+@I [SCHED-11] Finished scheduling.
+@I [HLS-111] Elapsed time: 0.03 seconds; current memory usage: 50.6 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'gaussian' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [BIND-100] Starting micro-architecture binding ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding resource limited operations ...
+@I [BIND-100] Finished micro-architecture binding.
+@I [HLS-111] Elapsed time: 0.01 seconds; current memory usage: 50.7 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'gaussian_1line' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [RTGEN-100] Module generated: gaussian_fadd_32ns_32ns_32_5_full_dsp|gaussian_fadd_32ns_32ns_32_5_full_dsp_U1.
+@I [RTGEN-100] Module generated: gaussian_fadd_32ns_32ns_32_5_full_dsp|gaussian_fadd_32ns_32ns_32_5_full_dsp_U2.
+@I [RTGEN-100] Module generated: gaussian_fmul_32ns_32ns_32_4_max_dsp|gaussian_fmul_32ns_32ns_32_4_max_dsp_U3.
+@I [RTGEN-100] Module generated: gaussian_fmul_32ns_32ns_32_4_max_dsp|gaussian_fmul_32ns_32ns_32_4_max_dsp_U4.
+@I [RTGEN-100] Module generated: gaussian_fmul_32ns_32ns_32_4_max_dsp|gaussian_fmul_32ns_32ns_32_4_max_dsp_U5.
+@I [RTGEN-100] Module generated: gaussian_fmul_32ns_32ns_32_4_max_dsp|gaussian_fmul_32ns_32ns_32_4_max_dsp_U6.
+@I [RTGEN-100] Module generated: gaussian_fptoui_32ns_64_4|gaussian_fptoui_32ns_64_4_U7.
+@I [RTGEN-100] Module generated: gaussian_sitofp_64ns_32_6|gaussian_sitofp_64ns_32_6_U8.
+@I [RTGEN-100] Module generated: gaussian_sitofp_64ns_32_6|gaussian_sitofp_64ns_32_6_U9.
+@I [RTGEN-100] Module generated: gaussian_sitofp_64ns_32_6|gaussian_sitofp_64ns_32_6_U10.
+@I [RTGEN-100] Module generated: gaussian_sitofp_64ns_32_6|gaussian_sitofp_64ns_32_6_U11.
+@I [RTGEN-100] Finished creating RTL model for 'gaussian_1line'.
+@I [HLS-111] Elapsed time: 0.05 seconds; current memory usage: 51.7 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'gaussian' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [RTGEN-500] Setting interface mode on port 'gaussian/in_r' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'gaussian/out_r' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on function 'gaussian' to 'ap_ctrl_hs'.
+@I [RTGEN-100] Finished creating RTL model for 'gaussian'.
+@I [HLS-111] Elapsed time: 0.1 seconds; current memory usage: 53.9 MB.
+@W [RTMG-276] Only power-on reset is supported for RAM 'gaussian_1line_tmp'.
+@I [RTMG-278] Implementing memory 'gaussian_1line_tmp_ram' using block RAMs.
+@I [HLS-10] Finished generating all RTL models.
+@I [WSYSC-301] Generating RTL SystemC for 'gaussian'.
+@I [WVHDL-304] Generating RTL VHDL for 'gaussian'.
+@I [WVLOG-307] Generating RTL Verilog for 'gaussian'.
+@I [HLS-112] Total elapsed time: 24.335 seconds; peak memory usage: 53.9 MB.

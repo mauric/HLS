@@ -5,8 +5,8 @@
 <ModuleName>gaussian</ModuleName>
 <InstancesList>
 <Instance>
-<InstName>grp_gaussian_sep_fu_17</InstName>
-<ModuleName>gaussian_sep</ModuleName>
+<InstName>grp_gaussian_1line_fu_17</InstName>
+<ModuleName>gaussian_1line</ModuleName>
 <ID>17</ID>
 </Instance>
 </InstancesList>
@@ -15,7 +15,7 @@
 
 <ModuleInformation>
 <Module>
-<Name>gaussian_sep</Name>
+<Name>gaussian_1line</Name>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>10.00</TargetClockPeriod>
@@ -23,56 +23,42 @@
 <EstimatedClockPeriod>8.09</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>89037598</Best-caseLatency>
-<Average-caseLatency>89037598</Average-caseLatency>
-<Worst-caseLatency>89037598</Worst-caseLatency>
-<PipelineInitiationInterval>89037598</PipelineInitiationInterval>
+<Best-caseLatency>74529768</Best-caseLatency>
+<Average-caseLatency>74529768</Average-caseLatency>
+<Worst-caseLatency>74529768</Worst-caseLatency>
+<PipelineInitiationInterval>74529768</PipelineInitiationInterval>
 <PipelineType>none</PipelineType>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <Loop1>
 <Name>Loop 1</Name>
-<TripCount>1078</TripCount>
-<Latency>47606636</Latency>
-<IterationLatency>44162</IterationLatency>
-<PipelineDepth>44162</PipelineDepth>
+<TripCount>1079</TripCount>
+<Latency>74529767</Latency>
+<IterationLatency>69073</IterationLatency>
+<PipelineDepth>69073</PipelineDepth>
 <Loop1.1>
 <Name>Loop 1.1</Name>
-<TripCount>1920</TripCount>
-<Latency>44160</Latency>
-<IterationLatency>23</IterationLatency>
-<PipelineDepth>23</PipelineDepth>
+<TripCount>1918</TripCount>
+<Latency>69048</Latency>
+<IterationLatency>36</IterationLatency>
+<PipelineDepth>36</PipelineDepth>
 </Loop1.1>
 </Loop1>
-<Loop2>
-<Name>Loop 2</Name>
-<TripCount>1080</TripCount>
-<Latency>41430960</Latency>
-<IterationLatency>38362</IterationLatency>
-<PipelineDepth>38362</PipelineDepth>
-<Loop2.1>
-<Name>Loop 2.1</Name>
-<TripCount>1918</TripCount>
-<Latency>38360</Latency>
-<IterationLatency>20</IterationLatency>
-<PipelineDepth>20</PipelineDepth>
-</Loop2.1>
-</Loop2>
 </SummaryOfLoopLatency>
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
-<BRAM_18K>4064</BRAM_18K>
-<DSP48E>8</DSP48E>
-<FF>1830</FF>
-<LUT>3176</LUT>
+<BRAM_18K>4</BRAM_18K>
+<DSP48E>16</DSP48E>
+<FF>3259</FF>
+<LUT>5294</LUT>
 <SLICE>0</SLICE>
 </Resources>
 </AreaEstimates>
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>gaussian_sep</Object>
+<Object>gaussian_1line</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol></IOProtocol>
@@ -83,7 +69,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>gaussian_sep</Object>
+<Object>gaussian_1line</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol></IOProtocol>
@@ -94,7 +80,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>gaussian_sep</Object>
+<Object>gaussian_1line</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol></IOProtocol>
@@ -105,7 +91,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>gaussian_sep</Object>
+<Object>gaussian_1line</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol></IOProtocol>
@@ -116,7 +102,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>gaussian_sep</Object>
+<Object>gaussian_1line</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol></IOProtocol>
@@ -127,7 +113,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>gaussian_sep</Object>
+<Object>gaussian_1line</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol></IOProtocol>
@@ -257,19 +243,19 @@
 <EstimatedClockPeriod>8.09</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>89037599</Best-caseLatency>
-<Average-caseLatency>89037599</Average-caseLatency>
-<Worst-caseLatency>89037599</Worst-caseLatency>
-<PipelineInitiationInterval>89037600</PipelineInitiationInterval>
+<Best-caseLatency>74529769</Best-caseLatency>
+<Average-caseLatency>74529769</Average-caseLatency>
+<Worst-caseLatency>74529769</Worst-caseLatency>
+<PipelineInitiationInterval>74529770</PipelineInitiationInterval>
 <PipelineType>none</PipelineType>
 </SummaryOfOverallLatency>
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
-<BRAM_18K>4064</BRAM_18K>
-<DSP48E>8</DSP48E>
-<FF>1832</FF>
-<LUT>3176</LUT>
+<BRAM_18K>4</BRAM_18K>
+<DSP48E>16</DSP48E>
+<FF>3261</FF>
+<LUT>5294</LUT>
 <SLICE>0</SLICE>
 </Resources>
 </AreaEstimates>

@@ -25,7 +25,7 @@
 
 <node id="6" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16">
 <![CDATA[
-entry:2  call fastcc void @gaussian_sep([2073600 x i16]* nocapture %in_r, [2073600 x i16]* nocapture %out_r) nounwind
+entry:2  call fastcc void @gaussian_1line([2073600 x i16]* nocapture %in_r, [2073600 x i16]* nocapture %out_r) nounwind
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>
@@ -73,7 +73,7 @@ entry:1  call void (...)* @_ssdm_op_SpecMem([2073600 x i16]* %out_r, [10 x i8]* 
 
 <node id="6" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16">
 <![CDATA[
-entry:2  call fastcc void @gaussian_sep([2073600 x i16]* nocapture %in_r, [2073600 x i16]* nocapture %out_r) nounwind
+entry:2  call fastcc void @gaussian_1line([2073600 x i16]* nocapture %in_r, [2073600 x i16]* nocapture %out_r) nounwind
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>

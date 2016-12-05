@@ -34,7 +34,7 @@ set SCTraceFileName "mytrace"
 set SCTraceFileFormat "vcd"
 set SCTraceOption "all"
 set TargetInfo "xc7z010:clg400:-1"
-set SourceFiles {sc {} c {../../src/gaussian_sep.cpp ../../src/gaussian_scalarized.cpp ../../src/gaussian_loopFusion.cpp ../../src/gaussian_fixedPoint.cpp ../../src/gaussian_caching.cpp ../../src/gaussian_3x3.cpp ../../src/gaussian_1line.cpp ../../src/gaussian.cpp}}
+set SourceFiles {sc {} c {../../src/gaussian.cpp ../../src/gaussian_1line.cpp ../../src/gaussian_3x3.cpp ../../src/gaussian_caching.cpp ../../src/gaussian_fixedPoint.cpp ../../src/gaussian_loopFusion.cpp ../../src/gaussian_scalarized.cpp ../../src/gaussian_sep.cpp}}
 set SourceFlags {sc {} c {{} {} {} {} {} {} {} {}}}
 set DirectiveFile {/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/solution1.directive}
 set TBFiles {verilog ../../test/test.cpp bc ../../test/test.cpp vhdl ../../test/test.cpp sc ../../test/test.cpp cas ../../test/test.cpp c {}}

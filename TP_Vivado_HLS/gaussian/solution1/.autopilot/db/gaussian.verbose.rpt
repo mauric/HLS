@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'gaussian'
 ================================================================
-* Date:           Mon Dec  5 11:38:48 2016
+* Date:           Mon Dec  5 12:31:12 2016
 
 * Version:        2013.2 (build date: Thu Jun 13 16:07:59 PM 2013)
 * Project:        gaussian
@@ -29,17 +29,17 @@
     |       Latency       |       Interval      | Pipeline|
     |    min   |    max   |    min   |    max   |   Type  |
     +----------+----------+----------+----------+---------+
-    |  89037599|  89037599|  89037600|  89037600|   none  |
+    |  74529769|  74529769|  74529770|  74529770|   none  |
     +----------+----------+----------+----------+---------+
 
     + Detail: 
         * Instance: 
-        +------------------------+--------------+----------+----------+----------+----------+---------+
-        |                        |              |       Latency       |       Interval      | Pipeline|
-        |        Instance        |    Module    |    min   |    max   |    min   |    max   |   Type  |
-        +------------------------+--------------+----------+----------+----------+----------+---------+
-        |grp_gaussian_sep_fu_17  |gaussian_sep  |  89037598|  89037598|  89037598|  89037598|   none  |
-        +------------------------+--------------+----------+----------+----------+----------+---------+
+        +--------------------------+----------------+----------+----------+----------+----------+---------+
+        |                          |                |       Latency       |       Interval      | Pipeline|
+        |         Instance         |     Module     |    min   |    max   |    min   |    max   |   Type  |
+        +--------------------------+----------------+----------+----------+----------+----------+---------+
+        |grp_gaussian_1line_fu_17  |gaussian_1line  |  74529768|  74529768|  74529768|  74529768|   none  |
+        +--------------------------+----------------+----------+----------+----------+----------+---------+
 
         * Loop: 
         N/A
@@ -55,28 +55,28 @@
 +-----------------+---------+-------+-------+-------+
 |Expression       |        -|      -|      -|      -|
 |FIFO             |        -|      -|      -|      -|
-|Instance         |     4064|      8|   1830|   3176|
+|Instance         |        4|     16|   3259|   5294|
 |Memory           |        -|      -|      -|      -|
 |Multiplexer      |        -|      -|      -|      -|
 |Register         |        -|      -|      2|      -|
 |ShiftMemory      |        -|      -|      -|      -|
 +-----------------+---------+-------+-------+-------+
-|Total            |     4064|      8|   1832|   3176|
+|Total            |        4|     16|   3261|   5294|
 +-----------------+---------+-------+-------+-------+
 |Available        |      120|     80|  35200|  17600|
 +-----------------+---------+-------+-------+-------+
-|Utilization (%)  |     3386|     10|      5|     18|
+|Utilization (%)  |        3|     20|      9|     30|
 +-----------------+---------+-------+-------+-------+
 
 + Detail: 
     * Instance: 
-    +------------------------+--------------+---------+-------+------+------+
-    |        Instance        |    Module    | BRAM_18K| DSP48E|  FF  |  LUT |
-    +------------------------+--------------+---------+-------+------+------+
-    |grp_gaussian_sep_fu_17  |gaussian_sep  |     4064|      8|  1830|  3176|
-    +------------------------+--------------+---------+-------+------+------+
-    |Total                   |              |     4064|      8|  1830|  3176|
-    +------------------------+--------------+---------+-------+------+------+
+    +--------------------------+----------------+---------+-------+------+------+
+    |         Instance         |     Module     | BRAM_18K| DSP48E|  FF  |  LUT |
+    +--------------------------+----------------+---------+-------+------+------+
+    |grp_gaussian_1line_fu_17  |gaussian_1line  |        4|     16|  3259|  5294|
+    +--------------------------+----------------+---------+-------+------+------+
+    |Total                     |                |        4|     16|  3259|  5294|
+    +--------------------------+----------------+---------+-------+------+------+
 
     * Memory: 
     N/A
@@ -94,14 +94,14 @@
     N/A
 
     * Register: 
-    +----------------------------------------------+---+-----+-----------+
-    |                     Name                     | FF| Bits| Const Bits|
-    +----------------------------------------------+---+-----+-----------+
-    |ap_CS_fsm                                     |  1|    1|          0|
-    |grp_gaussian_sep_fu_17_ap_start_ap_start_reg  |  1|    1|          0|
-    +----------------------------------------------+---+-----+-----------+
-    |Total                                         |  2|    2|          0|
-    +----------------------------------------------+---+-----+-----------+
+    +------------------------------------------------+---+-----+-----------+
+    |                      Name                      | FF| Bits| Const Bits|
+    +------------------------------------------------+---+-----+-----------+
+    |ap_CS_fsm                                       |  1|    1|          0|
+    |grp_gaussian_1line_fu_17_ap_start_ap_start_reg  |  1|    1|          0|
+    +------------------------------------------------+---+-----+-----------+
+    |Total                                           |  2|    2|          0|
+    +------------------------------------------------+---+-----+-----------+
 
 
 
@@ -168,7 +168,7 @@ IsGatedGlobalClock: 0
 
  <State 1>: 0.00ns
 ST_1: stg_3 [2/2] 0.00ns
-entry:2  call fastcc void @gaussian_sep([2073600 x i16]* nocapture %in_r, [2073600 x i16]* nocapture %out_r) nounwind
+entry:2  call fastcc void @gaussian_1line([2073600 x i16]* nocapture %in_r, [2073600 x i16]* nocapture %out_r) nounwind
 
 
  <State 2>: 0.00ns
@@ -179,7 +179,7 @@ ST_2: stg_5 [1/1] 0.00ns
 entry:1  call void (...)* @_ssdm_op_SpecMem([2073600 x i16]* %out_r, [10 x i8]* @p_str, i32 0, i32 0, i32 0, [1 x i8]* @p_str1) nounwind
 
 ST_2: stg_6 [1/2] 0.00ns
-entry:2  call fastcc void @gaussian_sep([2073600 x i16]* nocapture %in_r, [2073600 x i16]* nocapture %out_r) nounwind
+entry:2  call fastcc void @gaussian_1line([2073600 x i16]* nocapture %in_r, [2073600 x i16]* nocapture %out_r) nounwind
 
 ST_2: stg_7 [1/1] 0.00ns
 entry:3  ret void
@@ -198,9 +198,9 @@ STG Binding:
 - Is pipelined: 0
 - Is top level: 1
 Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
-Port [ in_r]:  wired=0; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=2; mode=0x4f11840; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
-Port [ out_r]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=2; mode=0x4f18810; pingpong=0; private_global=0; MemPort=[03]; IO mode=ap_memory:ce=0
-Port [ tmp]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=2; mode=0x4ccebd0; pingpong=0; private_global=0; linkage=7; visibility=0; MemPort=[21]; IO mode=ap_memory:ce=0
+Port [ in_r]:  wired=0; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=2; mode=0x42d12c0; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
+Port [ out_r]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=2; mode=0x40639b0; pingpong=0; private_global=0; MemPort=[03]; IO mode=ap_memory:ce=0
+Port [ tmp]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=2; mode=0x41fc5a0; pingpong=0; private_global=0; linkage=7; visibility=0; MemPort=[22]; IO mode=ap_memory:ce=0
 ---------------- STG Properties END ------------------
 
 ---------------- Datapath Model BEGIN ----------------
@@ -241,7 +241,7 @@ stg_7 (ret    ) [ 000]
 <pin id="5" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="tmp"/><MemPortTyVec>2 1 </MemPortTyVec>
+<StgValue><ssdm name="tmp"/><MemPortTyVec>2 2 </MemPortTyVec>
 </StgValue>
 </bind>
 </comp>
@@ -251,7 +251,7 @@ stg_7 (ret    ) [ 000]
 <pin id="7" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="gaussian_sep"/></StgValue>
+<StgValue><ssdm name="gaussian_1line"/></StgValue>
 </bind>
 </comp>
 
@@ -291,7 +291,7 @@ stg_7 (ret    ) [ 000]
 </bind>
 </comp>
 
-<comp id="17" class="1004" name="grp_gaussian_sep_fu_17">
+<comp id="17" class="1004" name="grp_gaussian_1line_fu_17">
 <pin_list>
 <pin id="18" dir="0" index="0" bw="0" slack="0"/>
 <pin id="19" dir="0" index="1" bw="16" slack="0"/>
@@ -333,21 +333,21 @@ stg_7 (ret    ) [ 000]
 ============================================================
 
 * Functional unit list:
-|----------|------------------------|---------|---------|---------|---------|
-| Operation|     Functional Unit    |  DSP48E |  Delay  |    FF   |   LUT   |
-|----------|------------------------|---------|---------|---------|---------|
-|   call   | grp_gaussian_sep_fu_17 |    8    | 18.8586 |   2270  |   3202  |
-|----------|------------------------|---------|---------|---------|---------|
-|   Total  |                        |    8    | 18.8586 |   2270  |   3202  |
-|----------|------------------------|---------|---------|---------|---------|
+|----------|--------------------------|---------|---------|---------|---------|
+| Operation|      Functional Unit     |  DSP48E |  Delay  |    FF   |   LUT   |
+|----------|--------------------------|---------|---------|---------|---------|
+|   call   | grp_gaussian_1line_fu_17 |    16   | 26.3674 |   4158  |   5391  |
+|----------|--------------------------|---------|---------|---------|---------|
+|   Total  |                          |    16   | 26.3674 |   4158  |   5391  |
+|----------|--------------------------|---------|---------|---------|---------|
 
 Memories:
 +----+--------+--------+--------+
 |    |  BRAM  |   FF   |   LUT  |
 +----+--------+--------+--------+
-| tmp|  4064  |    0   |    0   |
+| tmp|    4   |    0   |    0   |
 +----+--------+--------+--------+
-|Total|  4064  |    0   |    0   |
+|Total|    4   |    0   |    0   |
 +----+--------+--------+--------+
 
 * Register list:
@@ -366,10 +366,10 @@ N/A
 +-----------+--------+--------+--------+--------+--------+
 |           |  BRAM  | DSP48E |  Delay |   FF   |   LUT  |
 +-----------+--------+--------+--------+--------+--------+
-|  Function |    -   |    8   |   18   |  2270  |  3202  |
-|   Memory  |  4064  |    -   |    -   |    0   |    0   |
+|  Function |    -   |   16   |   26   |  4158  |  5391  |
+|   Memory  |    4   |    -   |    -   |    0   |    0   |
 |Multiplexer|    -   |    -   |    -   |    -   |    -   |
 |  Register |    -   |    -   |    -   |    -   |    -   |
 +-----------+--------+--------+--------+--------+--------+
-|   Total   |  4064  |    8   |   18   |  2270  |  3202  |
+|   Total   |    4   |   16   |   26   |  4158  |  5391  |
 +-----------+--------+--------+--------+--------+--------+

@@ -78,7 +78,7 @@
 						<name></name>
 						<fileName>gaussian.cpp</fileName>
 						<fileDirectory>/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src</fileDirectory>
-						<lineNumber>9</lineNumber>
+						<lineNumber>11</lineNumber>
 						<contextFuncName>gaussian</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -93,7 +93,7 @@
 											<first>gaussian.cpp</first>
 											<second>gaussian</second>
 										</first>
-										<second>9</second>
+										<second>11</second>
 									</item>
 								</second>
 							</item>
@@ -163,7 +163,7 @@
 					<Obj>
 						<type>2</type>
 						<id>9</id>
-						<name>gaussian_sep</name>
+						<name>gaussian_1line</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -179,7 +179,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:gaussian_sep&gt;</content>
+				<content>&lt;constant:gaussian_1line&gt;</content>
 			</item>
 		</consts>
 		<blocks class_id="17" tracking_level="0" version="0">
@@ -259,7 +259,7 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>89037599</mMinLatency>
+			<mMinLatency>74529769</mMinLatency>
 			<mMaxLatency>-1</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>

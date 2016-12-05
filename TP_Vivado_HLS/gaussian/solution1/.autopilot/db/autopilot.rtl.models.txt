@@ -2,6 +2,6 @@ gaussian_fadd_32ns_32ns_32_5_full_dsp
 gaussian_fmul_32ns_32ns_32_4_max_dsp
 gaussian_fptoui_32ns_64_4
 gaussian_sitofp_64ns_32_6
-gaussian_sep_tmp
-gaussian_sep
+gaussian_1line_tmp
+gaussian_1line
 gaussian

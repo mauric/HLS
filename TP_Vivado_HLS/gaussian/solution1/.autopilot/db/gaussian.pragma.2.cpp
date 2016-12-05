@@ -327,10 +327,10 @@ void gaussian(unsigned short in[1080][1920], unsigned short out[1080][1920])
 {_ssdm_SpecArrayDimSize(in,1080);_ssdm_SpecArrayDimSize(out,1080);
 _ssdm_op_SpecMem(in, "ap_memory", 0, 0, 0, "");
 _ssdm_op_SpecMem(out, "ap_memory", 0, 0, 0, "");
-    //gaussian_3x3(in, out);
-    gaussian_sep(in, out);
-    //gaussian_loopFusion(in, out);
-    //gaussian_1line(in, out);
+    //gaussian_3x3(in, out); //DONE
+    //gaussian_sep(in, out); //DONE
+    //gaussian_loopFusion(in, out); //DONE
+     gaussian_1line(in, out); //DOING
     //gaussian_scalarized(in, out);
     //gaussian_caching(in, out);
     //gaussian_fixedPoint(in, out);

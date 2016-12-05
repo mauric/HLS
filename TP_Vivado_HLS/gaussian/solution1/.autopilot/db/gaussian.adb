@@ -78,7 +78,7 @@
               <name/>
               <fileName>gaussian.cpp</fileName>
               <fileDirectory>../src</fileDirectory>
-              <lineNumber>9</lineNumber>
+              <lineNumber>11</lineNumber>
               <contextFuncName>gaussian</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -93,13 +93,13 @@
                         <first>gaussian.cpp</first>
                         <second>gaussian</second>
                       </first>
-                      <second>9</second>
+                      <second>11</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_gaussian_sep_fu_17</rtlName>
+              <rtlName>grp_gaussian_1line_fu_17</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -163,7 +163,7 @@
             <Obj>
               <type>2</type>
               <id>9</id>
-              <name>gaussian_sep</name>
+              <name>gaussian_1line</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -179,7 +179,7 @@
             <bitwidth>0</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:gaussian_sep&gt;</content>
+          <content>&lt;constant:gaussian_1line&gt;</content>
         </item>
       </consts>
       <blocks class_id="17" tracking_level="0" version="0">
@@ -259,7 +259,7 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>89037599</mMinLatency>
+        <mMinLatency>74529769</mMinLatency>
         <mMaxLatency>-1</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"/>
@@ -334,25 +334,25 @@
         <count>1</count>
         <item_version>0</item_version>
         <item class_id="36" tracking_level="0" version="0">
-          <first>grp_gaussian_sep_fu_17 (gaussian_sep)</first>
+          <first>grp_gaussian_1line_fu_17 (gaussian_1line)</first>
           <second class_id="37" tracking_level="0" version="0">
             <count>4</count>
             <item_version>0</item_version>
             <item class_id="38" tracking_level="0" version="0">
               <first>BRAM</first>
-              <second>4064</second>
+              <second>4</second>
             </item>
             <item>
               <first>DSP48E</first>
-              <second>8</second>
+              <second>16</second>
             </item>
             <item>
               <first>FF</first>
-              <second>1830</second>
+              <second>3259</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>3176</second>
+              <second>5294</second>
             </item>
           </second>
         </item>
@@ -396,7 +396,7 @@
           </second>
         </item>
         <item>
-          <first>grp_gaussian_sep_fu_17_ap_start_ap_start_reg</first>
+          <first>grp_gaussian_1line_fu_17_ap_start_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -419,7 +419,7 @@
         <count>1</count>
         <item_version>0</item_version>
         <item class_id="40" tracking_level="0" version="0">
-          <first>grp_gaussian_sep_fu_17 (gaussian_sep)</first>
+          <first>grp_gaussian_1line_fu_17 (gaussian_1line)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -494,7 +494,7 @@
       <count>1</count>
       <item_version>0</item_version>
       <item class_id="52" tracking_level="0" version="0">
-        <first>grp_gaussian_sep_fu_17</first>
+        <first>grp_gaussian_1line_fu_17</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>

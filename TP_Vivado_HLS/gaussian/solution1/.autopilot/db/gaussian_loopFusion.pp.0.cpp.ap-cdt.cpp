@@ -183,23 +183,33 @@ void gaussian_loopFusion(unsigned short in[1080][1920], unsigned short out[1080]
 		     j -> W
 		   _ _ _ _ _  1920
 		  |
-	i-> H |  x
+	i-> H |  x(i,j)
 		  |
 		1080
 	*/
  int i,j;
 #pragma empty_line
- for ( i = 0; i < 1080; ++i) {
-  for ( j = 0; j < 1920; ++j) {
-   //limitation de bord pour calcul en lignes
-   tmp[i][j] = k[0] * in[((i<1)?1:i) - 1][j] + k[1] * in[i][j]
-     + k[2] * in[((i>1918)?1918:i) + 1][j];
-#pragma empty_line
-   //limitation de bord pour calcul en colonnes
-   out[i][j] = k[0] * tmp[i][((j<1)?1:j) - 1] + k[1] * tmp[i][j]
-     + k[2] * tmp[i][((j>1918)?1918:j) + 1];
+ for ( i = 1; i < 1080; ++i) {
+  tmp[i][0] = k[0] * in[i - 1][0] + k[1] * in[i][0] + k[2] * in[i + 1][0];
+  tmp[i][1] = k[0] * in[i - 1][1] + k[1] * in[i][1] + k[2] * in[i + 1][1];
+  for ( j = 2; j < 1920; ++j) {
+   tmp[i][j] = k[0] * in[i - 1][j] + k[1] * in[i][j] + k[2] * in[i + 1][j];
+   out[i][j-1] = k[0] * tmp[i][j -2 ] + k[1] * tmp[i][(j - 1) ] + k[2] * tmp[i][j];
   }
  }
 #pragma empty_line
 #pragma empty_line
 }
+#pragma empty_line
+/* Les operateur ternqires nos rqjoutent des complexite  NE PAS FAIRE CELA
+for ( i = 0; i < H; ++i) {
+	for ( j = 0; j < W; ++j) {
+		//limitation de bord pour calcul en lignes
+		tmp[((i<1)?1:((i>1918)?1918:i))][j] = k[0] * in[((i<1)?1:i) - 1][j] + k[1] * in[((i<1)?1:((i>1918)?1918:i))][j]
+				+ k[2] * in[((i>1918)?1918:i) + 1][j];
+#pragma empty_line
+		//limitation de bord pour calcul en colonnes
+		out[i][((j<1)?1:((j>1918)?1918:j))] = k[0] * tmp[i][((j<1)?1:j) - 1] + k[1] * tmp[i][((j<1)?1:((j>1918)?1918:j))]
+				+ k[2] * tmp[i][((j>1918)?1918:j) + 1];
+	}
+}*/

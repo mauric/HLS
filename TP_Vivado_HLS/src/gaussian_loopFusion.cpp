@@ -19,19 +19,19 @@ void gaussian_loopFusion(unsigned short in[H][W], unsigned short out[H][W])
 	*/
 	int i,j;
 
-	for ( i = 0; i < H; ++i) {
-		tmp[i][0] = k[0] * in[i+1 - 1][j] + k[1] * in[i][j] + k[2] * in[i + 1][j];
-		tmp[i][1] = k[0] * in[i+1 - 1][j] + k[1] * in[i][j] + k[2] * in[i + 1][j];
+	for ( i = 1; i < H; ++i) {
+		tmp[i][0] = k[0] * in[i - 1][0] + k[1] * in[i][0] + k[2] * in[i + 1][0];
+		tmp[i][1] = k[0] * in[i - 1][1] + k[1] * in[i][1] + k[2] * in[i + 1][1];
 		for ( j = 2; j < W; ++j) {
-			tmp[i][j] = k[0] * in[i+1 - 1][j] + k[1] * in[i][j] + k[2] * in[i + 1][j];
-			out[i][j-1] = k[0] * tmp[i][(j - 1) - 1] + k[1] * tmp[i][(j - 1) ] + k[2] * tmp[i][(j - 1)  + 1];
+			tmp[i][j] = k[0] * in[i - 1][j] + k[1] * in[i][j] + k[2] * in[i + 1][j];
+			out[i][j-1] = k[0] * tmp[i][j -2 ] + k[1] * tmp[i][(j - 1) ] + k[2] * tmp[i][j];
 		}
 	}
 
 
 }
 
-/* Les operateur ternqires nos rqjoutent des complexite
+/* Les operateur ternqires nos rqjoutent des complexite  NE PAS FAIRE CELA
 for ( i = 0; i < H; ++i) {
 	for ( j = 0; j < W; ++j) {
 		//limitation de bord pour calcul en lignes
