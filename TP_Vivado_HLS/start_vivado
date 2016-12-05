@@ -1,0 +1,4 @@
+#!/bin/sh
+
+LD_LIBRARY_PATH=/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/libs:/usr/local/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/opencv/ LIBRARY_PATH=/usr/lib/x86_64-linux-gnu/ /usr/local/Vivado-2013.2/Vivado_HLS/2013.2/bin/vivado_hls 
+

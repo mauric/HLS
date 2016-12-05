@@ -1,0 +1,208 @@
+
+
+================================================================
+== Vivado HLS Report for 'gaussian'
+================================================================
+* Date:           Mon Nov 28 09:36:14 2016
+
+* Version:        2013.2 (build date: Thu Jun 13 16:07:59 PM 2013)
+* Project:        gaussian
+* Solution:       solution1
+* Product family: zynq zynq_fpv6 
+* Target device:  xc7z010clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +---------+-------+----------+------------+
+    |  Clock  | Target| Estimated| Uncertainty|
+    +---------+-------+----------+------------+
+    |default  |   1.00|      4.05|        0.12|
+    +---------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----------+-----------+-----------+-----------+---------+
+    |        Latency        |        Interval       | Pipeline|
+    |    min    |    max    |    min    |    max    |   Type  |
+    +-----------+-----------+-----------+-----------+---------+
+    |  318417487|  318417487|  318417488|  318417488|   none  |
+    +-----------+-----------+-----------+-----------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------+-----------+-----------+----------+-----------+-----------+------+----------+
+        |             |        Latency        | Iteration|  Initiation Interval  | Trip |          |
+        |  Loop Name  |    min    |    max    |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------+-----------+-----------+----------+-----------+-----------+------+----------+
+        |- Loop 1     |  318417486|  318417486|    295378|          -|          -|  1078|    no    |
+        | + Loop 1.1  |     295374|     295374|       154|          -|          -|  1918|    no    |
+        +-------------+-----------+-----------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+-------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF  |  LUT  |
++-----------------+---------+-------+-------+-------+
+|Expression       |        -|      -|      0|     26|
+|FIFO             |        -|      -|      -|      -|
+|Instance         |        -|      6|   5121|   3136|
+|Memory           |        -|      -|      -|      -|
+|Multiplexer      |        -|      -|      -|    181|
+|Register         |        -|      -|    713|      -|
+|ShiftMemory      |        -|      -|      -|      -|
++-----------------+---------+-------+-------+-------+
+|Total            |        0|      6|   5834|   3343|
++-----------------+---------+-------+-------+-------+
+|Available        |      120|     80|  35200|  17600|
++-----------------+---------+-------+-------+-------+
+|Utilization (%)  |        0|      7|     16|     18|
++-----------------+---------+-------+-------+-------+
+
++ Detail: 
+    * Instance: 
+    +-----------------------------------------+--------------------------------------+---------+-------+-----+-----+
+    |                 Instance                |                Module                | BRAM_18K| DSP48E|  FF | LUT |
+    +-----------------------------------------+--------------------------------------+---------+-------+-----+-----+
+    |gaussian_add_11ns_11ns_11_3_U7           |gaussian_add_11ns_11ns_11_3           |        0|      0|   49|   11|
+    |gaussian_add_11ns_11ns_11_3_U8           |gaussian_add_11ns_11ns_11_3           |        0|      0|   49|   11|
+    |gaussian_add_11ns_11ns_11_3_U9           |gaussian_add_11ns_11ns_11_3           |        0|      0|   49|   11|
+    |gaussian_add_11ns_11ns_11_3_U10          |gaussian_add_11ns_11ns_11_3           |        0|      0|   49|   11|
+    |gaussian_add_24s_24ns_24_6_U12           |gaussian_add_24s_24ns_24_6            |        0|      0|  203|   23|
+    |gaussian_add_24s_24ns_24_6_U13           |gaussian_add_24s_24ns_24_6            |        0|      0|  203|   23|
+    |gaussian_add_24s_24ns_24_6_U14           |gaussian_add_24s_24ns_24_6            |        0|      0|  203|   23|
+    |gaussian_add_24s_24ns_24_6_U16           |gaussian_add_24s_24ns_24_6            |        0|      0|  203|   23|
+    |gaussian_add_24s_24ns_24_6_U18           |gaussian_add_24s_24ns_24_6            |        0|      0|  203|   23|
+    |gaussian_add_24s_24ns_24_6_U19           |gaussian_add_24s_24ns_24_6            |        0|      0|  203|   23|
+    |gaussian_add_24s_24ns_24_6_U20           |gaussian_add_24s_24ns_24_6            |        0|      0|  203|   23|
+    |gaussian_add_24s_24ns_24_6_U21           |gaussian_add_24s_24ns_24_6            |        0|      0|  203|   23|
+    |gaussian_add_24s_24ns_24_6_U22           |gaussian_add_24s_24ns_24_6            |        0|      0|  203|   23|
+    |gaussian_fadd_32ns_32ns_32_14_no_dsp_U1  |gaussian_fadd_32ns_32ns_32_14_no_dsp  |        0|      0|  636|  595|
+    |gaussian_fmul_32ns_32ns_32_8_max_dsp_U2  |gaussian_fmul_32ns_32ns_32_8_max_dsp  |        0|      3|  199|  324|
+    |gaussian_fmul_32ns_32ns_32_8_max_dsp_U3  |gaussian_fmul_32ns_32ns_32_8_max_dsp  |        0|      3|  199|  324|
+    |gaussian_fptoui_32ns_64_8_U4             |gaussian_fptoui_32ns_64_8             |        0|      0|  484|  424|
+    |gaussian_sitofp_64ns_32_9_U5             |gaussian_sitofp_64ns_32_9             |        0|      0|  502|  576|
+    |gaussian_sitofp_64ns_32_9_U6             |gaussian_sitofp_64ns_32_9             |        0|      0|  502|  576|
+    |gaussian_sub_23ns_23ns_23_6_U11          |gaussian_sub_23ns_23ns_23_6           |        0|      0|  192|   22|
+    |gaussian_sub_23ns_23ns_23_6_U15          |gaussian_sub_23ns_23ns_23_6           |        0|      0|  192|   22|
+    |gaussian_sub_23ns_23ns_23_6_U17          |gaussian_sub_23ns_23ns_23_6           |        0|      0|  192|   22|
+    +-----------------------------------------+--------------------------------------+---------+-------+-----+-----+
+    |Total                                    |                                      |        0|      6| 5121| 3136|
+    +-----------------------------------------+--------------------------------------+---------+-------+-----+-----+
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Shift register: 
+    N/A
+
+    * Expression: 
+    +---------------------+----------+-------+---+----+------------+------------+
+    |    Variable Name    | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------+----------+-------+---+----+------------+------------+
+    |exitcond1_fu_241_p2  |   icmp   |      0|  0|  13|          11|           9|
+    |exitcond_fu_223_p2   |   icmp   |      0|  0|  13|          11|          11|
+    +---------------------+----------+-------+---+----+------------+------------+
+    |Total                |          |      0|  0|  26|          22|          20|
+    +---------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------+----+-----------+-----+-----------+
+    |        Name       | LUT| Input Size| Bits| Total Bits|
+    +-------------------+----+-----------+-----+-----------+
+    |grp_fu_160_p0      |  32|          2|   32|         64|
+    |grp_fu_160_p1      |  32|          2|   32|         64|
+    |grp_fu_164_p1      |  21|          4|   21|         84|
+    |grp_fu_180_p0      |  32|          8|   16|        128|
+    |in_r_address0      |  21|          6|   21|        126|
+    |in_r_address1      |  21|          3|   21|         63|
+    |indvar1_i_reg_135  |  11|          2|   11|         22|
+    |indvar_i_reg_147   |  11|          2|   11|         22|
+    +-------------------+----+-----------+-----+-----------+
+    |Total              | 181|         29|  165|        573|
+    +-------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +---------------------------+----+-----+-----------+
+    |            Name           | FF | Bits| Const Bits|
+    +---------------------------+----+-----+-----------+
+    |ap_CS_fsm                  |   8|    8|          0|
+    |exitcond_reg_516           |   1|    1|          0|
+    |i_reg_526                  |  11|   11|          0|
+    |in_load_7_reg_759          |  16|   16|          0|
+    |in_load_8_reg_769          |  16|   16|          0|
+    |indvar1_i_reg_135          |  11|   11|          0|
+    |indvar_i_reg_147           |  11|   11|          0|
+    |j_reg_538                  |  11|   11|          0|
+    |p_addr10_reg_709           |  24|   24|          0|
+    |p_addr11_reg_704           |  24|   24|          0|
+    |p_addr1_reg_724            |  24|   24|          0|
+    |p_addr2_reg_583            |  24|   24|          0|
+    |p_addr3_reg_588            |  24|   24|          0|
+    |p_addr4_reg_719            |  24|   24|          0|
+    |p_addr5_reg_625            |  24|   24|          0|
+    |p_addr6_reg_692            |  23|   23|          0|
+    |p_addr7_reg_714            |  24|   24|          0|
+    |p_addr8_cast_reg_660       |  24|   24|          0|
+    |p_addr8_reg_655            |  23|   23|          0|
+    |p_addr9_reg_667            |  24|   24|          0|
+    |p_addr_cast_reg_569        |  24|   24|          0|
+    |p_addr_reg_557             |  23|   23|          0|
+    |reg_186                    |  16|   16|          0|
+    |reg_190                    |  16|   16|          0|
+    |reg_194                    |  32|   32|          0|
+    |reg_199                    |  32|   32|          0|
+    |reg_205                    |  32|   32|          0|
+    |tmp6_i_reg_533             |  11|   11|          0|
+    |tmp_10_i_reg_650           |  32|   32|          0|
+    |tmp_12_i_trn_cast_reg_613  |  11|   24|         13|
+    |tmp_14_reg_794             |  16|   16|          0|
+    |tmp_4_i_trn_cast_reg_562   |  11|   24|         13|
+    |tmp_8_i_trn_cast_reg_576   |  11|   24|         13|
+    |tmp_8_reg_729              |  32|   64|         32|
+    |tmp_i_12_reg_520           |  11|   11|          0|
+    |tmp_i_reg_620              |  32|   32|          0|
+    +---------------------------+----+-----+-----------+
+    |Total                      | 713|  784|         71|
+    +---------------------------+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------+-----+-----+------------+--------------+--------------+
+|    RTL Ports   | Dir | Bits|  Protocol  | Source Object|    C Type    |
++----------------+-----+-----+------------+--------------+--------------+
+|ap_clk          |  in |    1| ap_ctrl_hs |   gaussian   | return value |
+|ap_rst          |  in |    1| ap_ctrl_hs |   gaussian   | return value |
+|ap_start        |  in |    1| ap_ctrl_hs |   gaussian   | return value |
+|ap_done         | out |    1| ap_ctrl_hs |   gaussian   | return value |
+|ap_idle         | out |    1| ap_ctrl_hs |   gaussian   | return value |
+|ap_ready        | out |    1| ap_ctrl_hs |   gaussian   | return value |
+|in_r_address0   | out |   21|  ap_memory |     in_r     |     array    |
+|in_r_ce0        | out |    1|  ap_memory |     in_r     |     array    |
+|in_r_q0         |  in |   16|  ap_memory |     in_r     |     array    |
+|in_r_address1   | out |   21|  ap_memory |     in_r     |     array    |
+|in_r_ce1        | out |    1|  ap_memory |     in_r     |     array    |
+|in_r_q1         |  in |   16|  ap_memory |     in_r     |     array    |
+|out_r_address0  | out |   21|  ap_memory |     out_r    |     array    |
+|out_r_ce0       | out |    1|  ap_memory |     out_r    |     array    |
+|out_r_we0       | out |    1|  ap_memory |     out_r    |     array    |
+|out_r_d0        | out |   16|  ap_memory |     out_r    |     array    |
++----------------+-----+-----+------------+--------------+--------------+
+

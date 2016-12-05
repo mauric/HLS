@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="@W [RTMG-276] Only power-on reset is supported for RAM 'gaussian_sep_tmp'." projectName="gaussian" solutionName="solution1" date="2016-12-05T10:55:29.227+0100" type="Warning"/>
+        <logs message="@W [RTGEN-101] Legalizing port name 'gaussian/out' to 'gaussian/out_r'." projectName="gaussian" solutionName="solution1" date="2016-12-05T10:55:27.267+0100" type="Warning"/>
+        <logs message="@W [RTGEN-101] Legalizing port name 'gaussian/in' to 'gaussian/in_r'." projectName="gaussian" solutionName="solution1" date="2016-12-05T10:55:27.255+0100" type="Warning"/>
+        <logs message="@W [RTGEN-101] Legalizing port name 'gaussian_sep/out' to 'gaussian_sep/out_r'." projectName="gaussian" solutionName="solution1" date="2016-12-05T10:55:27.244+0100" type="Warning"/>
+        <logs message="@W [RTGEN-101] Legalizing port name 'gaussian_sep/in' to 'gaussian_sep/in_r'." projectName="gaussian" solutionName="solution1" date="2016-12-05T10:55:27.231+0100" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

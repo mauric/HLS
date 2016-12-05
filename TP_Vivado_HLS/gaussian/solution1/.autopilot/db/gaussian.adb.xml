@@ -1,0 +1,164 @@
+<stg><name>gaussian</name>
+
+
+<trans_list>
+
+<trans id="8" from="1" to="2">
+<condition id="2">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+</trans_list>
+
+
+
+<state_list>
+
+<state id="1" st_id="1">
+
+<operation id="3" st_id="1" stage="2" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="0">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="6" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16">
+<![CDATA[
+entry:2  call fastcc void @gaussian_sep([2073600 x i16]* nocapture %in_r, [2073600 x i16]* nocapture %out_r) nounwind
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+</state>
+
+<state id="2" st_id="2">
+
+<operation id="4" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="4" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="8" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="8">
+<![CDATA[
+entry:0  call void (...)* @_ssdm_op_SpecMem([2073600 x i16]* %in_r, [10 x i8]* @p_str, i32 0, i32 0, i32 0, [1 x i8]* @p_str1) nounwind
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="5" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="5" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="8" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="8">
+<![CDATA[
+entry:1  call void (...)* @_ssdm_op_SpecMem([2073600 x i16]* %out_r, [10 x i8]* @p_str, i32 0, i32 0, i32 0, [1 x i8]* @p_str1) nounwind
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="6" st_id="2" stage="1" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="6" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16">
+<![CDATA[
+entry:2  call fastcc void @gaussian_sep([2073600 x i16]* nocapture %in_r, [2073600 x i16]* nocapture %out_r) nounwind
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="7" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="7" bw="0">
+<![CDATA[
+entry:3  ret void
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+</state>
+</state_list>
+
+
+<ports>
+<port id="9" name="in_r" dir="0" iftype="2">
+<core>RAM</core><StgValue><ssdm name="in_r"/><MemPortTyVec>1 1 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="10" name="out_r" dir="1" iftype="2">
+<core>RAM</core><StgValue><ssdm name="out_r"/><MemPortTyVec>0 3 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="11" name="tmp" dir="2" iftype="2">
+<core>RAM</core><StgValue><ssdm name="tmp"/><MemPortTyVec>2 1 </MemPortTyVec>
+</StgValue>
+</port>
+</ports>
+
+
+<dataflows>
+<dataflow id="13" from="gaussian_sep" to="stg_3" fromId="12" toId="3">
+</dataflow>
+<dataflow id="14" from="in_r" to="stg_3" fromId="9" toId="3">
+</dataflow>
+<dataflow id="15" from="out_r" to="stg_3" fromId="10" toId="3">
+</dataflow>
+<dataflow id="16" from="tmp" to="stg_3" fromId="11" toId="3">
+</dataflow>
+<dataflow id="18" from="_ssdm_op_SpecMem" to="stg_4" fromId="17" toId="4">
+</dataflow>
+<dataflow id="19" from="in_r" to="stg_4" fromId="9" toId="4">
+</dataflow>
+<dataflow id="21" from="p_str" to="stg_4" fromId="20" toId="4">
+</dataflow>
+<dataflow id="23" from="stg_22" to="stg_4" fromId="22" toId="4">
+</dataflow>
+<dataflow id="24" from="stg_22" to="stg_4" fromId="22" toId="4">
+</dataflow>
+<dataflow id="25" from="stg_22" to="stg_4" fromId="22" toId="4">
+</dataflow>
+<dataflow id="27" from="p_str1" to="stg_4" fromId="26" toId="4">
+</dataflow>
+<dataflow id="28" from="_ssdm_op_SpecMem" to="stg_5" fromId="17" toId="5">
+</dataflow>
+<dataflow id="29" from="out_r" to="stg_5" fromId="10" toId="5">
+</dataflow>
+<dataflow id="30" from="p_str" to="stg_5" fromId="20" toId="5">
+</dataflow>
+<dataflow id="31" from="stg_22" to="stg_5" fromId="22" toId="5">
+</dataflow>
+<dataflow id="32" from="stg_22" to="stg_5" fromId="22" toId="5">
+</dataflow>
+<dataflow id="33" from="stg_22" to="stg_5" fromId="22" toId="5">
+</dataflow>
+<dataflow id="34" from="p_str1" to="stg_5" fromId="26" toId="5">
+</dataflow>
+<dataflow id="35" from="gaussian_sep" to="stg_6" fromId="12" toId="6">
+</dataflow>
+<dataflow id="36" from="in_r" to="stg_6" fromId="9" toId="6">
+</dataflow>
+<dataflow id="37" from="out_r" to="stg_6" fromId="10" toId="6">
+</dataflow>
+<dataflow id="38" from="tmp" to="stg_6" fromId="11" toId="6">
+</dataflow>
+</dataflows>
+
+
+</stg>
