@@ -8,3 +8,4 @@
 #pragma line 1 "src/gaussian_1line.cpp" ::: 139
 #pragma line 1 "src/globals.h" 1 ::: 140
 #pragma line 2 "src/gaussian_1line.cpp" 2 ::: 160
+#pragma line 24 "src/gaussian_1line.cpp" ::: 185

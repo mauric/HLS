@@ -5,9 +5,9 @@
 <ModuleName>gaussian</ModuleName>
 <InstancesList>
 <Instance>
-<InstName>grp_gaussian_1line_fu_17</InstName>
-<ModuleName>gaussian_1line</ModuleName>
-<ID>17</ID>
+<InstName>grp_gaussian_scalarized_fu_15</InstName>
+<ModuleName>gaussian_scalarized</ModuleName>
+<ID>15</ID>
 </Instance>
 </InstancesList>
 </TopModule>
@@ -15,12 +15,12 @@
 
 <ModuleInformation>
 <Module>
-<Name>gaussian_1line</Name>
+<Name>gaussian_scalarized</Name>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>10.00</TargetClockPeriod>
 <ClockUncertainty>1.25</ClockUncertainty>
-<EstimatedClockPeriod>8.09</EstimatedClockPeriod>
+<EstimatedClockPeriod>7.26</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <Best-caseLatency>74529768</Best-caseLatency>
@@ -48,17 +48,17 @@
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
-<BRAM_18K>4</BRAM_18K>
 <DSP48E>16</DSP48E>
-<FF>3259</FF>
-<LUT>5294</LUT>
+<FF>3344</FF>
+<LUT>5336</LUT>
+<BRAM_18K>0</BRAM_18K>
 <SLICE>0</SLICE>
 </Resources>
 </AreaEstimates>
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>gaussian_1line</Object>
+<Object>gaussian_scalarized</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol></IOProtocol>
@@ -69,7 +69,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>gaussian_1line</Object>
+<Object>gaussian_scalarized</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol></IOProtocol>
@@ -80,7 +80,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>gaussian_1line</Object>
+<Object>gaussian_scalarized</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol></IOProtocol>
@@ -91,7 +91,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>gaussian_1line</Object>
+<Object>gaussian_scalarized</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol></IOProtocol>
@@ -102,7 +102,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>gaussian_1line</Object>
+<Object>gaussian_scalarized</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol></IOProtocol>
@@ -113,7 +113,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>gaussian_1line</Object>
+<Object>gaussian_scalarized</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol></IOProtocol>
@@ -240,7 +240,7 @@
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>10.00</TargetClockPeriod>
 <ClockUncertainty>1.25</ClockUncertainty>
-<EstimatedClockPeriod>8.09</EstimatedClockPeriod>
+<EstimatedClockPeriod>7.26</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <Best-caseLatency>74529769</Best-caseLatency>
@@ -252,10 +252,10 @@
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
-<BRAM_18K>4</BRAM_18K>
 <DSP48E>16</DSP48E>
-<FF>3261</FF>
-<LUT>5294</LUT>
+<FF>3346</FF>
+<LUT>5336</LUT>
+<BRAM_18K>0</BRAM_18K>
 <SLICE>0</SLICE>
 </Resources>
 </AreaEstimates>

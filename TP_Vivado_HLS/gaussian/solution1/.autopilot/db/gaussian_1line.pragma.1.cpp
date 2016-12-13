@@ -191,10 +191,13 @@ void gaussian_1line(unsigned short in[1080][1920], unsigned short out[1080][1920
  for ( i = 1; i < 1080; ++i) {
   tmp[0] = k[0] * in[i - 1][0] + k[1] * in[i][0] + k[2] * in[i + 1][0];
   tmp[1] = k[0] * in[i - 1][1] + k[1] * in[i][1] + k[2] * in[i + 1][1];
-  for ( j = 2; j < 1920; ++j) {
+  gaussian_1line_label0_pipeline:for ( j = 2; j < 1920; ++j) {_ssdm_op_SpecLoopName("gaussian_1line_label0_pipeline");_ssdm_RegionBegin("gaussian_1line_label0_pipeline");
+_ssdm_op_SpecPipeline(1, 1, 1, "");
+#24 "src/gaussian_1line.cpp"
+
    tmp[j] = k[0] * in[i - 1][j] + k[1] * in[i][j] + k[2] * in[i + 1][j];
    out[i][j-1] = k[0] * tmp[j -2 ] + k[1] * tmp[(j - 1) ] + k[2] * tmp[j];
-  }
+  _ssdm_RegionEnd("gaussian_1line_label0_pipeline");}
  }
 
 }

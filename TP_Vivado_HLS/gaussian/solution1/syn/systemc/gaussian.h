@@ -11,7 +11,7 @@
 #include "systemc.h"
 #include "AESL_pkg.h"
 
-#include "gaussian_sep.h"
+#include "gaussian_scalarized.h"
 
 namespace ap_rtl {
 
@@ -45,23 +45,23 @@ struct gaussian : public sc_module {
 
     ofstream mHdltvinHandle;
     ofstream mHdltvoutHandle;
-    gaussian_sep* grp_gaussian_sep_fu_17;
+    gaussian_scalarized* grp_gaussian_scalarized_fu_15;
     sc_signal< sc_lv<1> > ap_CS_fsm;
-    sc_signal< sc_logic > grp_gaussian_sep_fu_17_ap_start;
-    sc_signal< sc_logic > grp_gaussian_sep_fu_17_ap_done;
-    sc_signal< sc_logic > grp_gaussian_sep_fu_17_ap_idle;
-    sc_signal< sc_logic > grp_gaussian_sep_fu_17_ap_ready;
-    sc_signal< sc_lv<21> > grp_gaussian_sep_fu_17_in_r_address0;
-    sc_signal< sc_logic > grp_gaussian_sep_fu_17_in_r_ce0;
-    sc_signal< sc_lv<16> > grp_gaussian_sep_fu_17_in_r_q0;
-    sc_signal< sc_lv<21> > grp_gaussian_sep_fu_17_in_r_address1;
-    sc_signal< sc_logic > grp_gaussian_sep_fu_17_in_r_ce1;
-    sc_signal< sc_lv<16> > grp_gaussian_sep_fu_17_in_r_q1;
-    sc_signal< sc_lv<21> > grp_gaussian_sep_fu_17_out_r_address0;
-    sc_signal< sc_logic > grp_gaussian_sep_fu_17_out_r_ce0;
-    sc_signal< sc_logic > grp_gaussian_sep_fu_17_out_r_we0;
-    sc_signal< sc_lv<16> > grp_gaussian_sep_fu_17_out_r_d0;
-    sc_signal< sc_logic > grp_gaussian_sep_fu_17_ap_start_ap_start_reg;
+    sc_signal< sc_logic > grp_gaussian_scalarized_fu_15_ap_start;
+    sc_signal< sc_logic > grp_gaussian_scalarized_fu_15_ap_done;
+    sc_signal< sc_logic > grp_gaussian_scalarized_fu_15_ap_idle;
+    sc_signal< sc_logic > grp_gaussian_scalarized_fu_15_ap_ready;
+    sc_signal< sc_lv<21> > grp_gaussian_scalarized_fu_15_in_r_address0;
+    sc_signal< sc_logic > grp_gaussian_scalarized_fu_15_in_r_ce0;
+    sc_signal< sc_lv<16> > grp_gaussian_scalarized_fu_15_in_r_q0;
+    sc_signal< sc_lv<21> > grp_gaussian_scalarized_fu_15_in_r_address1;
+    sc_signal< sc_logic > grp_gaussian_scalarized_fu_15_in_r_ce1;
+    sc_signal< sc_lv<16> > grp_gaussian_scalarized_fu_15_in_r_q1;
+    sc_signal< sc_lv<21> > grp_gaussian_scalarized_fu_15_out_r_address0;
+    sc_signal< sc_logic > grp_gaussian_scalarized_fu_15_out_r_ce0;
+    sc_signal< sc_logic > grp_gaussian_scalarized_fu_15_out_r_we0;
+    sc_signal< sc_lv<16> > grp_gaussian_scalarized_fu_15_out_r_d0;
+    sc_signal< sc_logic > grp_gaussian_scalarized_fu_15_ap_start_ap_start_reg;
     sc_signal< sc_lv<1> > ap_NS_fsm;
     static const sc_logic ap_const_logic_1;
     static const sc_logic ap_const_logic_0;
@@ -72,9 +72,9 @@ struct gaussian : public sc_module {
     void thread_ap_done();
     void thread_ap_idle();
     void thread_ap_ready();
-    void thread_grp_gaussian_sep_fu_17_ap_start();
-    void thread_grp_gaussian_sep_fu_17_in_r_q0();
-    void thread_grp_gaussian_sep_fu_17_in_r_q1();
+    void thread_grp_gaussian_scalarized_fu_15_ap_start();
+    void thread_grp_gaussian_scalarized_fu_15_in_r_q0();
+    void thread_grp_gaussian_scalarized_fu_15_in_r_q1();
     void thread_in_r_address0();
     void thread_in_r_address1();
     void thread_in_r_ce0();

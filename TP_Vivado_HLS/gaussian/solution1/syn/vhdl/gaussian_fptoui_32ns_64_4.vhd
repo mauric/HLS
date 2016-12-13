@@ -10,7 +10,7 @@ use ieee.std_logic_1164.all;
 
 entity gaussian_fptoui_32ns_64_4 is
     generic (
-        ID         : integer := 4;
+        ID         : integer := 7;
         NUM_STAGE  : integer := 4;
         din0_WIDTH : integer := 32;
         dout_WIDTH : integer := 64

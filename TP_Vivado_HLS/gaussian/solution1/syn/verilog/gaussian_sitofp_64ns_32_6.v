@@ -10,7 +10,7 @@
 
 module gaussian_sitofp_64ns_32_6
 #(parameter
-    ID         = 5,
+    ID         = 8,
     NUM_STAGE  = 6,
     din0_WIDTH = 64,
     dout_WIDTH = 32

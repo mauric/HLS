@@ -5,15 +5,15 @@
 ############################################################
 open_project gaussian
 set_top gaussian
-add_files src/gaussian.cpp
-add_files src/gaussian_1line.cpp
-add_files src/gaussian_3x3.cpp
-add_files src/gaussian_caching.cpp
-add_files src/gaussian_fixedPoint.cpp
-add_files src/gaussian_loopFusion.cpp
-add_files src/gaussian_scalarized.cpp
-add_files src/gaussian_sep.cpp
 add_files src/globals.h
+add_files src/gaussian_sep.cpp
+add_files src/gaussian_scalarized.cpp
+add_files src/gaussian_loopFusion.cpp
+add_files src/gaussian_fixedPoint.cpp
+add_files src/gaussian_caching.cpp
+add_files src/gaussian_3x3.cpp
+add_files src/gaussian_1line.cpp
+add_files src/gaussian.cpp
 add_files -tb test/test.cpp
 open_solution "solution1"
 set_part {xc7z010clg400-1}

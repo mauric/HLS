@@ -93,6 +93,11 @@
 			<location>/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/.apc/.tb</location>
 		</link>
 		<link>
+			<name>.reference/gaussian_scalarized.cpp</name>
+			<type>1</type>
+			<location>/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src/gaussian_scalarized.cpp</location>
+		</link>
+		<link>
 			<name>.reference/gaussian_sep.cpp</name>
 			<type>1</type>
 			<location>/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src/gaussian_sep.cpp</location>

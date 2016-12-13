@@ -10,7 +10,7 @@
 
 module gaussian_fptoui_32ns_64_4
 #(parameter
-    ID         = 4,
+    ID         = 7,
     NUM_STAGE  = 4,
     din0_WIDTH = 32,
     dout_WIDTH = 64
