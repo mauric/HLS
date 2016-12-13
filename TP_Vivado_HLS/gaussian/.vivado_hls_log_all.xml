@@ -12,11 +12,11 @@
   <warningLogs>
     <logs>
       <synLog>
-        <logs message="@W [RTGEN-101] Legalizing port name 'gaussian/out' to 'gaussian/out_r'." projectName="gaussian" solutionName="solution1" date="2016-12-13T12:00:29.400+0100" type="Warning"/>
-        <logs message="@W [RTGEN-101] Legalizing port name 'gaussian/in' to 'gaussian/in_r'." projectName="gaussian" solutionName="solution1" date="2016-12-13T12:00:29.385+0100" type="Warning"/>
-        <logs message="@W [RTGEN-101] Legalizing port name 'gaussian_scalarized/out' to 'gaussian_scalarized/out_r'." projectName="gaussian" solutionName="solution1" date="2016-12-13T12:00:29.369+0100" type="Warning"/>
-        <logs message="@W [RTGEN-101] Legalizing port name 'gaussian_scalarized/in' to 'gaussian_scalarized/in_r'." projectName="gaussian" solutionName="solution1" date="2016-12-13T12:00:29.356+0100" type="Warning"/>
-        <logs message="@W [HLS-40] Directive 'PIPELINE' cannot be applied: Label 'gaussian_scalarized_label0_pipeline' does not exist in function 'gaussian_scalarized'. " projectName="gaussian" solutionName="solution1" date="2016-12-13T12:00:29.041+0100" type="Warning"/>
+        <logs message="@W [RTGEN-101] Legalizing port name 'gaussian/out' to 'gaussian/out_r'." projectName="gaussian" solutionName="solution1" date="2016-12-13T13:04:10.720+0100" type="Warning"/>
+        <logs message="@W [RTGEN-101] Legalizing port name 'gaussian/in' to 'gaussian/in_r'." projectName="gaussian" solutionName="solution1" date="2016-12-13T13:04:10.710+0100" type="Warning"/>
+        <logs message="@W [RTGEN-101] Legalizing port name 'gaussian_scalarized/out' to 'gaussian_scalarized/out_r'." projectName="gaussian" solutionName="solution1" date="2016-12-13T13:04:10.700+0100" type="Warning"/>
+        <logs message="@W [RTGEN-101] Legalizing port name 'gaussian_scalarized/in' to 'gaussian_scalarized/in_r'." projectName="gaussian" solutionName="solution1" date="2016-12-13T13:04:10.689+0100" type="Warning"/>
+        <logs message="@W [HLS-40] Directive 'PIPELINE' cannot be applied: Label 'gaussian_scalarized_label0_pipeline' does not exist in function 'gaussian_scalarized'. " projectName="gaussian" solutionName="solution1" date="2016-12-13T13:04:10.388+0100" type="Warning"/>
       </synLog>
       <simLog/>
       <mgLog/>

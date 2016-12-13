@@ -1,0 +1,89 @@
+//---------------------------------------------------------------------------//
+//												RAPPORT
+//---------------------------------------------------------------------------//
+//     Exploitation	de	la	séparabilité	
+//---------------------------------------------------------------------------//
+Questions	
+	
+1. Implémentez	cette	approche	sous	la	forme	de	deux	nids	de	boucle	dans	le	fichier	
+«	gaussian_sep.cpp	»,	en	stockant	le	résultat	de	la	première	convolution	dans	un	tableau	
+intermédiaire	de	la	taille	de	l’image.	
+
+
+
+2. Lancez	la	synthèse	(pensez	à	rétablir	la	période	à	10ns	dans	les	paramètres	de	la	solution)	et	
+examinez	le	rapport.	Le	design	obtenu	est-il	implémentable	sur	la	carte	?	Pourquoi	?	Comment	
+l’expliquez-vous	(rapports	!),	et	quel	lien	faites-vous	entre	le	code	écrit	et	le	matériel	généré	?	
+
+
+
+
+
+
+//---------------------------------------------------------------------------//
+//        Fusion	de	boucles	
+//---------------------------------------------------------------------------//
+Procédez	à	la	fusion	des	deux	boucles	en	conservant	pour	l’instant	le	tableau	intermédiaire	
+(«	gaussian_loopFusion.cpp	»).	L’empreinte	mémoire	a-t-elle	changé	?	Qu’en	est-il	de	la	latence	?	
+
+2. Reprenez	votre	implémentation	en	réduisant	cette	fois-ci	la	taille	du	tableau	à	une	ligne	
+(«	gaussian_1line.cpp	»,	Votre	design	est-il	maintenant	implémentable	sur	la	carte	?		
+
+3. Procédez	à	une	scalarisation	avec	vieillissement	afin	de	conserver	uniquement	les	résultats	
+nécessaires	lors	du	traitement	d’une	ligne	(«	gaussian_scalarized.cpp	»).	Combien	de	BRAMs	
+utilisez-vous	?	Que	pouvez-vous	en	conclure	?	
+4. La	contrainte	de	performances	est-elle	enfin	atteinte	?	
+
+
+
+//---------------------------------------------------------------------------//
+//					Pipeline	de	boucles	
+//---------------------------------------------------------------------------//
+Lancez	la	synthèse,	et	lisez	les	messages	affichés	dans	la	console.	Le	résultat	est-il	conforme	à	vos	
+directives	?	
+
+
+Comment	l’expliquez-vous	?
+Vous	pouvez	vous	aider	de	la	perspective	d’analyse	(bouton	«	Analysis	»	en	haut	à	droite).
+
+//---------------------------------------------------------------------------//
+//     Minimisation	des	accès	mémoire
+//---------------------------------------------------------------------------//
+1. Modifier	votre	implémentation	afin	de	ne	lire	chaque	donnée	qu’une	seule	fois	
+(«	gaussian_caching.cpp	»).		On	pourra	utiliser	un	tableau	de	taille	adéquate,	soigneusement	
+géré.	
+en voyant que l'acces memoire est cher on va tout mettre dans une cache pour reduire le temps d'acces 
+pour pouvoir ;;;
+2. Synthétisez	et	analysez	votre	design.	Quelle	est	l’influence	sur	le	pipeline,	et	pourquoi	?	La	
+contrainte	de	performances	semble-t-elle	désormais	respectée	?	A	quoi	attribuez-vous	ce	
+paradoxe	?	
+	
+Note	:	Pour	copier	des	blocs	de	donnée	il	existe	la	fonction	memcpy(...)	dont	le	prototype	est	le	
+suivant	:	
+void *memcpy(void *dest, const void *src, size_t n);
+
+//---------------------------------------------------------------------------//
+//     Partitionnement	
+//---------------------------------------------------------------------------//
+1. Analysez	l’ordonnancement	de	l’implémentation	précédente	et	identifiez	les	zones	où	les	accès	
+mémoire	restent	problématiques.	
+2. Dans	le	volet	«	Directive	»,	effectuez	un	clic	droit	sur	la	variable	«	cache	»	puis	choisissez	
+«	Insert	directive...	».		Sélectionnez	la	directive	«	ARRAY_PARTITION	»,	et	entrez	les	paramètres	
+suivants	:	
+• Variable	:	cache	
+• Type	:	<vide>	
+• Factor	:	<vide>	
+• Dimension	:	1	
+3. Relancez	la	synthèse.	Que	constatez-vous	?	
+4. En	analysant	soigneusement	les	rapports	de	synthèse,	l’ordonnancement	et	les	ressources	
+utilisées,	expliquez	l’effet	de	la	directive	«	ARRAY_PARTITION	».	
+5. Quel	est	la	fréquence	maximale	atteignable	sans	risque	de	violation	de	timing	?	Avez-vous	enfin	
+atteint	votre	but	?	
+//---------------------------------------------------------------------------//
+//     Mise	en	œuvre	en	virgule	fixe	
+//---------------------------------------------------------------------------//
+1. Transformez	l’algorithme	en	virgule	fixe	(	«	gaussian_fixedPoint.cpp	»).	Tâchez	de	minimiser	la	
+taille	de	votre	design	en	vérifiant,	au	moyen	du	test	fourni,	que	votre	implémentation	respecte	
+les	contraintes	de	précision.	Qu’en	est-il	des	performances	?	Jusqu’où	pouvez-vous	aller	en	
+modifiant	la	fréquence	?	
+

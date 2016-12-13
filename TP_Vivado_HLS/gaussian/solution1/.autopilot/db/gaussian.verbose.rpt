@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'gaussian'
 ================================================================
-* Date:           Tue Dec 13 12:00:30 2016
+* Date:           Tue Dec 13 13:04:11 2016
 
 * Version:        2013.2 (build date: Thu Jun 13 16:07:59 PM 2013)
 * Project:        gaussian
@@ -173,10 +173,10 @@ entry:2  call fastcc void @gaussian_scalarized([2073600 x i16]* nocapture %in_r,
 
  <State 2>: 0.00ns
 ST_2: stg_4 [1/1] 0.00ns
-entry:0  call void (...)* @_ssdm_op_SpecMem([2073600 x i16]* %in_r, [10 x i8]* @p_str, i32 0, i32 0, i32 0, [1 x i8]* @p_str1) nounwind
+entry:0  call void (...)* @_ssdm_op_SpecMem([2073600 x i16]* %in_r, [10 x i8]* @p_str9, i32 0, i32 0, i32 0, [1 x i8]* @p_str110) nounwind
 
 ST_2: stg_5 [1/1] 0.00ns
-entry:1  call void (...)* @_ssdm_op_SpecMem([2073600 x i16]* %out_r, [10 x i8]* @p_str, i32 0, i32 0, i32 0, [1 x i8]* @p_str1) nounwind
+entry:1  call void (...)* @_ssdm_op_SpecMem([2073600 x i16]* %out_r, [10 x i8]* @p_str9, i32 0, i32 0, i32 0, [1 x i8]* @p_str110) nounwind
 
 ST_2: stg_6 [1/2] 0.00ns
 entry:2  call fastcc void @gaussian_scalarized([2073600 x i16]* nocapture %in_r, [2073600 x i16]* nocapture %out_r) nounwind
@@ -198,8 +198,8 @@ STG Binding:
 - Is pipelined: 0
 - Is top level: 1
 Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
-Port [ in_r]:  wired=0; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=2; mode=0x4629db0; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
-Port [ out_r]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=2; mode=0x47101d0; pingpong=0; private_global=0; MemPort=[03]; IO mode=ap_memory:ce=0
+Port [ in_r]:  wired=0; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=2; mode=0x3d84ad0; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
+Port [ out_r]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=2; mode=0x3f1ef70; pingpong=0; private_global=0; MemPort=[03]; IO mode=ap_memory:ce=0
 ---------------- STG Properties END ------------------
 
 ---------------- Datapath Model BEGIN ----------------
@@ -258,7 +258,7 @@ stg_7 (ret    ) [ 000]
 <pin id="9" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str"/></StgValue>
+<StgValue><ssdm name="p_str9"/></StgValue>
 </bind>
 </comp>
 
@@ -276,7 +276,7 @@ stg_7 (ret    ) [ 000]
 <pin id="13" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str1"/></StgValue>
+<StgValue><ssdm name="p_str110"/></StgValue>
 </bind>
 </comp>
 

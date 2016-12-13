@@ -1205,15 +1205,40 @@ void gaussian_caching(unsigned short in[1080][1920], unsigned short out[1080][19
 	 1080
 	 */
  float tmp0, tmp1, tmp2;
- int i, j;
+ float cache[3][1920];
+ int i, j,l;
+
+ //init cache
+ for (l = 0; l < 1920; ++l) {
+  cache[0][l] = in[0][l];
+  cache[1][l] = in[1][l];
+  cache[2][l] = in[2][l];
+ }
+
  for (i = 1; i < 1080; ++i) {
-  tmp0 = k[0] * in[i - 1][0] + k[1] * in[i][0] + k[2] * in[i + 1][0];
-  tmp1 = k[0] * in[i - 1][1] + k[1] * in[i][1] + k[2] * in[i + 1][1];
- for (j = 2; j < 1920; ++j) {
-   tmp2 = k[0] * in[i - 1][j] + k[1] * in[i][j] + k[2] * in[i + 1][j];
+  tmp0 = k[0] * cache[i - 1][0] + k[1] * cache[i][0] + k[2] * cache[i + 1][0];
+  tmp1 = k[0] * cache[i - 1][1] + k[1] * cache[i][1] + k[2] * cache[i + 1][1];
+
+  cache[0][0] = cache[1][0];
+  cache[1][0] = cache[2][0];
+  cache[2][0] = in[i+2][0];
+
+  cache[0][1] = cache[1][1];
+  cache[1][1] = cache[2][1];
+  cache[2][1] = in[i+2][1];
+ gaussian_caching_label1:for (j = 2; j < 1920; ++j) {_ssdm_op_SpecLoopName("gaussian_caching_label1");_ssdm_RegionBegin("gaussian_caching_label1");
+#pragma HLS PIPELINE II=1
+#40 "src/gaussian_caching.cpp"
+
+   tmp2 = k[0] * cache[i - 1][j] + k[1] * cache[i][j] + k[2] * cache[i + 1][j];
    out[i][j - 1] = k[0] * tmp0 + k[1] * tmp1+ k[2] * tmp2;
    tmp0 = tmp1;
    tmp1 = tmp2;
-  }
+
+   cache[0][j] = cache[1][j];
+   cache[1][j] = cache[2][j];
+   cache[2][j] = in[i+2][j];
+
+  _ssdm_RegionEnd("gaussian_caching_label1");}
  }
 }

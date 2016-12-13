@@ -25,10 +25,9 @@
 								<option id="gnu.cpp.compiler.exe.debug.option.optimization.level.1059421322" name="Optimization Level" superClass="gnu.cpp.compiler.exe.debug.option.optimization.level" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.exe.debug.option.debugging.level.341084062" name="Debug Level" superClass="gnu.cpp.compiler.exe.debug.option.debugging.level" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.include.paths.1726353493" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
-									<listOptionValue builtIn="false" value="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS"/>
 									<listOptionValue builtIn="false" value="/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/auto_cc/include"/>
-									<listOptionValue builtIn="false" value="/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/systemc/include"/>
 									<listOptionValue builtIn="false" value="/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/include/etc"/>
+									<listOptionValue builtIn="false" value="/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/systemc/include"/>
 									<listOptionValue builtIn="false" value="/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/include"/>
 									<listOptionValue builtIn="false" value="/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/include/ap_sysc"/>
 								</option>
@@ -38,10 +37,9 @@
 								<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.exe.debug.option.optimization.level.700215314" name="Optimization Level" superClass="gnu.c.compiler.exe.debug.option.optimization.level" valueType="enumerated"/>
 								<option id="gnu.c.compiler.exe.debug.option.debugging.level.642094143" name="Debug Level" superClass="gnu.c.compiler.exe.debug.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.include.paths.1699183445" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
-									<listOptionValue builtIn="false" value="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS"/>
 									<listOptionValue builtIn="false" value="/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/auto_cc/include"/>
-									<listOptionValue builtIn="false" value="/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/systemc/include"/>
 									<listOptionValue builtIn="false" value="/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/include/etc"/>
+									<listOptionValue builtIn="false" value="/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/systemc/include"/>
 									<listOptionValue builtIn="false" value="/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/include"/>
 									<listOptionValue builtIn="false" value="/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/include/ap_sysc"/>
 								</option>
@@ -101,10 +99,9 @@
 								<option id="gnu.cpp.compiler.exe.release.option.optimization.level.656808311" name="Optimization Level" superClass="gnu.cpp.compiler.exe.release.option.optimization.level" value="gnu.cpp.compiler.optimization.level.most" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.exe.release.option.debugging.level.1050266964" name="Debug Level" superClass="gnu.cpp.compiler.exe.release.option.debugging.level" value="gnu.cpp.compiler.debugging.level.none" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.include.paths.646530381" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
-									<listOptionValue builtIn="false" value="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS"/>
 									<listOptionValue builtIn="false" value="/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/auto_cc/include"/>
-									<listOptionValue builtIn="false" value="/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/systemc/include"/>
 									<listOptionValue builtIn="false" value="/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/include/etc"/>
+									<listOptionValue builtIn="false" value="/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/systemc/include"/>
 									<listOptionValue builtIn="false" value="/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/include"/>
 									<listOptionValue builtIn="false" value="/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/include/ap_sysc"/>
 								</option>
@@ -114,10 +111,9 @@
 								<option defaultValue="gnu.c.optimization.level.most" id="gnu.c.compiler.exe.release.option.optimization.level.362793322" name="Optimization Level" superClass="gnu.c.compiler.exe.release.option.optimization.level" valueType="enumerated"/>
 								<option id="gnu.c.compiler.exe.release.option.debugging.level.1633965720" name="Debug Level" superClass="gnu.c.compiler.exe.release.option.debugging.level" value="gnu.c.debugging.level.none" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.include.paths.1857704107" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
-									<listOptionValue builtIn="false" value="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS"/>
 									<listOptionValue builtIn="false" value="/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/auto_cc/include"/>
-									<listOptionValue builtIn="false" value="/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/systemc/include"/>
 									<listOptionValue builtIn="false" value="/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/include/etc"/>
+									<listOptionValue builtIn="false" value="/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/systemc/include"/>
 									<listOptionValue builtIn="false" value="/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/include"/>
 									<listOptionValue builtIn="false" value="/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/include/ap_sysc"/>
 								</option>

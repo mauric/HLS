@@ -4,12 +4,12 @@ target triple = "x86_64-unknown-linux-gnu"
 
 %"struct.std::ios_base::Init" = type <{ i8 }>
 
-@p_str = private constant [10 x i8] c"ap_memory\00", align 1 ; <[10 x i8]*> [#uses=2]
-@p_str1 = private constant [1 x i8] zeroinitializer, align 1 ; <[1 x i8]*> [#uses=2]
 @llvm_global_ctors_0 = appending global [1 x i32] [i32 65535] ; <[1 x i32]*> [#uses=0]
 @llvm_global_ctors_1 = appending global [1 x void ()*] [void ()* @_GLOBAL__I__Z19gaussian_fixedPointPA1920_tS0_] ; <[1 x void ()*]*> [#uses=0]
 @llvm_global_dtors_0 = appending global [1 x i32] [i32 65535] ; <[1 x i32]*> [#uses=0]
 @llvm_global_dtors_1 = appending global [1 x void ()*] [void ()* @_GLOBAL__D__Z19gaussian_fixedPointPA1920_tS0_] ; <[1 x void ()*]*> [#uses=0]
+@p_str9 = private constant [10 x i8] c"ap_memory\00", align 1 ; <[10 x i8]*> [#uses=2]
+@p_str110 = private constant [1 x i8] zeroinitializer, align 1 ; <[1 x i8]*> [#uses=2]
 
 define weak void @_ssdm_op_SpecMem(...) nounwind {
 entry:
@@ -24,8 +24,8 @@ declare void @_GLOBAL__D__Z19gaussian_fixedPointPA1920_tS0_() nounwind
 
 define void @gaussian([2073600 x i16]* %in_r, [2073600 x i16]* %out_r) nounwind {
 entry:
-  call void (...)* @_ssdm_op_SpecMem([2073600 x i16]* %in_r, [10 x i8]* @p_str, i32 0, i32 0, i32 0, [1 x i8]* @p_str1) nounwind
-  call void (...)* @_ssdm_op_SpecMem([2073600 x i16]* %out_r, [10 x i8]* @p_str, i32 0, i32 0, i32 0, [1 x i8]* @p_str1) nounwind
+  call void (...)* @_ssdm_op_SpecMem([2073600 x i16]* %in_r, [10 x i8]* @p_str9, i32 0, i32 0, i32 0, [1 x i8]* @p_str110) nounwind
+  call void (...)* @_ssdm_op_SpecMem([2073600 x i16]* %out_r, [10 x i8]* @p_str9, i32 0, i32 0, i32 0, [1 x i8]* @p_str110) nounwind
   call fastcc void @gaussian_scalarized([2073600 x i16]* nocapture %in_r, [2073600 x i16]* nocapture %out_r) nounwind
   ret void
 }

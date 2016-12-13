@@ -43,7 +43,7 @@ entry:2  call fastcc void @gaussian_scalarized([2073600 x i16]* nocapture %in_r,
 
 <node id="3" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="8" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="8">
 <![CDATA[
-entry:0  call void (...)* @_ssdm_op_SpecMem([2073600 x i16]* %in_r, [10 x i8]* @p_str, i32 0, i32 0, i32 0, [1 x i8]* @p_str1) nounwind
+entry:0  call void (...)* @_ssdm_op_SpecMem([2073600 x i16]* %in_r, [10 x i8]* @p_str9, i32 0, i32 0, i32 0, [1 x i8]* @p_str110) nounwind
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>
@@ -58,7 +58,7 @@ entry:0  call void (...)* @_ssdm_op_SpecMem([2073600 x i16]* %in_r, [10 x i8]* @
 
 <node id="4" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="8" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="8">
 <![CDATA[
-entry:1  call void (...)* @_ssdm_op_SpecMem([2073600 x i16]* %out_r, [10 x i8]* @p_str, i32 0, i32 0, i32 0, [1 x i8]* @p_str1) nounwind
+entry:1  call void (...)* @_ssdm_op_SpecMem([2073600 x i16]* %out_r, [10 x i8]* @p_str9, i32 0, i32 0, i32 0, [1 x i8]* @p_str110) nounwind
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>
@@ -120,7 +120,7 @@ entry:3  ret void
 </dataflow>
 <dataflow id="17" from="in_r" to="stg_4" fromId="9" toId="4">
 </dataflow>
-<dataflow id="19" from="p_str" to="stg_4" fromId="18" toId="4">
+<dataflow id="19" from="p_str9" to="stg_4" fromId="18" toId="4">
 </dataflow>
 <dataflow id="21" from="stg_20" to="stg_4" fromId="20" toId="4">
 </dataflow>
@@ -128,13 +128,13 @@ entry:3  ret void
 </dataflow>
 <dataflow id="23" from="stg_20" to="stg_4" fromId="20" toId="4">
 </dataflow>
-<dataflow id="25" from="p_str1" to="stg_4" fromId="24" toId="4">
+<dataflow id="25" from="p_str110" to="stg_4" fromId="24" toId="4">
 </dataflow>
 <dataflow id="26" from="_ssdm_op_SpecMem" to="stg_5" fromId="15" toId="5">
 </dataflow>
 <dataflow id="27" from="out_r" to="stg_5" fromId="10" toId="5">
 </dataflow>
-<dataflow id="28" from="p_str" to="stg_5" fromId="18" toId="5">
+<dataflow id="28" from="p_str9" to="stg_5" fromId="18" toId="5">
 </dataflow>
 <dataflow id="29" from="stg_20" to="stg_5" fromId="20" toId="5">
 </dataflow>
@@ -142,7 +142,7 @@ entry:3  ret void
 </dataflow>
 <dataflow id="31" from="stg_20" to="stg_5" fromId="20" toId="5">
 </dataflow>
-<dataflow id="32" from="p_str1" to="stg_5" fromId="24" toId="5">
+<dataflow id="32" from="p_str110" to="stg_5" fromId="24" toId="5">
 </dataflow>
 <dataflow id="33" from="gaussian_scalarized" to="stg_6" fromId="11" toId="6">
 </dataflow>

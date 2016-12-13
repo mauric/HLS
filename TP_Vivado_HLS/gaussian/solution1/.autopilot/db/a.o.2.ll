@@ -4,12 +4,12 @@ target triple = "x86_64-unknown-linux-gnu"
 
 %"struct.std::ios_base::Init" = type <{ i8 }>
 
-@.str = private constant [10 x i8] c"ap_memory\00", align 1 ; <[10 x i8]*> [#uses=2]
-@.str1 = private constant [1 x i8] zeroinitializer, align 1 ; <[1 x i8]*> [#uses=2]
 @llvm.global_ctors.0 = appending global [1 x i32] [i32 65535] ; <[1 x i32]*> [#uses=0]
 @llvm.global_ctors.1 = appending global [1 x void ()*] [void ()* @_GLOBAL__I__Z19gaussian_fixedPointPA1920_tS0_] ; <[1 x void ()*]*> [#uses=0]
 @llvm.global_dtors.0 = appending global [1 x i32] [i32 65535] ; <[1 x i32]*> [#uses=0]
 @llvm.global_dtors.1 = appending global [1 x void ()*] [void ()* @_GLOBAL__D__Z19gaussian_fixedPointPA1920_tS0_] ; <[1 x void ()*]*> [#uses=0]
+@.str9 = private constant [10 x i8] c"ap_memory\00", align 1 ; <[10 x i8]*> [#uses=2]
+@.str110 = private constant [1 x i8] zeroinitializer, align 1 ; <[1 x i8]*> [#uses=2]
 
 declare void @_ssdm_op_SpecMem(...) nounwind
 
@@ -23,8 +23,8 @@ define void @gaussian([1080 x [1920 x i16]]* %in, [1080 x [1920 x i16]]* %out) n
 entry:
   call void @llvm.dbg.value(metadata !{[1080 x [1920 x i16]]* %in}, i64 0, metadata !7)
   call void @llvm.dbg.value(metadata !{[1080 x [1920 x i16]]* %out}, i64 0, metadata !19)
-  call void (...)* @_ssdm_op_SpecMem([1080 x [1920 x i16]]* %in, [10 x i8]* @.str, i32 0, i32 0, i32 0, [1 x i8]* @.str1) nounwind, !dbg !20
-  call void (...)* @_ssdm_op_SpecMem([1080 x [1920 x i16]]* %out, [10 x i8]* @.str, i32 0, i32 0, i32 0, [1 x i8]* @.str1) nounwind, !dbg !22
+  call void (...)* @_ssdm_op_SpecMem([1080 x [1920 x i16]]* %in, [10 x i8]* @.str9, i32 0, i32 0, i32 0, [1 x i8]* @.str110) nounwind, !dbg !20
+  call void (...)* @_ssdm_op_SpecMem([1080 x [1920 x i16]]* %out, [10 x i8]* @.str9, i32 0, i32 0, i32 0, [1 x i8]* @.str110) nounwind, !dbg !22
   call fastcc void @gaussian_scalarized([1080 x [1920 x i16]]* %in, [1080 x [1920 x i16]]* %out) nounwind, !dbg !23
   ret void, !dbg !24
 }
