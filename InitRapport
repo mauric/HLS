@@ -77,6 +77,8 @@ suivants	:
 3. Relancez	la	synthèse.	Que	constatez-vous	?	
 4. En	analysant	soigneusement	les	rapports	de	synthèse,	l’ordonnancement	et	les	ressources	
 utilisées,	expliquez	l’effet	de	la	directive	«	ARRAY_PARTITION	».	
+Nous permet de mieux gerer l'acces memoire. va mettre intelligement dand DBRAM pour avoir 
+acces simultanees
 5. Quel	est	la	fréquence	maximale	atteignable	sans	risque	de	violation	de	timing	?	Avez-vous	enfin	
 atteint	votre	but	?	
 //---------------------------------------------------------------------------//

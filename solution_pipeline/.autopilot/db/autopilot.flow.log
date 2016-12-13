@@ -1,0 +1,753 @@
+@I [HLS-0] Workspace /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1 opened at Tue Dec 13 11:35:45 CET 2016
+@I [HLS-100] Command "config_clock -quiet -name default -period 10 -default=false "
+@I [SYN-201] Setting up clock 'default' with a period of 10ns.
+@I [HLS-100] Command 'config_clock' returned 0; elapsed 0Total elapsed time: 1.221 sec.
+@I [HLS-100] Command "open_platform DefaultPlatform "
+@I [HLS-100] Command 'open_platform' returned 0; elapsed 0Total elapsed time: 1.223 sec.
+@I [HLS-100] Command "import_lib /usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/xilinx/zynq/zynq "
+@I [HLS-100] Command "source /usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/xilinx/common/xilinx.lib "
+@I [HLS-100] Command "source /usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/xilinx/interface/xilinx_interface.lib "
+@I [HLS-100] Command "source /usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/xilinx/interface/plb46.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.228 sec.
+@I [HLS-100] Command "source /usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/xilinx/interface/fsl.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.230 sec.
+@I [HLS-100] Command "source /usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/xilinx/interface/axi4.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.232 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.232 sec.
+@I [HLS-100] Command "source /usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/xilinx/common/dsp48.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.234 sec.
+@I [HLS-100] Command "source /usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/xilinx/ip/xfft.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.237 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.242 sec.
+@I [HLS-100] Command "source /usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/xilinx/common/xilinx_old.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 1.248 sec.
+@I [HLS-100] Command "source /usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/xilinx/common/xilinx_vivado.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.250 sec.
+@I [HLS-100] Command "source /usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/xilinx/common/xilinx.hlp "
+@I [HLS-100] Command "source /usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/xilinx/common/target_info.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.259 sec.
+@I [HLS-100] Command "source /usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/xilinx/common/dsp48.hlp "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.262 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.262 sec.
+@I [HLS-100] Command "source /usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/xilinx/zynq/dsp48e1.hlp "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.264 sec.
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 1.264 sec.
+@I [HLS-100] Command "config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 1.264 sec.
+@I [HLS-100] Command "config_chip_info -quiet -speed medium "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 1.264 sec.
+@I [HLS-100] Command 'import_lib' returned 0; elapsed 0.03Total elapsed time: 1.269 sec.
+@I [HLS-100] Command "source /usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/xilinx/zynq/zynq.gen "
+@I [HLS-100] Command "source /usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/xilinx/common/virtex.gen "
+@I [HLS-100] Command "source /usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/xilinx/common/xilinx.gen "
+@I [HLS-100] Command "source /usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/xilinx/interface/plb46.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.278 sec.
+@I [HLS-100] Command "source /usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/xilinx/interface/fsl.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.281 sec.
+@I [HLS-100] Command "source /usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/xilinx/interface/axi4.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 1.288 sec.
+@I [HLS-100] Command "source /usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/xilinx/scripts/xilinxcoregen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 1.298 sec.
+@I [HLS-100] Command "source /usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/xilinx/interface/XilEDKCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 1.305 sec.
+@I [HLS-100] Command "source /usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/xilinx/ip/util.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.306 sec.
+@I [HLS-100] Command "source /usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/xilinx/ip/xfft.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.08Total elapsed time: 1.386 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.11Total elapsed time: 1.386 sec.
+@I [HLS-100] Command "source /usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/xilinx/common/dsp48.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.388 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.11Total elapsed time: 1.388 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.11Total elapsed time: 1.388 sec.
+@I [HLS-100] Command "open_platform DefaultPlatform "
+@I [HLS-100] Command 'open_platform' returned 0; elapsed 0Total elapsed time: 1.388 sec.
+@I [HLS-100] Command "import_lib /usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/xilinx/zynq/zynq_fpv6 "
+@I [HLS-100] Command "source /usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/xilinx/common/xilinx_fpv7.lib "
+@I [HLS-100] Command "source /usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/xilinx/common/xilinx_fpv6.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.391 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.392 sec.
+@I [HLS-100] Command 'import_lib' returned 0; elapsed 0Total elapsed time: 1.400 sec.
+@I [HLS-100] Command "source /usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/xilinx/zynq/zynq_fpv6.gen "
+@I [HLS-100] Command "source /usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/xilinx/common/xilinx_fpv6.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.402 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.402 sec.
+@I [HLS-100] Command "set_part xc7z010clg400-1 "
+@I [HLS-100] Command "add_library xilinx/zynq/zynq:xc7z010:clg400:-1 "
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 1.405 sec.
+@I [HLS-100] Command "license_exists VIVADO_HLS "
+@I [HLS-100] Command 'license_exists' returned 1; elapsed 0Total elapsed time: 1.405 sec.
+@I [HLS-100] Command "license_exists AUTOESL_NI "
+@I [HLS-100] Command 'license_exists' returned 1; elapsed 0Total elapsed time: 1.405 sec.
+@I [HLS-100] Command "license_exists HLS "
+@I [HLS-100] Command 'license_exists' returned 0; elapsed 0Total elapsed time: 1.405 sec.
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 1.411 sec.
+@I [HLS-100] Command "config_chip_info -quiet -resource  {SLICE 4400}   {LUT 17600}     {FF 35200}  {DSP48E 80}    {BRAM 120}  "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 1.411 sec.
+@I [HLS-100] Command "config_chip_info -quiet -speed slow "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 1.411 sec.
+@I [HLS-100] Command 'add_library' returned 0; elapsed 0.01Total elapsed time: 1.414 sec.
+@I [HLS-100] Command "add_library xilinx/zynq/zynq_fpv6 "
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 1.415 sec.
+@I [HLS-100] Command "license_exists VIVADO_HLS "
+@I [HLS-100] Command 'license_exists' returned 1; elapsed 0Total elapsed time: 1.416 sec.
+@I [HLS-100] Command "license_exists AUTOESL_NI "
+@I [HLS-100] Command 'license_exists' returned 1; elapsed 0Total elapsed time: 1.416 sec.
+@I [HLS-100] Command "license_exists HLS "
+@I [HLS-100] Command 'license_exists' returned 0; elapsed 0Total elapsed time: 1.416 sec.
+@I [HLS-100] Command 'add_library' returned 0; elapsed 0Total elapsed time: 1.419 sec.
+@I [HLS-10] Setting target device to 'xc7z010clg400-1'
+@I [HLS-100] Command 'set_part' returned 0; elapsed 0.01Total elapsed time: 1.420 sec.
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 1.420 sec.
+@I [HLS-100] Command "config_chip_info -quiet -resource  {SLICE 4400}   {LUT 17600}     {FF 35200}  {DSP48E 80}    {BRAM 120}  "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 1.420 sec.
+@I [HLS-100] Command "config_chip_info -quiet -speed slow "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 1.420 sec.
+@I [HLS-100] Command 'open_solution' returned 0; elapsed 0.17Total elapsed time: 1.422 sec.
+@I [HLS-100] Command "set_part xc7z010clg400-1 "
+@I [HLS-100] Command "add_library xilinx/zynq/zynq:xc7z010:clg400:-1 "
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 1.424 sec.
+@I [HLS-100] Command "license_exists VIVADO_HLS "
+@I [HLS-100] Command 'license_exists' returned 1; elapsed 0Total elapsed time: 1.424 sec.
+@I [HLS-100] Command "license_exists AUTOESL_NI "
+@I [HLS-100] Command 'license_exists' returned 1; elapsed 0Total elapsed time: 1.424 sec.
+@I [HLS-100] Command "license_exists HLS "
+@I [HLS-100] Command 'license_exists' returned 0; elapsed 0Total elapsed time: 1.424 sec.
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 1.428 sec.
+@I [HLS-100] Command "config_chip_info -quiet -resource  {SLICE 4400}   {LUT 17600}     {FF 35200}  {DSP48E 80}    {BRAM 120}  "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 1.428 sec.
+@I [HLS-100] Command "config_chip_info -quiet -speed slow "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 1.428 sec.
+@I [HLS-100] Command 'add_library' returned 0; elapsed 0.01Total elapsed time: 1.432 sec.
+@I [HLS-100] Command "add_library xilinx/zynq/zynq_fpv6 "
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 1.434 sec.
+@I [HLS-100] Command "license_exists VIVADO_HLS "
+@I [HLS-100] Command 'license_exists' returned 1; elapsed 0Total elapsed time: 1.434 sec.
+@I [HLS-100] Command "license_exists AUTOESL_NI "
+@I [HLS-100] Command 'license_exists' returned 1; elapsed 0Total elapsed time: 1.434 sec.
+@I [HLS-100] Command "license_exists HLS "
+@I [HLS-100] Command 'license_exists' returned 0; elapsed 0Total elapsed time: 1.434 sec.
+@I [HLS-100] Command 'add_library' returned 0; elapsed 0Total elapsed time: 1.438 sec.
+@I [HLS-100] Command 'set_part' returned 0; elapsed 0.01Total elapsed time: 1.438 sec.
+@I [HLS-100] Command "create_clock -period 10 -name default "
+@I [HLS-100] Command 'create_clock' returned 0; elapsed 0Total elapsed time: 1.444 sec.
+@I [HLS-100] Command "source ./gaussian/solution1/directives.tcl "
+@I [HLS-100] Command "set_directive_pipeline -II 1 gaussian_1line/gaussian_1line_label0_pipeline "
+@I [HLS-100] Command 'set_directive_pipeline' returned 0; elapsed 0Total elapsed time: 1.446 sec.
+@I [HLS-100] Command "set_directive_pipeline -II 1 gaussian_scalarized/gaussian_scalarized_label0_pipeline "
+@I [HLS-100] Command 'set_directive_pipeline' returned 0; elapsed 0Total elapsed time: 1.447 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.447 sec.
+@I [HLS-100] Command "csynth_design "
+@I [HLS-100] Command "elaborate -effort=medium -skip_syncheck=0 -lm=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 "
+@I [HLS-10] Importing test bench file 'test/test.cpp' ... 
+@0 [HLS-0] Importing test bench file 'test/test.cpp' ... 
+@I [HLS-10] Analyzing design file 'src/gaussian.cpp' ... 
+@0 [HLS-0] Analyzing design file 'src/gaussian.cpp' ... 
+@I [HLS-0] Compiling one TU...
+@I [HLS-0] 
+Checking before pre-process: exec llvm-gcc -fno-builtin-isinf -fno-builtin-isnan    -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit   -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/systemc/include" -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/include" -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/include/ap_sysc" -fexceptions "src/gaussian.cpp"  -o "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian.pp.00.o"
+
+@I [HLS-0] Syntax Checker time: 0 seconds per iteration
+@I [HLS-0] 
+Source preprocessing: exec llvm-gcc  -fno-builtin-isinf -fno-builtin-isnan -CC -E "src/gaussian.cpp"     -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/autopilot" -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D "__asm__(...)="  -o "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian.pp.0.cpp"
+
+@I [HLS-0] GCC PP time: 0 seconds per iteration
+@I [HLS-0] Setting directive 'PIPELINE' II=1 
+@I [HLS-0] Setting directive 'PIPELINE' II=1 
+@I [HLS-0] Marker-Pragma convertor: /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian.pp.0.cpp /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian.pp.0.cpp.ap-line.cpp /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian.pp.0.cpp.ap-line.cpp.CXX 1
+@I [HLS-0] 
+Source processor: exec /usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/jre/bin/java -Xmx512m -classpath   "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/lib/autopilot.sourceprocessor.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/lib/org.eclipse.cdt.core_5.3.0.xilinx_patch.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/lib/org.eclipse.core.runtime_3.7.0.v20110110.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/lib/org.eclipse.equinox.common_3.6.0.v20110523.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/lib/com.ibm.icu_4.4.2.v20110208.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/lib/jargs.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/eclipse/plugins/org.eclipse.emf.common_2.7.0.v20120127-1122.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/eclipse/plugins/org.eclipse.emf.ecore_2.7.0.v20120127-1122.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/eclipse/plugins/org.eclipse.emf.ecore.xmi_2.7.0.v20120127-1122.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/eclipse/plugins/com.autoesl.autopilot.ui.directiveFileModel_1.0.0.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/eclipse/plugins/com.autoesl.autopilot.ui.common_1.0.0.jar"  autopilot.sourceprocessor.CParser  "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian.pp.0.cpp.ap-line.cpp"  -m gaussian -o "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian.pp.0.cpp.ap-cdt.cpp" --ad --pc --pp --directive /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/solution1.directive --source /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src/gaussian.cpp --error /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db --ce --tcl /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db --ve --vetcl /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db --lp --ca --es --gf --nk --df --pd --p2d /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db --sd --scff /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/.systemc_flag
+
+@I [HLS-0] Marker-Pragma convertor: /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian.pp.0.cpp.ap-cdt.cpp /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian.pragma.0.cpp /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian.pragma.0.cpp.ap-line.CXX 0
+@I [HLS-100] Command "source /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/pragma.status.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.355 sec.
+@I [HLS-0] CDT processor time: 0 seconds per iteration
+@I [HLS-0] Pragma handling time: 0 seconds per iteration
+@I [HLS-0] 
+Source preprocessing: exec llvm-gcc  -fno-builtin-isinf -fno-builtin-isnan -CC -E "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian.pragma.1.cpp"     -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/autopilot" -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D "__asm__(...)="  -o "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian.pragma.2.cpp"
+
+@I [HLS-0] exec llvm-gcc  -w -fno-builtin-isinf -fno-builtin-isnan  "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian.pragma.2.cpp"    -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/autopilot" -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -g -o "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian.g.bc"
+@I [HLS-10] Analyzing design file 'src/gaussian_1line.cpp' ... 
+@0 [HLS-0] Analyzing design file 'src/gaussian_1line.cpp' ... 
+@I [HLS-0] Compiling one TU...
+@I [HLS-0] 
+Checking before pre-process: exec llvm-gcc -fno-builtin-isinf -fno-builtin-isnan    -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit   -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/systemc/include" -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/include" -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/include/ap_sysc" -fexceptions "src/gaussian_1line.cpp"  -o "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_1line.pp.00.o"
+
+@I [HLS-0] Syntax Checker time: 0 seconds per iteration
+@I [HLS-0] 
+Source preprocessing: exec llvm-gcc  -fno-builtin-isinf -fno-builtin-isnan -CC -E "src/gaussian_1line.cpp"     -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/autopilot" -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D "__asm__(...)="  -o "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_1line.pp.0.cpp"
+
+@I [HLS-0] GCC PP time: 0 seconds per iteration
+@I [HLS-0] Setting directive 'PIPELINE' II=1 
+@I [HLS-0] Setting directive 'PIPELINE' II=1 
+@I [HLS-0] Marker-Pragma convertor: /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_1line.pp.0.cpp /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_1line.pp.0.cpp.ap-line.cpp /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_1line.pp.0.cpp.ap-line.cpp.CXX 1
+@I [HLS-0] 
+Source processor: exec /usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/jre/bin/java -Xmx512m -classpath   "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/lib/autopilot.sourceprocessor.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/lib/org.eclipse.cdt.core_5.3.0.xilinx_patch.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/lib/org.eclipse.core.runtime_3.7.0.v20110110.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/lib/org.eclipse.equinox.common_3.6.0.v20110523.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/lib/com.ibm.icu_4.4.2.v20110208.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/lib/jargs.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/eclipse/plugins/org.eclipse.emf.common_2.7.0.v20120127-1122.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/eclipse/plugins/org.eclipse.emf.ecore_2.7.0.v20120127-1122.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/eclipse/plugins/org.eclipse.emf.ecore.xmi_2.7.0.v20120127-1122.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/eclipse/plugins/com.autoesl.autopilot.ui.directiveFileModel_1.0.0.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/eclipse/plugins/com.autoesl.autopilot.ui.common_1.0.0.jar"  autopilot.sourceprocessor.CParser  "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_1line.pp.0.cpp.ap-line.cpp"  -m gaussian -o "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_1line.pp.0.cpp.ap-cdt.cpp" --ad --pc --pp --directive /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/solution1.directive --source /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src/gaussian_1line.cpp --error /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db --ce --tcl /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db --ve --vetcl /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db --lp --ca --es --gf --nk --df --pd --p2d /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db --sd --scff /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/.systemc_flag
+
+@I [HLS-0] Marker-Pragma convertor: /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_1line.pp.0.cpp.ap-cdt.cpp /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_1line.pragma.0.cpp /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_1line.pragma.0.cpp.ap-line.CXX 0
+@I [HLS-100] Command "source /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/pragma.status.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 3.362 sec.
+@I [HLS-0] CDT processor time: 0 seconds per iteration
+@I [HLS-0] Pragma handling time: 0 seconds per iteration
+@I [HLS-0] 
+Source preprocessing: exec llvm-gcc  -fno-builtin-isinf -fno-builtin-isnan -CC -E "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_1line.pragma.1.cpp"     -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/autopilot" -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D "__asm__(...)="  -o "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_1line.pragma.2.cpp"
+
+@I [HLS-0] exec llvm-gcc  -w -fno-builtin-isinf -fno-builtin-isnan  "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_1line.pragma.2.cpp"    -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/autopilot" -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -g -o "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_1line.g.bc"
+@I [HLS-10] Analyzing design file 'src/gaussian_3x3.cpp' ... 
+@0 [HLS-0] Analyzing design file 'src/gaussian_3x3.cpp' ... 
+@I [HLS-0] Compiling one TU...
+@I [HLS-0] 
+Checking before pre-process: exec llvm-gcc -fno-builtin-isinf -fno-builtin-isnan    -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit   -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/systemc/include" -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/include" -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/include/ap_sysc" -fexceptions "src/gaussian_3x3.cpp"  -o "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_3x3.pp.00.o"
+
+@I [HLS-0] Syntax Checker time: 0 seconds per iteration
+@I [HLS-0] 
+Source preprocessing: exec llvm-gcc  -fno-builtin-isinf -fno-builtin-isnan -CC -E "src/gaussian_3x3.cpp"     -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/autopilot" -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D "__asm__(...)="  -o "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_3x3.pp.0.cpp"
+
+@I [HLS-0] GCC PP time: 0 seconds per iteration
+@I [HLS-0] Setting directive 'PIPELINE' II=1 
+@I [HLS-0] Setting directive 'PIPELINE' II=1 
+@I [HLS-0] Marker-Pragma convertor: /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_3x3.pp.0.cpp /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_3x3.pp.0.cpp.ap-line.cpp /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_3x3.pp.0.cpp.ap-line.cpp.CXX 1
+@I [HLS-0] 
+Source processor: exec /usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/jre/bin/java -Xmx512m -classpath   "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/lib/autopilot.sourceprocessor.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/lib/org.eclipse.cdt.core_5.3.0.xilinx_patch.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/lib/org.eclipse.core.runtime_3.7.0.v20110110.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/lib/org.eclipse.equinox.common_3.6.0.v20110523.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/lib/com.ibm.icu_4.4.2.v20110208.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/lib/jargs.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/eclipse/plugins/org.eclipse.emf.common_2.7.0.v20120127-1122.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/eclipse/plugins/org.eclipse.emf.ecore_2.7.0.v20120127-1122.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/eclipse/plugins/org.eclipse.emf.ecore.xmi_2.7.0.v20120127-1122.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/eclipse/plugins/com.autoesl.autopilot.ui.directiveFileModel_1.0.0.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/eclipse/plugins/com.autoesl.autopilot.ui.common_1.0.0.jar"  autopilot.sourceprocessor.CParser  "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_3x3.pp.0.cpp.ap-line.cpp"  -m gaussian -o "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_3x3.pp.0.cpp.ap-cdt.cpp" --ad --pc --pp --directive /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/solution1.directive --source /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src/gaussian_3x3.cpp --error /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db --ce --tcl /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db --ve --vetcl /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db --lp --ca --es --gf --nk --df --pd --p2d /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db --sd --scff /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/.systemc_flag
+
+@I [HLS-0] Marker-Pragma convertor: /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_3x3.pp.0.cpp.ap-cdt.cpp /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_3x3.pragma.0.cpp /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_3x3.pragma.0.cpp.ap-line.CXX 0
+@I [HLS-100] Command "source /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/pragma.status.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.245 sec.
+@I [HLS-0] CDT processor time: 0 seconds per iteration
+@I [HLS-0] Pragma handling time: 0 seconds per iteration
+@I [HLS-0] 
+Source preprocessing: exec llvm-gcc  -fno-builtin-isinf -fno-builtin-isnan -CC -E "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_3x3.pragma.1.cpp"     -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/autopilot" -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D "__asm__(...)="  -o "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_3x3.pragma.2.cpp"
+
+@I [HLS-0] exec llvm-gcc  -w -fno-builtin-isinf -fno-builtin-isnan  "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_3x3.pragma.2.cpp"    -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/autopilot" -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -g -o "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_3x3.g.bc"
+@I [HLS-10] Analyzing design file 'src/gaussian_caching.cpp' ... 
+@0 [HLS-0] Analyzing design file 'src/gaussian_caching.cpp' ... 
+@I [HLS-0] Compiling one TU...
+@I [HLS-0] 
+Checking before pre-process: exec llvm-gcc -fno-builtin-isinf -fno-builtin-isnan    -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit   -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/systemc/include" -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/include" -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/include/ap_sysc" -fexceptions "src/gaussian_caching.cpp"  -o "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_caching.pp.00.o"
+
+@I [HLS-0] Syntax Checker time: 0 seconds per iteration
+@I [HLS-0] 
+Source preprocessing: exec llvm-gcc  -fno-builtin-isinf -fno-builtin-isnan -CC -E "src/gaussian_caching.cpp"     -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/autopilot" -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D "__asm__(...)="  -o "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_caching.pp.0.cpp"
+
+@I [HLS-0] GCC PP time: 0 seconds per iteration
+@I [HLS-0] Setting directive 'PIPELINE' II=1 
+@I [HLS-0] Setting directive 'PIPELINE' II=1 
+@I [HLS-0] Marker-Pragma convertor: /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_caching.pp.0.cpp /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_caching.pp.0.cpp.ap-line.cpp /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_caching.pp.0.cpp.ap-line.cpp.CXX 1
+@I [HLS-0] 
+Source processor: exec /usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/jre/bin/java -Xmx512m -classpath   "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/lib/autopilot.sourceprocessor.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/lib/org.eclipse.cdt.core_5.3.0.xilinx_patch.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/lib/org.eclipse.core.runtime_3.7.0.v20110110.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/lib/org.eclipse.equinox.common_3.6.0.v20110523.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/lib/com.ibm.icu_4.4.2.v20110208.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/lib/jargs.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/eclipse/plugins/org.eclipse.emf.common_2.7.0.v20120127-1122.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/eclipse/plugins/org.eclipse.emf.ecore_2.7.0.v20120127-1122.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/eclipse/plugins/org.eclipse.emf.ecore.xmi_2.7.0.v20120127-1122.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/eclipse/plugins/com.autoesl.autopilot.ui.directiveFileModel_1.0.0.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/eclipse/plugins/com.autoesl.autopilot.ui.common_1.0.0.jar"  autopilot.sourceprocessor.CParser  "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_caching.pp.0.cpp.ap-line.cpp"  -m gaussian -o "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_caching.pp.0.cpp.ap-cdt.cpp" --ad --pc --pp --directive /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/solution1.directive --source /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src/gaussian_caching.cpp --error /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db --ce --tcl /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db --ve --vetcl /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db --lp --ca --es --gf --nk --df --pd --p2d /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db --sd --scff /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/.systemc_flag
+
+@I [HLS-0] Marker-Pragma convertor: /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_caching.pp.0.cpp.ap-cdt.cpp /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_caching.pragma.0.cpp /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_caching.pragma.0.cpp.ap-line.CXX 0
+@I [HLS-100] Command "source /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/pragma.status.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.246 sec.
+@I [HLS-0] CDT processor time: 0 seconds per iteration
+@I [HLS-0] Pragma handling time: 0 seconds per iteration
+@I [HLS-0] 
+Source preprocessing: exec llvm-gcc  -fno-builtin-isinf -fno-builtin-isnan -CC -E "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_caching.pragma.1.cpp"     -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/autopilot" -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D "__asm__(...)="  -o "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_caching.pragma.2.cpp"
+
+@I [HLS-0] exec llvm-gcc  -w -fno-builtin-isinf -fno-builtin-isnan  "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_caching.pragma.2.cpp"    -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/autopilot" -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -g -o "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_caching.g.bc"
+@I [HLS-10] Analyzing design file 'src/gaussian_fixedPoint.cpp' ... 
+@0 [HLS-0] Analyzing design file 'src/gaussian_fixedPoint.cpp' ... 
+@I [HLS-0] Compiling one TU...
+@I [HLS-0] 
+Checking before pre-process: exec llvm-gcc -fno-builtin-isinf -fno-builtin-isnan    -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit   -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/systemc/include" -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/include" -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/include/ap_sysc" -fexceptions "src/gaussian_fixedPoint.cpp"  -o "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_fixedPoint.pp.00.o"
+
+@I [HLS-0] Syntax Checker time: 0 seconds per iteration
+@I [HLS-0] 
+Source preprocessing: exec llvm-gcc  -fno-builtin-isinf -fno-builtin-isnan -CC -E "src/gaussian_fixedPoint.cpp"     -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/autopilot" -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D "__asm__(...)="  -o "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_fixedPoint.pp.0.cpp"
+
+@I [HLS-0] GCC PP time: 0 seconds per iteration
+@I [HLS-0] Setting directive 'PIPELINE' II=1 
+@I [HLS-0] Setting directive 'PIPELINE' II=1 
+@I [HLS-0] Marker-Pragma convertor: /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_fixedPoint.pp.0.cpp /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_fixedPoint.pp.0.cpp.ap-line.cpp /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_fixedPoint.pp.0.cpp.ap-line.cpp.CXX 1
+@I [HLS-0] 
+Source processor: exec /usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/jre/bin/java -Xmx512m -classpath   "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/lib/autopilot.sourceprocessor.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/lib/org.eclipse.cdt.core_5.3.0.xilinx_patch.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/lib/org.eclipse.core.runtime_3.7.0.v20110110.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/lib/org.eclipse.equinox.common_3.6.0.v20110523.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/lib/com.ibm.icu_4.4.2.v20110208.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/lib/jargs.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/eclipse/plugins/org.eclipse.emf.common_2.7.0.v20120127-1122.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/eclipse/plugins/org.eclipse.emf.ecore_2.7.0.v20120127-1122.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/eclipse/plugins/org.eclipse.emf.ecore.xmi_2.7.0.v20120127-1122.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/eclipse/plugins/com.autoesl.autopilot.ui.directiveFileModel_1.0.0.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/eclipse/plugins/com.autoesl.autopilot.ui.common_1.0.0.jar"  autopilot.sourceprocessor.CParser  "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_fixedPoint.pp.0.cpp.ap-line.cpp"  -m gaussian -o "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_fixedPoint.pp.0.cpp.ap-cdt.cpp" --ad --pc --pp --directive /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/solution1.directive --source /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src/gaussian_fixedPoint.cpp --error /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db --ce --tcl /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db --ve --vetcl /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db --lp --ca --es --gf --nk --df --pd --p2d /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db --sd --scff /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/.systemc_flag
+
+@I [HLS-0] Marker-Pragma convertor: /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_fixedPoint.pp.0.cpp.ap-cdt.cpp /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_fixedPoint.pragma.0.cpp /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_fixedPoint.pragma.0.cpp.ap-line.CXX 0
+@I [HLS-100] Command "source /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/pragma.status.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 17.358 sec.
+@I [HLS-0] CDT processor time: 10 seconds per iteration
+@I [HLS-0] Pragma handling time: 0 seconds per iteration
+@I [HLS-0] 
+Source preprocessing: exec llvm-gcc  -fno-builtin-isinf -fno-builtin-isnan -CC -E "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_fixedPoint.pragma.1.cpp"     -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/autopilot" -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D "__asm__(...)="  -o "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_fixedPoint.pragma.2.cpp"
+
+@I [HLS-0] exec llvm-gcc  -w -fno-builtin-isinf -fno-builtin-isnan  "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_fixedPoint.pragma.2.cpp"    -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/autopilot" -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -g -o "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_fixedPoint.g.bc"
+@I [HLS-10] Analyzing design file 'src/gaussian_loopFusion.cpp' ... 
+@0 [HLS-0] Analyzing design file 'src/gaussian_loopFusion.cpp' ... 
+@I [HLS-0] Compiling one TU...
+@I [HLS-0] 
+Checking before pre-process: exec llvm-gcc -fno-builtin-isinf -fno-builtin-isnan    -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit   -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/systemc/include" -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/include" -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/include/ap_sysc" -fexceptions "src/gaussian_loopFusion.cpp"  -o "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_loopFusion.pp.00.o"
+
+@I [HLS-0] Syntax Checker time: 0 seconds per iteration
+@I [HLS-0] 
+Source preprocessing: exec llvm-gcc  -fno-builtin-isinf -fno-builtin-isnan -CC -E "src/gaussian_loopFusion.cpp"     -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/autopilot" -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D "__asm__(...)="  -o "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_loopFusion.pp.0.cpp"
+
+@I [HLS-0] GCC PP time: 0 seconds per iteration
+@I [HLS-0] Setting directive 'PIPELINE' II=1 
+@I [HLS-0] Setting directive 'PIPELINE' II=1 
+@I [HLS-0] Marker-Pragma convertor: /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_loopFusion.pp.0.cpp /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_loopFusion.pp.0.cpp.ap-line.cpp /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_loopFusion.pp.0.cpp.ap-line.cpp.CXX 1
+@I [HLS-0] 
+Source processor: exec /usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/jre/bin/java -Xmx512m -classpath   "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/lib/autopilot.sourceprocessor.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/lib/org.eclipse.cdt.core_5.3.0.xilinx_patch.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/lib/org.eclipse.core.runtime_3.7.0.v20110110.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/lib/org.eclipse.equinox.common_3.6.0.v20110523.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/lib/com.ibm.icu_4.4.2.v20110208.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/lib/jargs.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/eclipse/plugins/org.eclipse.emf.common_2.7.0.v20120127-1122.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/eclipse/plugins/org.eclipse.emf.ecore_2.7.0.v20120127-1122.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/eclipse/plugins/org.eclipse.emf.ecore.xmi_2.7.0.v20120127-1122.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/eclipse/plugins/com.autoesl.autopilot.ui.directiveFileModel_1.0.0.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/eclipse/plugins/com.autoesl.autopilot.ui.common_1.0.0.jar"  autopilot.sourceprocessor.CParser  "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_loopFusion.pp.0.cpp.ap-line.cpp"  -m gaussian -o "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_loopFusion.pp.0.cpp.ap-cdt.cpp" --ad --pc --pp --directive /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/solution1.directive --source /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src/gaussian_loopFusion.cpp --error /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db --ce --tcl /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db --ve --vetcl /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db --lp --ca --es --gf --nk --df --pd --p2d /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db --sd --scff /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/.systemc_flag
+
+@I [HLS-0] Marker-Pragma convertor: /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_loopFusion.pp.0.cpp.ap-cdt.cpp /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_loopFusion.pragma.0.cpp /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_loopFusion.pragma.0.cpp.ap-line.CXX 0
+@I [HLS-100] Command "source /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/pragma.status.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 19.991 sec.
+@I [HLS-0] CDT processor time: 0 seconds per iteration
+@I [HLS-0] Pragma handling time: 0 seconds per iteration
+@I [HLS-0] 
+Source preprocessing: exec llvm-gcc  -fno-builtin-isinf -fno-builtin-isnan -CC -E "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_loopFusion.pragma.1.cpp"     -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/autopilot" -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D "__asm__(...)="  -o "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_loopFusion.pragma.2.cpp"
+
+@I [HLS-0] exec llvm-gcc  -w -fno-builtin-isinf -fno-builtin-isnan  "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_loopFusion.pragma.2.cpp"    -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/autopilot" -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -g -o "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_loopFusion.g.bc"
+@I [HLS-10] Analyzing design file 'src/gaussian_scalarized.cpp' ... 
+@0 [HLS-0] Analyzing design file 'src/gaussian_scalarized.cpp' ... 
+@I [HLS-0] Compiling one TU...
+@I [HLS-0] 
+Checking before pre-process: exec llvm-gcc -fno-builtin-isinf -fno-builtin-isnan    -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit   -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/systemc/include" -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/include" -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/include/ap_sysc" -fexceptions "src/gaussian_scalarized.cpp"  -o "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_scalarized.pp.00.o"
+
+@I [HLS-0] Syntax Checker time: 0 seconds per iteration
+@I [HLS-0] 
+Source preprocessing: exec llvm-gcc  -fno-builtin-isinf -fno-builtin-isnan -CC -E "src/gaussian_scalarized.cpp"     -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/autopilot" -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D "__asm__(...)="  -o "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_scalarized.pp.0.cpp"
+
+@I [HLS-0] GCC PP time: 0 seconds per iteration
+@I [HLS-0] Setting directive 'PIPELINE' II=1 
+@I [HLS-0] Setting directive 'PIPELINE' II=1 
+@I [HLS-0] Marker-Pragma convertor: /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_scalarized.pp.0.cpp /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_scalarized.pp.0.cpp.ap-line.cpp /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_scalarized.pp.0.cpp.ap-line.cpp.CXX 1
+@I [HLS-0] 
+Source processor: exec /usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/jre/bin/java -Xmx512m -classpath   "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/lib/autopilot.sourceprocessor.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/lib/org.eclipse.cdt.core_5.3.0.xilinx_patch.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/lib/org.eclipse.core.runtime_3.7.0.v20110110.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/lib/org.eclipse.equinox.common_3.6.0.v20110523.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/lib/com.ibm.icu_4.4.2.v20110208.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/lib/jargs.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/eclipse/plugins/org.eclipse.emf.common_2.7.0.v20120127-1122.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/eclipse/plugins/org.eclipse.emf.ecore_2.7.0.v20120127-1122.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/eclipse/plugins/org.eclipse.emf.ecore.xmi_2.7.0.v20120127-1122.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/eclipse/plugins/com.autoesl.autopilot.ui.directiveFileModel_1.0.0.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/eclipse/plugins/com.autoesl.autopilot.ui.common_1.0.0.jar"  autopilot.sourceprocessor.CParser  "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_scalarized.pp.0.cpp.ap-line.cpp"  -m gaussian -o "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_scalarized.pp.0.cpp.ap-cdt.cpp" --ad --pc --pp --directive /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/solution1.directive --source /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src/gaussian_scalarized.cpp --error /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db --ce --tcl /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db --ve --vetcl /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db --lp --ca --es --gf --nk --df --pd --p2d /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db --sd --scff /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/.systemc_flag
+
+@I [HLS-0] Marker-Pragma convertor: /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_scalarized.pp.0.cpp.ap-cdt.cpp /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_scalarized.pragma.0.cpp /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_scalarized.pragma.0.cpp.ap-line.CXX 0
+@I [HLS-100] Command "source /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/pragma.status.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 20.999 sec.
+@I [HLS-0] CDT processor time: 0 seconds per iteration
+@I [HLS-0] Pragma handling time: 0 seconds per iteration
+@I [HLS-0] 
+Source preprocessing: exec llvm-gcc  -fno-builtin-isinf -fno-builtin-isnan -CC -E "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_scalarized.pragma.1.cpp"     -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/autopilot" -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D "__asm__(...)="  -o "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_scalarized.pragma.2.cpp"
+
+@I [HLS-0] exec llvm-gcc  -w -fno-builtin-isinf -fno-builtin-isnan  "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_scalarized.pragma.2.cpp"    -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/autopilot" -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -g -o "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_scalarized.g.bc"
+@I [HLS-10] Analyzing design file 'src/gaussian_sep.cpp' ... 
+@0 [HLS-0] Analyzing design file 'src/gaussian_sep.cpp' ... 
+@I [HLS-0] Compiling one TU...
+@I [HLS-0] 
+Checking before pre-process: exec llvm-gcc -fno-builtin-isinf -fno-builtin-isnan    -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit   -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/systemc/include" -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/include" -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/include/ap_sysc" -fexceptions "src/gaussian_sep.cpp"  -o "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_sep.pp.00.o"
+
+@I [HLS-0] Syntax Checker time: 0 seconds per iteration
+@I [HLS-0] 
+Source preprocessing: exec llvm-gcc  -fno-builtin-isinf -fno-builtin-isnan -CC -E "src/gaussian_sep.cpp"     -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/autopilot" -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D "__asm__(...)="  -o "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_sep.pp.0.cpp"
+
+@I [HLS-0] GCC PP time: 0 seconds per iteration
+@I [HLS-0] Setting directive 'PIPELINE' II=1 
+@I [HLS-0] Setting directive 'PIPELINE' II=1 
+@I [HLS-0] Marker-Pragma convertor: /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_sep.pp.0.cpp /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_sep.pp.0.cpp.ap-line.cpp /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_sep.pp.0.cpp.ap-line.cpp.CXX 1
+@I [HLS-0] 
+Source processor: exec /usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/jre/bin/java -Xmx512m -classpath   "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/lib/autopilot.sourceprocessor.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/lib/org.eclipse.cdt.core_5.3.0.xilinx_patch.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/lib/org.eclipse.core.runtime_3.7.0.v20110110.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/lib/org.eclipse.equinox.common_3.6.0.v20110523.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/lib/com.ibm.icu_4.4.2.v20110208.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/lib/jargs.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/eclipse/plugins/org.eclipse.emf.common_2.7.0.v20120127-1122.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/eclipse/plugins/org.eclipse.emf.ecore_2.7.0.v20120127-1122.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/eclipse/plugins/org.eclipse.emf.ecore.xmi_2.7.0.v20120127-1122.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/eclipse/plugins/com.autoesl.autopilot.ui.directiveFileModel_1.0.0.jar:/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/tools/eclipse/plugins/com.autoesl.autopilot.ui.common_1.0.0.jar"  autopilot.sourceprocessor.CParser  "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_sep.pp.0.cpp.ap-line.cpp"  -m gaussian -o "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_sep.pp.0.cpp.ap-cdt.cpp" --ad --pc --pp --directive /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/solution1.directive --source /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src/gaussian_sep.cpp --error /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db --ce --tcl /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db --ve --vetcl /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db --lp --ca --es --gf --nk --df --pd --p2d /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db --sd --scff /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/.systemc_flag
+
+@I [HLS-0] Marker-Pragma convertor: /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_sep.pp.0.cpp.ap-cdt.cpp /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_sep.pragma.0.cpp /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_sep.pragma.0.cpp.ap-line.CXX 0
+@I [HLS-100] Command "source /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/pragma.status.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 21.885 sec.
+@I [HLS-0] CDT processor time: 0 seconds per iteration
+@I [HLS-0] Pragma handling time: 0 seconds per iteration
+@I [HLS-0] 
+Source preprocessing: exec llvm-gcc  -fno-builtin-isinf -fno-builtin-isnan -CC -E "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_sep.pragma.1.cpp"     -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/autopilot" -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D "__asm__(...)="  -o "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_sep.pragma.2.cpp"
+
+@I [HLS-0] exec llvm-gcc  -w -fno-builtin-isinf -fno-builtin-isnan  "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_sep.pragma.2.cpp"    -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/autopilot" -I "/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -g -o "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_sep.g.bc"
+@I [HLS-10] 'globals.h' is skipped compilation; only files with extensions '.c|.C|.cc|.cpp|.c++|.cp|.cxx' are compiled.
+@I [HLS-100] Command "source /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/ve_warning.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 21.961 sec.
+@I [HLS-10] Validating synthesis directives ...
+@0 [HLS-0] Validating synthesis directives ...
+@I [HLS-100] Command "source /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/pragma.status.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 21.962 sec.
+@I [HLS-0] Linking all ...
+@I [HLS-0] exec llvm-ld  "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian.bc" "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_1line.bc" "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_3x3.bc" "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_caching.bc" "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_fixedPoint.bc" "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_loopFusion.bc" "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_scalarized.bc" "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_sep.bc"  -disable-opt  -L/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/lib -lm_basic -o "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/a.o"
+@I [HLS-0] Link time: 0 seconds per iteration
+@I [HLS-0] Linking all ...
+@I [HLS-0] exec llvm-ld  "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian.g.bc" "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_1line.g.bc" "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_3x3.g.bc" "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_caching.g.bc" "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_fixedPoint.g.bc" "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_loopFusion.g.bc" "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_scalarized.g.bc" "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_sep.g.bc"  -disable-opt  -L/usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/Linux_x86_64/lib -lm_basic -o "/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/a.g"
+@I [HLS-0] Link time: 0 seconds per iteration
+@I [HLS-100] Command "opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 "
+@I [HLS-100] Command "cleanup_all_models "
+@I [HLS-100] Command 'cleanup_all_models' returned 0; elapsed 0Total elapsed time: 22.35 sec.
+@I [HLS-10] Checking synthesizability ...
+@0 [HLS-0] Checking synthesizability ...
+@I [HLS-0] std xform: transform -share-std-xform -always-inline -promote-dbg-pointer  -interface-preproc  -scalarrepl -mem2reg -keep-read-access -instcombine -dce  -promote-dbg-pointer  -bitop-raise  -simplifycfg -mem2reg -globalopt  -global-constprop -deadargelim -instcombine -simplifycfg  -prune-eh -simplifycfg  -scalarrepl -instcombine -reassociate -licm  -simplifycfg -loopsimplify -indvars -instcombine  -simplifycfg -mem2reg -loopsimplify -indvars -instcombine  -gvn -gvn -instcombine -dse -adce  -break-crit-edges -deadtypeelim -simplifycfg -loop-delete  -global-array-opt  -find-syn-modules -top gaussian  -deadtypeelim -deadargelim  -mem2reg -instcombine -dce  -presyn-prepare -auto-rom-infer  -syn-check -check-rec-only  -find-region -simplifycfg -func-extr -function-inline  -mem2reg -instcombine -dce   -gvn -adce -adse  -constprop -instcombine -bit-constprop  -instcombine -dce -simplifycfg -bitop-raise  -simplifycfg -dce -loop-delete  -globalopt -global-privatize -mem2reg -dce  -global-constprop -pointer-simplify -constprop -dce  -promote-dbg-pointer  -norm-name   /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/a.g.bc -o /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/a.g.1.bc -f  -phase std-opt
+@I [HLS-0] Std xform time: 0 seconds per iteration
+@I [HLS-0] syn check 1/2: transform -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -deadtypeelim -dce  -mem2reg -instcombine  -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce  -array-normalize -instcombine -dce  -array-seg-normalize -instcombine -dce  -array-flatten -instcombine -dce  -array-burst -dce  -deadargelim -promote-global-argument  -doublePtrSimplify -doublePtrElim -dce  -doublePtrSimplify -promote-dbg-pointer  -dce -scalarrepl -dse -adse -instcombine  -ptrLegalization  -simplifycfg -dce -instcombine  -pointer-simplify -ptrArgReplace -dce -instcombine   -disaggr -scalarrepl -norm-name -deadtypeelim -dce  -mem2reg -instcombine  -directive-preproc -mem2reg -dse -dce  -globaldce    /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/a.g.1.bc -o /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/a.g.2.prechk.bc -f
+@I [HLS-0] Syn check 1/2 time: 0 seconds per iteration
+@I [HLS-0] syn check 2/2: transform -syn-check   -interface-gen -constprop -dse -dce  /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/a.g.2.prechk.bc -o /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/a.g.2.bc -f  -phase syn-check
+@I [HLS-0] Syn check 2/2 time: 0 seconds per iteration
+@I [HLS-10] Starting code transformations ...
+@0 [HLS-0] Starting code transformations ...
+@I [HLS-0] Compiler optimizing ...
+@I [HLS-0] Share syncheck's 1.bc for syn flow: copy /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/a.g.1.bc to /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/a.o.1.bc
+@I [HLS-0] presyn 1: transform  -directive-preproc -mem2reg -dse -dce  -disaggr -scalarrepl -norm-name -deadtypeelim -deadargelim  -mem2reg -instcombine -dce -auto-rom-infer -dce  -directive-preproc -mem2reg -dse -dce  -func-buffer -dce -array-normalize  -func-legal -instcombine -gvn -constprop -dce   -ptrArgReplace -mem2reg -instcombine -dce  -array-seg-normalize -global-constprop -deadargelim  -instcombine -dce  -pointer-simplify -dce  -data-pack -instcombine -dce   -loopsimplify -indvars -instcombine  -gvn -loopsimplify -mem2reg -dce -simplifycfg  -find-region -instcombine  -inst-simplify  -indvars -auto-loop-unroll -loopsimplify -xunroll  -constprop -instcombine -simplifycfg -indvars  -simplifycfg -dce -globaldce  -gvn -disable-agg-range -inst-simplify  -constprop -simplifycfg -dce  -pointer-simplify -dce  -array-transform-check  -globalopt -constprop -dce  -array-promote -constprop -instcombine -dce -auto-par -array-partition -instcombine -dce  -global-constprop -deadargelim -ptrArgReplace -mem2reg  -func-legal -instcombine -dce  -array-reshape -instcombine -simplifycfg -dce   -mem-intrinsic-preproc -dce  -global-privatize  -mem2reg -globaldce  -promote-global-argument  -ptrArgReplace -mem2reg -function-inline  -mem2reg -instcombine -dce  -globalopt -mergereturn -simplify-global-access -mem2reg -dce  -pointer-simplify -dce  -functionattrs  -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn  -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce  -inst-simplify -dce -norm-name  -func-inst -constprop -instcombine -simplifycfg -dce  -func-legal -dce   -directive-preproc -mem2reg -dse -dce  -loop-bound  -arraycheck -bitwidthmin -on-by-dataflow  -instcombine -simplifycfg -dce -loopsimplify -simplifycfg -loop-stream -instcombine -simplifycfg -dce  -function-stream -dce -globaldce  -array-streaming -instcombine -simplifycfg -dce      -simplifycfg -dce -loop-delete  -norm-name  /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/a.o.1.bc -o /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/a.o.1.tmp.bc -f
+@I [HLS-0] Presyn 1 time: 0 seconds per iteration
+@I [HLS-0] presyn 2: transform -keep-callgraph -scalarrepl -mem2reg  -indvars -loop-bound  -instcombine -dce  -merge-array-access -mem2reg -dce  -clean-region -mergereturn -if-conv  -instcombine -dce -constprop  -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn  -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce  -scalarrepl -mem2reg  -global-constprop -deadargelim -deadargelim  -instcombine -dce -simplifycfg    -ptrArgReplace -mem2reg -function-inline  -mem2reg -instcombine -dce -expr-balance  -instcombine -dce  -bitwidthmin  -directive-preproc  -inst-rectify -instcombine -dce  -functionattrs  -constprop -instcombine -bit-constprop  -globalopt -globaldce  -inst-simplify -instcombine -elimdeaddata -dce  -loop-delete -simplifycfg   -norm-name /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/a.o.1.tmp.bc -o /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/a.o.2.bc -f  -phase presyn
+@I [HLS-0] Presyn 2 time: 0 seconds per iteration
+@I [HLS-0] build ssdm: transform -function-uniquify -auto-function-inline  -loopsimplify -indvars -licm -loop-dep  -loop-bound -licm -loopsimplify -flattenloopnest  -array-flatten -gvn -instcombine -dce  -array-burst -dce  -promote-global-argument  -array-map -dce -func-legal  -gvn -adce -instcombine -cfgopt -simplifycfg -loopsimplify   -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn  -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce  -inst-simplify -dce  -array-streaming -instcombine  -dce   -deadargelim -doublePtrSimplify -doublePtrElim  -dce -doublePtrSimplify -promote-dbg-pointer -dce  -scalarrepl -mem2reg -disaggr -norm-name -mem2reg  -instcombine  -dse -adse -adce -ptrLegalization -dce -instcombine  -loop-rot -constprop -cfgopt -simplifycfg -indvars -pointer-simplify -dce -loop-bound  -loopsimplify -loop-preproc  -constprop -gvn -mem2reg -instcombine -dce  -loop-merge -dce  -bitwidthmin  -directive-preproc -inst-simplify -dce  -interface-gen -gvn -mem2reg -instcombine -dce -adse  -loop-bound  -instcombine -cfgopt -simplifycfg -loopsimplify  -clean-region -io-protocol  -find-region -mem2reg  -loopsimplify -phi-opt  -inst-simplify -inst-rectify -adce -cfgopt -simplifycfg  -strip-dead-prototypes  -interface-lower -bitop-lower -directive-lower  -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa  -inst-simplify -simplifycfg   -mergereturn -inst-simplify -inst-rectify -dce -bitop-lower  -loop-rewind -cfgopt  -norm-name -legalize -read-loop-dep -dce -bitwidth   -cdfg-build  /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/a.o.2.bc -o /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/a.o.3.bc -f  -phase build-ssdm
+@I [HLS-0] Build ssdm time: 0 seconds per iteration
+@I [HLS-0] Finish building internal data model.
+@I [HLS-100] Command 'opt_and_import_c' returned 0; elapsed 0.24Total elapsed time: 22.373 sec.
+@I [HLS-111] Elapsed time: 1.92 seconds; current memory usage: 48.9 MB.
+@I [HLS-100] Command 'elaborate' returned 0; elapsed 1.52Total elapsed time: 22.373 sec.
+@I [HLS-100] Command "autosyn "
+@I [HLS-10] Starting hardware synthesis ...
+@0 [HLS-0] Starting hardware synthesis ...
+@I [HLS-0] Synthesizing C/C++ design ...
+@I [HLS-10] Synthesizing 'gaussian' ...
+@0 [HLS-0] Synthesizing 'gaussian' ...
+@I [HLS-100] Command "ap_set_top_model gaussian "
+@I [HLS-100] Command 'ap_set_top_model' returned 0; elapsed 0Total elapsed time: 22.374 sec.
+@I [HLS-100] Command "get_model_list gaussian -filter all-wo-channel -topdown "
+@I [HLS-100] Command 'get_model_list' returned 0; elapsed 0Total elapsed time: 22.374 sec.
+@I [HLS-100] Command "preproc_iomode -model gaussian "
+@I [HLS-100] Command 'preproc_iomode' returned 0; elapsed 0Total elapsed time: 22.374 sec.
+@I [HLS-100] Command "preproc_iomode -model gaussian_scalarized "
+@I [HLS-100] Command 'preproc_iomode' returned 0; elapsed 0Total elapsed time: 22.374 sec.
+@I [HLS-100] Command "get_model_list gaussian -filter all-wo-channel "
+@I [HLS-100] Command 'get_model_list' returned 0; elapsed 0Total elapsed time: 22.374 sec.
+@I [HLS-0] Model list for configure: gaussian_scalarized gaussian
+@I [HLS-0] Configuring Module : gaussian_scalarized ...
+@I [HLS-100] Command "set_default_model gaussian_scalarized "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 22.375 sec.
+@I [HLS-100] Command "apply_spec_resource_limit gaussian_scalarized "
+@I [HLS-100] Command 'apply_spec_resource_limit' returned 0; elapsed 0Total elapsed time: 22.375 sec.
+@I [HLS-0] Configuring Module : gaussian ...
+@I [HLS-100] Command "set_default_model gaussian "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 22.375 sec.
+@I [HLS-100] Command "apply_spec_resource_limit gaussian "
+@I [HLS-100] Command 'apply_spec_resource_limit' returned 0; elapsed 0Total elapsed time: 22.375 sec.
+@I [HLS-0] Model list for preprocess: gaussian_scalarized gaussian
+@I [HLS-0] Preprocessing Module: gaussian_scalarized ...
+@I [HLS-100] Command "set_default_model gaussian_scalarized "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 22.375 sec.
+@I [HLS-100] Command "cdfg_preprocess -model gaussian_scalarized "
+@I [HLS-100] Command 'cdfg_preprocess' returned 0; elapsed 0Total elapsed time: 22.375 sec.
+@I [HLS-100] Command "rtl_gen_preprocess gaussian_scalarized "
+@W [RTGEN-101] Legalizing port name 'gaussian_scalarized/in' to 'gaussian_scalarized/in_r'.
+@W [RTGEN-101] Legalizing port name 'gaussian_scalarized/out' to 'gaussian_scalarized/out_r'.
+@I [HLS-100] Command 'rtl_gen_preprocess' returned 0; elapsed 0Total elapsed time: 22.375 sec.
+@I [HLS-0] Preprocessing Module: gaussian ...
+@I [HLS-100] Command "set_default_model gaussian "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 22.375 sec.
+@I [HLS-100] Command "cdfg_preprocess -model gaussian "
+@I [HLS-100] Command 'cdfg_preprocess' returned 0; elapsed 0Total elapsed time: 22.376 sec.
+@I [HLS-100] Command "rtl_gen_preprocess gaussian "
+@W [RTGEN-101] Legalizing port name 'gaussian/in' to 'gaussian/in_r'.
+@W [RTGEN-101] Legalizing port name 'gaussian/out' to 'gaussian/out_r'.
+@I [HLS-100] Command 'rtl_gen_preprocess' returned 0; elapsed 0Total elapsed time: 22.376 sec.
+@I [HLS-0] Model list for synthesis: gaussian_scalarized gaussian
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'gaussian_scalarized' 
+@0 [HLS-0] -- Scheduling module 'gaussian_scalarized' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "set_default_model gaussian_scalarized "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 22.376 sec.
+@I [HLS-100] Command "schedule -model gaussian_scalarized "
+@I [SCHED-11] Starting scheduling ...
+@I [SCHED-61] Pipelining loop 'gaussian_scalarized_label0_pipeline'.
+@W [SCHED-69] Unable to schedule 'load' operation ('in_load_8', gaussian_scalarized.cpp:25) on array 'in_r' due to limited memory ports.
+@I [SCHED-61] Pipelining result: Target II: 1, Final II: 2, Depth: 40.
+@I [SCHED-11] Finished scheduling.
+@I [HLS-100] Command 'schedule' returned 0; elapsed 0.16Total elapsed time: 22.540 sec.
+@I [HLS-111] Elapsed time: 0.17 seconds; current memory usage: 49.8 MB.
+@I [HLS-100] Command "report -o /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_scalarized.verbose.sched.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0Total elapsed time: 22.552 sec.
+@I [HLS-100] Command "db_write -o /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_scalarized.sched.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.01Total elapsed time: 22.598 sec.
+@I [HLS-0] Finish scheduling gaussian_scalarized.
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'gaussian_scalarized' 
+@0 [HLS-0] -- Exploring micro-architecture for module 'gaussian_scalarized' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "set_default_model gaussian_scalarized "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 22.631 sec.
+@I [HLS-100] Command "bind -model gaussian_scalarized "
+@I [BIND-110] clear=
+@I [BIND-110] debug=
+@I [BIND-110] drf=
+@I [BIND-110] effort=
+@I [BIND-110] fast_refine=
+@I [BIND-110] fu_weight=[ 0.0 -- 1.0 ]
+@I [BIND-110] global_opt=
+@I [BIND-110] gsearch=
+@I [BIND-110] help=
+@I [BIND-110] help-hidden=
+@I [BIND-110] min_mem_port=
+@I [BIND-110] min_op=
+@I [BIND-110] minreg=
+@I [BIND-110] ml=
+@I [BIND-110] model=gaussian_scalarized
+@I [BIND-110] no_false_path=
+@I [BIND-110] no_min_op=
+@I [BIND-110] normalize=
+@I [BIND-110] quiet=
+@I [BIND-110] refine=
+@I [BIND-110] reg_weight=[ 0.0 -- 1.0 ]
+@I [BIND-110] search=
+@I [BIND-110] tight_delay=
+@I [BIND-110] verbose=
+@I [BIND-110] wFF=
+@I [BIND-110] wFU=
+@I [BIND-110] wMUX=
+@I [BIND-110] wNET=
+@I [BIND-100] Starting micro-architecture binding ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding resource limited operations ...
+@I [BIND-100] Finished micro-architecture binding.
+@I [HLS-100] Command 'bind' returned 0; elapsed 0.03Total elapsed time: 22.654 sec.
+@I [HLS-111] Elapsed time: 0.04 seconds; current memory usage: 50.6 MB.
+@I [HLS-100] Command "report -o /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_scalarized.verbose.bind.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.01Total elapsed time: 22.689 sec.
+@I [HLS-100] Command "db_write -o /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_scalarized.bind.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.01Total elapsed time: 22.745 sec.
+@I [HLS-0] Finish binding gaussian_scalarized.
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'gaussian' 
+@0 [HLS-0] -- Scheduling module 'gaussian' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "set_default_model gaussian "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 22.745 sec.
+@I [HLS-100] Command "schedule -model gaussian "
+@I [SCHED-11] Starting scheduling ...
+@I [SCHED-11] Finished scheduling.
+@I [HLS-100] Command 'schedule' returned 0; elapsed 0Total elapsed time: 22.751 sec.
+@I [HLS-111] Elapsed time: 0.02 seconds; current memory usage: 50.7 MB.
+@I [HLS-100] Command "report -o /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian.verbose.sched.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0Total elapsed time: 22.756 sec.
+@I [HLS-100] Command "db_write -o /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian.sched.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0Total elapsed time: 22.762 sec.
+@I [HLS-0] Finish scheduling gaussian.
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'gaussian' 
+@0 [HLS-0] -- Exploring micro-architecture for module 'gaussian' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "set_default_model gaussian "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 22.763 sec.
+@I [HLS-100] Command "bind -model gaussian "
+@I [BIND-110] clear=
+@I [BIND-110] debug=
+@I [BIND-110] drf=
+@I [BIND-110] effort=
+@I [BIND-110] fast_refine=
+@I [BIND-110] fu_weight=[ 0.0 -- 1.0 ]
+@I [BIND-110] global_opt=
+@I [BIND-110] gsearch=
+@I [BIND-110] help=
+@I [BIND-110] help-hidden=
+@I [BIND-110] min_mem_port=
+@I [BIND-110] min_op=
+@I [BIND-110] minreg=
+@I [BIND-110] ml=
+@I [BIND-110] model=gaussian
+@I [BIND-110] no_false_path=
+@I [BIND-110] no_min_op=
+@I [BIND-110] normalize=
+@I [BIND-110] quiet=
+@I [BIND-110] refine=
+@I [BIND-110] reg_weight=[ 0.0 -- 1.0 ]
+@I [BIND-110] search=
+@I [BIND-110] tight_delay=
+@I [BIND-110] verbose=
+@I [BIND-110] wFF=
+@I [BIND-110] wFU=
+@I [BIND-110] wMUX=
+@I [BIND-110] wNET=
+@I [BIND-100] Starting micro-architecture binding ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding resource limited operations ...
+@I [BIND-100] Finished micro-architecture binding.
+@I [HLS-100] Command 'bind' returned 0; elapsed 0.01Total elapsed time: 22.769 sec.
+@I [HLS-111] Elapsed time: 0.01 seconds; current memory usage: 50.8 MB.
+@I [HLS-100] Command "report -o /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian.verbose.bind.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.01Total elapsed time: 22.786 sec.
+@I [HLS-100] Command "db_write -o /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian.bind.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0Total elapsed time: 22.793 sec.
+@I [HLS-0] Finish binding gaussian.
+@I [HLS-100] Command "get_model_list gaussian -filter all-wo-channel "
+@I [HLS-100] Command 'get_model_list' returned 0; elapsed 0Total elapsed time: 22.793 sec.
+@I [HLS-0] Preprocessing for RTLGen ...
+@I [HLS-100] Command "rtl_gen_preprocess gaussian_scalarized "
+@I [HLS-100] Command 'rtl_gen_preprocess' returned 0; elapsed 0Total elapsed time: 22.793 sec.
+@I [HLS-100] Command "rtl_gen_preprocess gaussian "
+@I [HLS-100] Command 'rtl_gen_preprocess' returned 0; elapsed 0Total elapsed time: 22.794 sec.
+@I [HLS-0] Model list for RTL generation: gaussian_scalarized gaussian
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'gaussian_scalarized' 
+@0 [HLS-0] -- Generating RTL for module 'gaussian_scalarized' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "create_rtl_model gaussian_scalarized -vendor xilinx -mg_file /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_scalarized.compgen.tcl "
+@I [RTGEN-100] Module generated: gaussian_fadd_32ns_32ns_32_5_full_dsp|gaussian_fadd_32ns_32ns_32_5_full_dsp_U1.
+@I [RTGEN-100] Module generated: gaussian_fadd_32ns_32ns_32_5_full_dsp|gaussian_fadd_32ns_32ns_32_5_full_dsp_U2.
+@I [RTGEN-100] Module generated: gaussian_fmul_32ns_32ns_32_4_max_dsp|gaussian_fmul_32ns_32ns_32_4_max_dsp_U3.
+@I [RTGEN-100] Module generated: gaussian_fmul_32ns_32ns_32_4_max_dsp|gaussian_fmul_32ns_32ns_32_4_max_dsp_U4.
+@I [RTGEN-100] Module generated: gaussian_fmul_32ns_32ns_32_4_max_dsp|gaussian_fmul_32ns_32ns_32_4_max_dsp_U5.
+@I [RTGEN-100] Module generated: gaussian_fmul_32ns_32ns_32_4_max_dsp|gaussian_fmul_32ns_32ns_32_4_max_dsp_U6.
+@I [RTGEN-100] Module generated: gaussian_fptoui_32ns_64_4|gaussian_fptoui_32ns_64_4_U7.
+@I [RTGEN-100] Module generated: gaussian_sitofp_64ns_32_6|gaussian_sitofp_64ns_32_6_U8.
+@I [RTGEN-100] Module generated: gaussian_sitofp_64ns_32_6|gaussian_sitofp_64ns_32_6_U9.
+@I [RTGEN-100] Module generated: gaussian_sitofp_64ns_32_6|gaussian_sitofp_64ns_32_6_U10.
+@I [RTGEN-100] Module generated: gaussian_sitofp_64ns_32_6|gaussian_sitofp_64ns_32_6_U11.
+@I [RTGEN-100] Finished creating RTL model for 'gaussian_scalarized'.
+@I [HLS-100] Command 'create_rtl_model' returned 0; elapsed 0.04Total elapsed time: 22.836 sec.
+@I [HLS-111] Elapsed time: 0.05 seconds; current memory usage: 51.9 MB.
+@I [HLS-100] Command "source /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian.rtl_wrap.cfg.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 22.839 sec.
+@I [HLS-100] Command "gen_rtl gaussian_scalarized -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/syn/systemc/gaussian_scalarized -synmodules gaussian_scalarized gaussian "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0Total elapsed time: 22.857 sec.
+@I [HLS-100] Command "gen_rtl gaussian_scalarized -style xilinx -f -lang vhdl -o /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/syn/vhdl/gaussian_scalarized "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0Total elapsed time: 22.870 sec.
+@I [HLS-100] Command "gen_rtl gaussian_scalarized -style xilinx -f -lang vlog -o /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/syn/verilog/gaussian_scalarized "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.01Total elapsed time: 22.883 sec.
+@I [HLS-100] Command "gen_tb_info gaussian_scalarized -o /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_scalarized -p /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db "
+@I [HLS-100] Command 'gen_tb_info' returned 0; elapsed 0Total elapsed time: 22.891 sec.
+@I [HLS-100] Command "report -model gaussian_scalarized -o /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/syn/report/gaussian_scalarized_csynth.rpt -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.02Total elapsed time: 22.914 sec.
+@I [HLS-100] Command "report -model gaussian_scalarized -o /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/syn/report/gaussian_scalarized_csynth.xml -f -x "
+@I [HLS-100] Command 'report' returned 0; elapsed 0Total elapsed time: 22.922 sec.
+@I [HLS-100] Command "report -model gaussian_scalarized -o /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_scalarized.verbose.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.03Total elapsed time: 22.965 sec.
+@I [HLS-100] Command "db_write -model gaussian_scalarized -o /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_scalarized.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.02Total elapsed time: 23.34 sec.
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'gaussian' 
+@0 [HLS-0] -- Generating RTL for module 'gaussian' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "create_rtl_model gaussian -vendor xilinx -mg_file /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian.compgen.tcl "
+@I [RTGEN-500] Setting interface mode on port 'gaussian/in_r' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'gaussian/out_r' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on function 'gaussian' to 'ap_ctrl_hs'.
+@I [RTGEN-100] Finished creating RTL model for 'gaussian'.
+@I [HLS-100] Command 'create_rtl_model' returned 0; elapsed 0Total elapsed time: 23.114 sec.
+@I [HLS-111] Elapsed time: 0.11 seconds; current memory usage: 54 MB.
+@I [HLS-100] Command "source /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian.rtl_wrap.cfg.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.115 sec.
+@I [HLS-100] Command "gen_rtl gaussian -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/syn/systemc/gaussian -synmodules gaussian_scalarized gaussian "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0Total elapsed time: 23.122 sec.
+@I [HLS-100] Command "gen_rtl gaussian -istop -style xilinx -f -lang vhdl -o /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/syn/vhdl/gaussian "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0Total elapsed time: 23.125 sec.
+@I [HLS-100] Command "gen_rtl gaussian -istop -style xilinx -f -lang vlog -o /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/syn/verilog/gaussian "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0Total elapsed time: 23.128 sec.
+@I [HLS-100] Command "export_constraint_db -o /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian.constraint.tcl -f -tool general "
+@I [HLS-100] Command 'export_constraint_db' returned 0; elapsed 0Total elapsed time: 23.130 sec.
+@I [HLS-100] Command "report -model gaussian -o /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian.design.xml -verbose -f -dv "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.02Total elapsed time: 23.153 sec.
+@I [HLS-100] Command "gen_tb_info gaussian -o /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian -p /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db "
+@I [HLS-100] Command 'gen_tb_info' returned 0; elapsed 0Total elapsed time: 23.168 sec.
+@I [HLS-100] Command "report -model gaussian -o /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/syn/report/gaussian_csynth.rpt -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.01Total elapsed time: 23.175 sec.
+@I [HLS-100] Command "report -model gaussian -o /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/syn/report/gaussian_csynth.xml -f -x "
+@I [HLS-100] Command 'report' returned 0; elapsed 0Total elapsed time: 23.179 sec.
+@I [HLS-100] Command "report -model gaussian -o /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian.verbose.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.02Total elapsed time: 23.211 sec.
+@I [HLS-100] Command "db_write -model gaussian -o /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0Total elapsed time: 23.218 sec.
+@I [HLS-100] Command "sc_get_clocks gaussian "
+@I [HLS-100] Command 'sc_get_clocks' returned 0; elapsed 0Total elapsed time: 23.225 sec.
+@I [HLS-100] Command "sc_get_portdomain gaussian "
+@I [HLS-100] Command 'sc_get_portdomain' returned 0; elapsed 0Total elapsed time: 23.225 sec.
+@I [HLS-0] Model list for RTL component generation: gaussian_scalarized gaussian
+@I [HLS-0] Handling components in module [gaussian_scalarized] ... 
+@I [HLS-100] Command "source /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_scalarized.compgen.tcl "
+@I [HLS-0] Found component gaussian_fadd_32ns_32ns_32_5_full_dsp.
+@I [HLS-0] Append model gaussian_fadd_32ns_32ns_32_5_full_dsp
+@I [HLS-0] Found component gaussian_fmul_32ns_32ns_32_4_max_dsp.
+@I [HLS-0] Append model gaussian_fmul_32ns_32ns_32_4_max_dsp
+@I [HLS-0] Found component gaussian_fptoui_32ns_64_4.
+@I [HLS-0] Append model gaussian_fptoui_32ns_64_4
+@I [HLS-0] Found component gaussian_sitofp_64ns_32_6.
+@I [HLS-0] Append model gaussian_sitofp_64ns_32_6
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.230 sec.
+@I [HLS-0] Handling components in module [gaussian] ... 
+@I [HLS-100] Command "source /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian.compgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.232 sec.
+@I [HLS-0] Append model gaussian_scalarized
+@I [HLS-0] Append model gaussian
+@I [HLS-0] Generating RTL model list ...
+@I [HLS-0] All models in this session: gaussian_fadd_32ns_32ns_32_5_full_dsp gaussian_fmul_32ns_32ns_32_4_max_dsp gaussian_fptoui_32ns_64_4 gaussian_sitofp_64ns_32_6 gaussian_scalarized gaussian
+@I [HLS-0] To file: write model gaussian_fadd_32ns_32ns_32_5_full_dsp
+@I [HLS-0] To file: write model gaussian_fmul_32ns_32ns_32_4_max_dsp
+@I [HLS-0] To file: write model gaussian_fptoui_32ns_64_4
+@I [HLS-0] To file: write model gaussian_sitofp_64ns_32_6
+@I [HLS-0] To file: write model gaussian_scalarized
+@I [HLS-0] To file: write model gaussian
+@I [HLS-0] Finished generating RTL model list.
+
+
+@I [HLS-100] Command "export_ssdm /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/a.export.ll "
+@I [HLS-100] Command 'export_ssdm' returned 0; elapsed 0Total elapsed time: 23.240 sec.
+@I [HLS-100] Command "source /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.252 sec.
+@I [HLS-100] Command "source /usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/generic/autopilot/common.gen "
+@I [HLS-100] Command "source /usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/generic/autopilot/APCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.258 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.259 sec.
+@I [HLS-100] Command "source /usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/generic/autopilot/op.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.262 sec.
+@I [HLS-100] Command "source /usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/generic/autopilot/op_simcore.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.265 sec.
+@I [HLS-100] Command "source /usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/generic/autopilot/interface.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.267 sec.
+@I [HLS-100] Command "source /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.268 sec.
+@I [HLS-100] Command "source /usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/xilinx/zynq/zynq.gen "
+@I [HLS-100] Command "source /usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/xilinx/common/virtex.gen "
+@I [HLS-100] Command "source /usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/xilinx/common/xilinx.gen "
+@I [HLS-100] Command "source /usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/xilinx/interface/plb46.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 23.276 sec.
+@I [HLS-100] Command "source /usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/xilinx/interface/fsl.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.279 sec.
+@I [HLS-100] Command "source /usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/xilinx/interface/axi4.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 23.286 sec.
+@I [HLS-100] Command "source /usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/xilinx/scripts/xilinxcoregen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 23.304 sec.
+@I [HLS-100] Command "source /usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/xilinx/interface/XilEDKCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 23.311 sec.
+@I [HLS-100] Command "source /usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/xilinx/ip/util.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.313 sec.
+@I [HLS-100] Command "source /usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/xilinx/ip/xfft.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.08Total elapsed time: 23.391 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.12Total elapsed time: 23.391 sec.
+@I [HLS-100] Command "source /usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/xilinx/common/dsp48.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.393 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.12Total elapsed time: 23.393 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.12Total elapsed time: 23.393 sec.
+@I [HLS-100] Command "source /usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/xilinx/zynq/zynq_fpv6.gen "
+@I [HLS-100] Command "source /usr/local/.recherche-cairn/Vivado-2013.2/Vivado_HLS/2013.2/common/technology/xilinx/common/xilinx_fpv6.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.396 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.396 sec.
+@I [HLS-100] Command "source /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.397 sec.
+@I [HLS-100] Command "source /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 23.398 sec.
+@I [HLS-100] Command "source /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian_scalarized.compgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.15Total elapsed time: 24.147 sec.
+@I [HLS-100] Command "source /users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/gaussian/solution1/.autopilot/db/gaussian.compgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 24.149 sec.
+@I [HLS-10] Finished generating all RTL models.
+@0 [HLS-0] Finished generating all RTL models.
+@I [WSYSC-301] Generating RTL SystemC for 'gaussian'.
+@I [WVHDL-304] Generating RTL VHDL for 'gaussian'.
+@I [WVLOG-307] Generating RTL Verilog for 'gaussian'.
+@I [HLS-100] Command 'autosyn' returned 0; elapsed 0.85Total elapsed time: 25.339 sec.
+@I [HLS-100] Command 'csynth_design' returned 0; elapsed 2.37Total elapsed time: 25.339 sec.
+@I [HLS-100] Command "cleanup_all "
+@I [HLS-100] Command 'cleanup_all' returned 0; elapsed 0Total elapsed time: 25.345 sec.
