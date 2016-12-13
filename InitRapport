@@ -52,6 +52,8 @@ Vous	pouvez	vous	aider	de	la	perspective	d’analyse	(bouton	«	Analysis	»	en	h
 1. Modifier	votre	implémentation	afin	de	ne	lire	chaque	donnée	qu’une	seule	fois	
 («	gaussian_caching.cpp	»).		On	pourra	utiliser	un	tableau	de	taille	adéquate,	soigneusement	
 géré.	
+en voyant que l'acces memoire est cher on va tout mettre dans une cache pour reduire le temps d'acces 
+pour pouvoir ;;;
 2. Synthétisez	et	analysez	votre	design.	Quelle	est	l’influence	sur	le	pipeline,	et	pourquoi	?	La	
 contrainte	de	performances	semble-t-elle	désormais	respectée	?	A	quoi	attribuez-vous	ce	
 paradoxe	?	
