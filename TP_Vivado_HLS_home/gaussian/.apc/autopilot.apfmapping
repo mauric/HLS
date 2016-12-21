@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="gaussian.cpp" path="/home/mauric/Github/HLS/TP_Vivado_HLS_home/src/gaussian.cpp"/>
+    <originFiles name="gaussian_1line.cpp" path="/home/mauric/Github/HLS/TP_Vivado_HLS_home/src/gaussian_1line.cpp"/>
+    <originFiles name="gaussian_3x3.cpp" path="/home/mauric/Github/HLS/TP_Vivado_HLS_home/src/gaussian_3x3.cpp"/>
+    <originFiles name="gaussian_caching.cpp" path="/home/mauric/Github/HLS/TP_Vivado_HLS_home/src/gaussian_caching.cpp"/>
+    <originFiles name="gaussian_fixedPoint.cpp" path="/home/mauric/Github/HLS/TP_Vivado_HLS_home/src/gaussian_fixedPoint.cpp"/>
+    <originFiles name="gaussian_loopFusion.cpp" path="/home/mauric/Github/HLS/TP_Vivado_HLS_home/src/gaussian_loopFusion.cpp"/>
+    <originFiles name="gaussian_scalarized.cpp" path="/home/mauric/Github/HLS/TP_Vivado_HLS_home/src/gaussian_scalarized.cpp"/>
+    <originFiles name="gaussian_sep.cpp" path="/home/mauric/Github/HLS/TP_Vivado_HLS_home/src/gaussian_sep.cpp"/>
+    <originFiles name="globals.h" path="/home/mauric/Github/HLS/TP_Vivado_HLS_home/src/globals.h"/>
+  </source>
+  <testbench>
+    <originFiles name="test.cpp" path="/home/mauric/Github/HLS/TP_Vivado_HLS_home/test/test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
