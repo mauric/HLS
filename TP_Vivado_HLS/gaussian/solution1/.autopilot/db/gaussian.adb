@@ -74,11 +74,11 @@
           <Value>
             <Obj>
               <type>0</type>
-              <id>6</id>
+              <id>5</id>
               <name/>
               <fileName>gaussian.cpp</fileName>
               <fileDirectory>../src</fileDirectory>
-              <lineNumber>11</lineNumber>
+              <lineNumber>12</lineNumber>
               <contextFuncName>gaussian</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -93,24 +93,23 @@
                         <first>gaussian.cpp</first>
                         <second>gaussian</second>
                       </first>
-                      <second>11</second>
+                      <second>12</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_gaussian_1line_fu_17</rtlName>
+              <rtlName>grp_gaussian_scalarized_fu_15</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
           <oprand_edges>
-            <count>4</count>
+            <count>3</count>
             <item_version>0</item_version>
+            <item>9</item>
             <item>10</item>
             <item>11</item>
-            <item>12</item>
-            <item>13</item>
           </oprand_edges>
           <opcode>call</opcode>
         </item>
@@ -118,7 +117,7 @@
           <Value>
             <Obj>
               <type>0</type>
-              <id>7</id>
+              <id>6</id>
               <name/>
               <fileName>gaussian.cpp</fileName>
               <fileDirectory>../src</fileDirectory>
@@ -162,8 +161,8 @@
           <Value>
             <Obj>
               <type>2</type>
-              <id>9</id>
-              <name>gaussian_1line</name>
+              <id>8</id>
+              <name>gaussian_scalarized</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -179,7 +178,7 @@
             <bitwidth>0</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:gaussian_1line&gt;</content>
+          <content>&lt;constant:gaussian_scalarized&gt;</content>
         </item>
       </consts>
       <blocks class_id="17" tracking_level="0" version="0">
@@ -188,7 +187,7 @@
         <item class_id="18" tracking_level="1" version="0" object_id="_6">
           <Obj>
             <type>3</type>
-            <id>8</id>
+            <id>7</id>
             <name>gaussian</name>
             <fileName/>
             <fileDirectory/>
@@ -205,44 +204,38 @@
           <node_objs>
             <count>2</count>
             <item_version>0</item_version>
+            <item>5</item>
             <item>6</item>
-            <item>7</item>
           </node_objs>
         </item>
       </blocks>
       <edges class_id="19" tracking_level="0" version="0">
-        <count>4</count>
+        <count>3</count>
         <item_version>0</item_version>
         <item class_id="20" tracking_level="1" version="0" object_id="_7">
-          <id>10</id>
+          <id>9</id>
           <edge_type>1</edge_type>
-          <source_obj>9</source_obj>
-          <sink_obj>6</sink_obj>
+          <source_obj>8</source_obj>
+          <sink_obj>5</sink_obj>
         </item>
         <item class_id_reference="20" object_id="_8">
-          <id>11</id>
+          <id>10</id>
           <edge_type>1</edge_type>
           <source_obj>1</source_obj>
-          <sink_obj>6</sink_obj>
+          <sink_obj>5</sink_obj>
         </item>
         <item class_id_reference="20" object_id="_9">
-          <id>12</id>
+          <id>11</id>
           <edge_type>1</edge_type>
           <source_obj>2</source_obj>
-          <sink_obj>6</sink_obj>
-        </item>
-        <item class_id_reference="20" object_id="_10">
-          <id>13</id>
-          <edge_type>1</edge_type>
-          <source_obj>3</source_obj>
-          <sink_obj>6</sink_obj>
+          <sink_obj>5</sink_obj>
         </item>
       </edges>
     </cdfg>
     <cdfg_regions class_id="21" tracking_level="0" version="0">
       <count>1</count>
       <item_version>0</item_version>
-      <item class_id="22" tracking_level="1" version="0" object_id="_11">
+      <item class_id="22" tracking_level="1" version="0" object_id="_10">
         <mId>1</mId>
         <mTag>gaussian</mTag>
         <mType>0</mType>
@@ -253,7 +246,7 @@
         <basic_blocks>
           <count>1</count>
           <item_version>0</item_version>
-          <item>8</item>
+          <item>7</item>
         </basic_blocks>
         <mII>-1</mII>
         <mDepth>-1</mDepth>
@@ -265,27 +258,32 @@
         <mDfPipe class_id="-1"/>
       </item>
     </cdfg_regions>
-    <fsm class_id="24" tracking_level="1" version="0" object_id="_12">
+    <fsm class_id="24" tracking_level="1" version="0" object_id="_11">
       <states class_id="25" tracking_level="0" version="0">
         <count>2</count>
         <item_version>0</item_version>
-        <item class_id="26" tracking_level="1" version="0" object_id="_13">
+        <item class_id="26" tracking_level="1" version="0" object_id="_12">
           <id>1</id>
           <operations class_id="27" tracking_level="0" version="0">
             <count>1</count>
             <item_version>0</item_version>
-            <item class_id="28" tracking_level="1" version="0" object_id="_14">
-              <id>6</id>
+            <item class_id="28" tracking_level="1" version="0" object_id="_13">
+              <id>5</id>
               <stage>2</stage>
               <latency>2</latency>
             </item>
           </operations>
         </item>
-        <item class_id_reference="26" object_id="_15">
+        <item class_id_reference="26" object_id="_14">
           <id>2</id>
           <operations>
             <count>4</count>
             <item_version>0</item_version>
+            <item class_id_reference="28" object_id="_15">
+              <id>3</id>
+              <stage>1</stage>
+              <latency>1</latency>
+            </item>
             <item class_id_reference="28" object_id="_16">
               <id>4</id>
               <stage>1</stage>
@@ -294,15 +292,10 @@
             <item class_id_reference="28" object_id="_17">
               <id>5</id>
               <stage>1</stage>
-              <latency>1</latency>
+              <latency>2</latency>
             </item>
             <item class_id_reference="28" object_id="_18">
               <id>6</id>
-              <stage>1</stage>
-              <latency>2</latency>
-            </item>
-            <item class_id_reference="28" object_id="_19">
-              <id>7</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
@@ -312,7 +305,7 @@
       <transitions class_id="29" tracking_level="0" version="0">
         <count>1</count>
         <item_version>0</item_version>
-        <item class_id="30" tracking_level="1" version="0" object_id="_20">
+        <item class_id="30" tracking_level="1" version="0" object_id="_19">
           <inState>1</inState>
           <outState>2</outState>
           <condition class_id="31" tracking_level="0" version="0">
@@ -329,30 +322,26 @@
         </item>
       </transitions>
     </fsm>
-    <res class_id="34" tracking_level="1" version="0" object_id="_21">
+    <res class_id="34" tracking_level="1" version="0" object_id="_20">
       <dp_component_resource class_id="35" tracking_level="0" version="0">
         <count>1</count>
         <item_version>0</item_version>
         <item class_id="36" tracking_level="0" version="0">
-          <first>grp_gaussian_1line_fu_17 (gaussian_1line)</first>
+          <first>grp_gaussian_scalarized_fu_15 (gaussian_scalarized)</first>
           <second class_id="37" tracking_level="0" version="0">
-            <count>4</count>
+            <count>3</count>
             <item_version>0</item_version>
             <item class_id="38" tracking_level="0" version="0">
-              <first>BRAM</first>
-              <second>4</second>
-            </item>
-            <item>
               <first>DSP48E</first>
               <second>16</second>
             </item>
             <item>
               <first>FF</first>
-              <second>3259</second>
+              <second>3344</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>5294</second>
+              <second>5336</second>
             </item>
           </second>
         </item>
@@ -396,7 +385,7 @@
           </second>
         </item>
         <item>
-          <first>grp_gaussian_1line_fu_17_ap_start_ap_start_reg</first>
+          <first>grp_gaussian_scalarized_fu_15_ap_start_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -419,11 +408,11 @@
         <count>1</count>
         <item_version>0</item_version>
         <item class_id="40" tracking_level="0" version="0">
-          <first>grp_gaussian_1line_fu_17 (gaussian_1line)</first>
+          <first>grp_gaussian_scalarized_fu_15 (gaussian_scalarized)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
-            <item>6</item>
+            <item>5</item>
           </second>
         </item>
       </dp_component_map>
@@ -444,14 +433,14 @@
       <count>2</count>
       <item_version>0</item_version>
       <item class_id="42" tracking_level="0" version="0">
-        <first>6</first>
+        <first>5</first>
         <second class_id="43" tracking_level="0" version="0">
           <first>0</first>
           <second>1</second>
         </second>
       </item>
       <item>
-        <first>7</first>
+        <first>6</first>
         <second>
           <first>1</first>
           <second>0</second>
@@ -462,7 +451,7 @@
       <count>1</count>
       <item_version>0</item_version>
       <item class_id="45" tracking_level="0" version="0">
-        <first>8</first>
+        <first>7</first>
         <second class_id="46" tracking_level="0" version="0">
           <first>0</first>
           <second>1</second>
@@ -477,12 +466,12 @@
       <count>1</count>
       <item_version>0</item_version>
       <item class_id="49" tracking_level="0" version="0">
-        <first>17</first>
+        <first>15</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
-          <item>6</item>
-          <item>6</item>
+          <item>5</item>
+          <item>5</item>
         </second>
       </item>
     </dp_fu_nodes>
@@ -494,12 +483,12 @@
       <count>1</count>
       <item_version>0</item_version>
       <item class_id="52" tracking_level="0" version="0">
-        <first>grp_gaussian_1line_fu_17</first>
+        <first>grp_gaussian_scalarized_fu_15</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
-          <item>6</item>
-          <item>6</item>
+          <item>5</item>
+          <item>5</item>
         </second>
       </item>
     </dp_fu_nodes_module>
@@ -512,19 +501,8 @@
       <item_version>0</item_version>
     </return_ports>
     <dp_mem_port_nodes class_id="53" tracking_level="0" version="0">
-      <count>1</count>
+      <count>0</count>
       <item_version>0</item_version>
-      <item class_id="54" tracking_level="0" version="0">
-        <first class_id="55" tracking_level="0" version="0">
-          <first>tmp</first>
-          <second>100</second>
-        </first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>6</item>
-        </second>
-      </item>
     </dp_mem_port_nodes>
     <dp_reg_nodes>
       <count>0</count>
@@ -542,10 +520,10 @@
       <count>0</count>
       <item_version>0</item_version>
     </dp_regname_phi>
-    <dp_port_io_nodes class_id="56" tracking_level="0" version="0">
+    <dp_port_io_nodes class_id="54" tracking_level="0" version="0">
       <count>2</count>
       <item_version>0</item_version>
-      <item class_id="57" tracking_level="0" version="0">
+      <item class_id="55" tracking_level="0" version="0">
         <first>in_r</first>
         <second>
           <count>1</count>
@@ -555,7 +533,7 @@
             <second>
               <count>1</count>
               <item_version>0</item_version>
-              <item>6</item>
+              <item>5</item>
             </second>
           </item>
         </second>
@@ -570,16 +548,16 @@
             <second>
               <count>1</count>
               <item_version>0</item_version>
-              <item>6</item>
+              <item>5</item>
             </second>
           </item>
         </second>
       </item>
     </dp_port_io_nodes>
-    <port2core class_id="58" tracking_level="0" version="0">
+    <port2core class_id="56" tracking_level="0" version="0">
       <count>2</count>
       <item_version>0</item_version>
-      <item class_id="59" tracking_level="0" version="0">
+      <item class_id="57" tracking_level="0" version="0">
         <first>1</first>
         <second>RAM</second>
       </item>

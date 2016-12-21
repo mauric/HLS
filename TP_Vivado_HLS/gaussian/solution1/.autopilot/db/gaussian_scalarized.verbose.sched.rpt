@@ -1,0 +1,1213 @@
+
+
+================================================================
+== Vivado HLS Report for 'gaussian_scalarized'
+================================================================
+* Date:           Tue Dec 13 13:04:10 2016
+
+* Version:        2013.2 (build date: Thu Jun 13 16:07:59 PM 2013)
+* Project:        gaussian
+* Solution:       solution1
+* Product family: zynq zynq_fpv6 
+* Target device:  xc7z010clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +---------+-------+----------+------------+
+    |  Clock  | Target| Estimated| Uncertainty|
+    +---------+-------+----------+------------+
+    |default  |  10.00|      7.26|        1.25|
+    +---------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +----------+----------+----------+----------+---------+
+    |       Latency       |       Interval      | Pipeline|
+    |    min   |    max   |    min   |    max   |   Type  |
+    +----------+----------+----------+----------+---------+
+    |  74529768|  74529768|  74529768|  74529768|   none  |
+    +----------+----------+----------+----------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------+----------+----------+----------+-----------+-----------+------+----------+
+        |             |       Latency       | Iteration|  Initiation Interval  | Trip |          |
+        |  Loop Name  |    min   |    max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------+----------+----------+----------+-----------+-----------+------+----------+
+        |- Loop 1     |  74529767|  74529767|     69073|          -|          -|  1079|    no    |
+        | + Loop 1.1  |     69048|     69048|        36|          -|          -|  1918|    no    |
+        +-------------+----------+----------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+-------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF  |  LUT  |
++-----------------+---------+-------+-------+-------+
+|Expression       |        -|      -|      -|      -|
+|FIFO             |        -|      -|      -|      -|
+|Instance         |        -|      -|      -|      -|
+|Memory           |        -|      -|      -|      -|
+|Multiplexer      |        -|      -|      -|      -|
+|Register         |        -|      -|      -|      -|
+|ShiftMemory      |        -|      -|      -|      -|
++-----------------+---------+-------+-------+-------+
+|Total            |        0|      0|      0|      0|
++-----------------+---------+-------+-------+-------+
+|Available        |      120|     80|  35200|  17600|
++-----------------+---------+-------+-------+-------+
+|Utilization (%)  |        0|      0|      0|      0|
++-----------------+---------+-------+-------+-------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Shift register: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
+N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 61
+* Pipeline: 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / (!exitcond)
+3 --> 
+	4  / true
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+	8  / true
+8 --> 
+	9  / true
+9 --> 
+	10  / true
+10 --> 
+	11  / true
+11 --> 
+	12  / true
+12 --> 
+	13  / true
+13 --> 
+	14  / true
+14 --> 
+	15  / true
+15 --> 
+	16  / true
+16 --> 
+	17  / true
+17 --> 
+	18  / true
+18 --> 
+	19  / true
+19 --> 
+	20  / true
+20 --> 
+	21  / true
+21 --> 
+	22  / true
+22 --> 
+	23  / true
+23 --> 
+	24  / true
+24 --> 
+	25  / true
+25 --> 
+	26  / true
+26 --> 
+	2  / (exitcond1)
+	27  / (!exitcond1)
+27 --> 
+	28  / true
+28 --> 
+	29  / true
+29 --> 
+	30  / true
+30 --> 
+	31  / true
+31 --> 
+	32  / true
+32 --> 
+	33  / true
+33 --> 
+	34  / true
+34 --> 
+	35  / true
+35 --> 
+	36  / true
+36 --> 
+	37  / true
+37 --> 
+	38  / true
+38 --> 
+	39  / true
+39 --> 
+	40  / true
+40 --> 
+	41  / true
+41 --> 
+	42  / true
+42 --> 
+	43  / true
+43 --> 
+	44  / true
+44 --> 
+	45  / true
+45 --> 
+	46  / true
+46 --> 
+	47  / true
+47 --> 
+	48  / true
+48 --> 
+	49  / true
+49 --> 
+	50  / true
+50 --> 
+	51  / true
+51 --> 
+	52  / true
+52 --> 
+	53  / true
+53 --> 
+	54  / true
+54 --> 
+	55  / true
+55 --> 
+	56  / true
+56 --> 
+	57  / true
+57 --> 
+	58  / true
+58 --> 
+	59  / true
+59 --> 
+	60  / true
+60 --> 
+	61  / true
+61 --> 
+	26  / true
+* FSM state operations: 
+
+ <State 1>: 1.39ns
+ST_1: stg_62 [1/1] 1.39ns
+entry:0  br label %bb4
+
+
+ <State 2>: 6.43ns
+ST_2: indvar1 [1/1] 0.00ns
+bb4:0  %indvar1 = phi i11 [ 0, %entry ], [ %i, %bb2 ]  ; <i11> [#uses=5]
+
+ST_2: tmp [1/1] 1.84ns
+bb4:1  %tmp = add i11 %indvar1, 2                      ; <i11> [#uses=2]
+
+ST_2: i [1/1] 1.84ns
+bb4:2  %i = add i11 %indvar1, 1                        ; <i11> [#uses=3]
+
+ST_2: empty_17 [1/1] 0.00ns
+bb4:3  %empty_17 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 1079, i64 1079, i64 1079) nounwind ; <i32> [#uses=0]
+
+ST_2: exitcond [1/1] 2.11ns
+bb4:4  %exitcond = icmp eq i11 %indvar1, -969          ; <i1> [#uses=1]
+
+ST_2: stg_68 [1/1] 0.00ns
+bb4:5  br i1 %exitcond, label %return, label %bb
+
+ST_2: tmp_1 [1/1] 0.00ns
+bb:0  %tmp_1 = call i22 @_ssdm_op_BitConcatenate.i22.i11.i11(i11 %indvar1, i11 0) ; <i22> [#uses=1]
+
+ST_2: p_shl_cast [1/1] 0.00ns
+bb:1  %p_shl_cast = zext i22 %tmp_1 to i23            ; <i23> [#uses=1]
+
+ST_2: tmp_5 [1/1] 0.00ns
+bb:2  %tmp_5 = call i18 @_ssdm_op_BitConcatenate.i18.i11.i7(i11 %indvar1, i7 0) ; <i18> [#uses=1]
+
+ST_2: p_shl1_cast [1/1] 0.00ns
+bb:3  %p_shl1_cast = zext i18 %tmp_5 to i23           ; <i23> [#uses=1]
+
+ST_2: p_addr [1/1] 2.20ns
+bb:4  %p_addr = sub i23 %p_shl_cast, %p_shl1_cast     ; <i23> [#uses=3]
+
+ST_2: p_addr_cast [1/1] 0.00ns
+bb:6  %p_addr_cast = sext i23 %p_addr to i32          ; <i32> [#uses=1]
+
+ST_2: tmp_23 [1/1] 0.00ns
+bb:7  %tmp_23 = zext i32 %p_addr_cast to i64          ; <i64> [#uses=1]
+
+ST_2: in_addr [1/1] 0.00ns
+bb:8  %in_addr = getelementptr [2073600 x i16]* %in_r, i64 0, i64 %tmp_23 ; <i16*> [#uses=1]
+
+ST_2: in_load [2/2] 2.39ns
+bb:9  %in_load = load i16* %in_addr, align 2          ; <i16> [#uses=1]
+
+ST_2: tmp_39 [1/1] 0.00ns
+bb:13  %tmp_39 = call i22 @_ssdm_op_BitConcatenate.i22.i11.i11(i11 %i, i11 0) ; <i22> [#uses=1]
+
+ST_2: p_shl2_cast [1/1] 0.00ns
+bb:14  %p_shl2_cast = zext i22 %tmp_39 to i23          ; <i23> [#uses=1]
+
+ST_2: tmp_40 [1/1] 0.00ns
+bb:15  %tmp_40 = call i18 @_ssdm_op_BitConcatenate.i18.i11.i7(i11 %i, i7 0) ; <i18> [#uses=1]
+
+ST_2: p_shl3_cast [1/1] 0.00ns
+bb:16  %p_shl3_cast = zext i18 %tmp_40 to i23          ; <i23> [#uses=1]
+
+ST_2: p_addr2 [1/1] 2.20ns
+bb:17  %p_addr2 = sub i23 %p_shl2_cast, %p_shl3_cast   ; <i23> [#uses=3]
+
+ST_2: p_addr2_cast [1/1] 0.00ns
+bb:19  %p_addr2_cast = sext i23 %p_addr2 to i32        ; <i32> [#uses=1]
+
+ST_2: tmp_41 [1/1] 0.00ns
+bb:20  %tmp_41 = zext i32 %p_addr2_cast to i64         ; <i64> [#uses=1]
+
+ST_2: in_addr_1 [1/1] 0.00ns
+bb:21  %in_addr_1 = getelementptr [2073600 x i16]* %in_r, i64 0, i64 %tmp_41 ; <i16*> [#uses=1]
+
+ST_2: in_load_1 [2/2] 2.39ns
+bb:22  %in_load_1 = load i16* %in_addr_1, align 2      ; <i16> [#uses=1]
+
+ST_2: tmp_45 [1/1] 0.00ns
+bb:41  %tmp_45 = call i22 @_ssdm_op_PartSelect.i22.i23.i32.i32(i23 %p_addr, i32 1, i32 22) ; <i22> [#uses=1]
+
+ST_2: tmp_48 [1/1] 0.00ns
+bb:50  %tmp_48 = call i22 @_ssdm_op_PartSelect.i22.i23.i32.i32(i23 %p_addr2, i32 1, i32 22) ; <i22> [#uses=1]
+
+ST_2: stg_89 [1/1] 0.00ns
+return:0  ret void
+
+
+ <State 3>: 2.39ns
+ST_3: in_load [1/2] 2.39ns
+bb:9  %in_load = load i16* %in_addr, align 2          ; <i16> [#uses=1]
+
+ST_3: in_load_1 [1/2] 2.39ns
+bb:22  %in_load_1 = load i16* %in_addr_1, align 2      ; <i16> [#uses=1]
+
+ST_3: tmp_46 [1/1] 0.00ns
+bb:42  %tmp_46 = call i23 @_ssdm_op_BitConcatenate.i23.i22.i1(i22 %tmp_45, i1 true) ; <i23> [#uses=1]
+
+ST_3: p_addr5 [1/1] 0.00ns
+bb:43  %p_addr5 = sext i23 %tmp_46 to i32              ; <i32> [#uses=1]
+
+ST_3: tmp_47 [1/1] 0.00ns
+bb:44  %tmp_47 = zext i32 %p_addr5 to i64              ; <i64> [#uses=1]
+
+ST_3: in_addr_3 [1/1] 0.00ns
+bb:45  %in_addr_3 = getelementptr [2073600 x i16]* %in_r, i64 0, i64 %tmp_47 ; <i16*> [#uses=1]
+
+ST_3: in_load_3 [2/2] 2.39ns
+bb:46  %in_load_3 = load i16* %in_addr_3, align 2      ; <i16> [#uses=1]
+
+ST_3: tmp_49 [1/1] 0.00ns
+bb:51  %tmp_49 = call i23 @_ssdm_op_BitConcatenate.i23.i22.i1(i22 %tmp_48, i1 true) ; <i23> [#uses=1]
+
+ST_3: p_addr6 [1/1] 0.00ns
+bb:52  %p_addr6 = sext i23 %tmp_49 to i32              ; <i32> [#uses=1]
+
+ST_3: tmp_50 [1/1] 0.00ns
+bb:53  %tmp_50 = zext i32 %p_addr6 to i64              ; <i64> [#uses=1]
+
+ST_3: in_addr_4 [1/1] 0.00ns
+bb:54  %in_addr_4 = getelementptr [2073600 x i16]* %in_r, i64 0, i64 %tmp_50 ; <i16*> [#uses=1]
+
+ST_3: in_load_4 [2/2] 2.39ns
+bb:55  %in_load_4 = load i16* %in_addr_4, align 2      ; <i16> [#uses=1]
+
+
+ <State 4>: 2.39ns
+ST_4: in_load_3 [1/2] 2.39ns
+bb:46  %in_load_3 = load i16* %in_addr_3, align 2      ; <i16> [#uses=1]
+
+ST_4: in_load_4 [1/2] 2.39ns
+bb:55  %in_load_4 = load i16* %in_addr_4, align 2      ; <i16> [#uses=1]
+
+
+ <State 5>: 6.41ns
+ST_5: tmp_2 [1/1] 0.00ns
+bb:10  %tmp_2 = zext i16 %in_load to i64               ; <i64> [#uses=1]
+
+ST_5: tmp_3 [6/6] 6.41ns
+bb:11  %tmp_3 = sitofp i64 %tmp_2 to float             ; <float> [#uses=1]
+
+ST_5: tmp_6 [1/1] 0.00ns
+bb:23  %tmp_6 = zext i16 %in_load_1 to i64             ; <i64> [#uses=1]
+
+ST_5: tmp_7 [6/6] 6.41ns
+bb:24  %tmp_7 = sitofp i64 %tmp_6 to float             ; <float> [#uses=1]
+
+ST_5: tmp_12 [1/1] 0.00ns
+bb:47  %tmp_12 = zext i16 %in_load_3 to i64            ; <i64> [#uses=1]
+
+ST_5: tmp_13 [6/6] 6.41ns
+bb:48  %tmp_13 = sitofp i64 %tmp_12 to float           ; <float> [#uses=1]
+
+ST_5: tmp_15 [1/1] 0.00ns
+bb:56  %tmp_15 = zext i16 %in_load_4 to i64            ; <i64> [#uses=1]
+
+ST_5: tmp_16 [6/6] 6.41ns
+bb:57  %tmp_16 = sitofp i64 %tmp_15 to float           ; <float> [#uses=1]
+
+
+ <State 6>: 6.41ns
+ST_6: tmp_3 [5/6] 6.41ns
+bb:11  %tmp_3 = sitofp i64 %tmp_2 to float             ; <float> [#uses=1]
+
+ST_6: tmp_7 [5/6] 6.41ns
+bb:24  %tmp_7 = sitofp i64 %tmp_6 to float             ; <float> [#uses=1]
+
+ST_6: tmp_13 [5/6] 6.41ns
+bb:48  %tmp_13 = sitofp i64 %tmp_12 to float           ; <float> [#uses=1]
+
+ST_6: tmp_16 [5/6] 6.41ns
+bb:57  %tmp_16 = sitofp i64 %tmp_15 to float           ; <float> [#uses=1]
+
+
+ <State 7>: 6.41ns
+ST_7: tmp_3 [4/6] 6.41ns
+bb:11  %tmp_3 = sitofp i64 %tmp_2 to float             ; <float> [#uses=1]
+
+ST_7: tmp_7 [4/6] 6.41ns
+bb:24  %tmp_7 = sitofp i64 %tmp_6 to float             ; <float> [#uses=1]
+
+ST_7: tmp_13 [4/6] 6.41ns
+bb:48  %tmp_13 = sitofp i64 %tmp_12 to float           ; <float> [#uses=1]
+
+ST_7: tmp_16 [4/6] 6.41ns
+bb:57  %tmp_16 = sitofp i64 %tmp_15 to float           ; <float> [#uses=1]
+
+
+ <State 8>: 6.41ns
+ST_8: tmp_3 [3/6] 6.41ns
+bb:11  %tmp_3 = sitofp i64 %tmp_2 to float             ; <float> [#uses=1]
+
+ST_8: tmp_7 [3/6] 6.41ns
+bb:24  %tmp_7 = sitofp i64 %tmp_6 to float             ; <float> [#uses=1]
+
+ST_8: tmp_42 [1/1] 0.00ns
+bb:27  %tmp_42 = call i22 @_ssdm_op_BitConcatenate.i22.i11.i11(i11 %tmp, i11 0) ; <i22> [#uses=1]
+
+ST_8: p_shl4_cast [1/1] 0.00ns
+bb:28  %p_shl4_cast = zext i22 %tmp_42 to i23          ; <i23> [#uses=1]
+
+ST_8: tmp_43 [1/1] 0.00ns
+bb:29  %tmp_43 = call i18 @_ssdm_op_BitConcatenate.i18.i11.i7(i11 %tmp, i7 0) ; <i18> [#uses=1]
+
+ST_8: p_shl5_cast [1/1] 0.00ns
+bb:30  %p_shl5_cast = zext i18 %tmp_43 to i23          ; <i23> [#uses=1]
+
+ST_8: p_addr3 [1/1] 2.20ns
+bb:31  %p_addr3 = sub i23 %p_shl4_cast, %p_shl5_cast   ; <i23> [#uses=3]
+
+ST_8: p_addr3_cast [1/1] 0.00ns
+bb:33  %p_addr3_cast = sext i23 %p_addr3 to i32        ; <i32> [#uses=1]
+
+ST_8: tmp_44 [1/1] 0.00ns
+bb:34  %tmp_44 = zext i32 %p_addr3_cast to i64         ; <i64> [#uses=1]
+
+ST_8: in_addr_2 [1/1] 0.00ns
+bb:35  %in_addr_2 = getelementptr [2073600 x i16]* %in_r, i64 0, i64 %tmp_44 ; <i16*> [#uses=1]
+
+ST_8: in_load_2 [2/2] 2.39ns
+bb:36  %in_load_2 = load i16* %in_addr_2, align 2      ; <i16> [#uses=1]
+
+ST_8: tmp_13 [3/6] 6.41ns
+bb:48  %tmp_13 = sitofp i64 %tmp_12 to float           ; <float> [#uses=1]
+
+ST_8: tmp_16 [3/6] 6.41ns
+bb:57  %tmp_16 = sitofp i64 %tmp_15 to float           ; <float> [#uses=1]
+
+ST_8: tmp_51 [1/1] 0.00ns
+bb:60  %tmp_51 = call i22 @_ssdm_op_PartSelect.i22.i23.i32.i32(i23 %p_addr3, i32 1, i32 22) ; <i22> [#uses=1]
+
+ST_8: tmp_57 [1/1] 0.00ns
+bb:61  %tmp_57 = call i23 @_ssdm_op_BitConcatenate.i23.i22.i1(i22 %tmp_51, i1 true) ; <i23> [#uses=1]
+
+ST_8: p_addr8 [1/1] 0.00ns
+bb:62  %p_addr8 = sext i23 %tmp_57 to i32              ; <i32> [#uses=1]
+
+ST_8: tmp_52 [1/1] 0.00ns
+bb:63  %tmp_52 = zext i32 %p_addr8 to i64              ; <i64> [#uses=1]
+
+ST_8: in_addr_5 [1/1] 0.00ns
+bb:64  %in_addr_5 = getelementptr [2073600 x i16]* %in_r, i64 0, i64 %tmp_52 ; <i16*> [#uses=1]
+
+ST_8: in_load_5 [2/2] 2.39ns
+bb:65  %in_load_5 = load i16* %in_addr_5, align 2      ; <i16> [#uses=1]
+
+
+ <State 9>: 6.41ns
+ST_9: tmp_3 [2/6] 6.41ns
+bb:11  %tmp_3 = sitofp i64 %tmp_2 to float             ; <float> [#uses=1]
+
+ST_9: tmp_7 [2/6] 6.41ns
+bb:24  %tmp_7 = sitofp i64 %tmp_6 to float             ; <float> [#uses=1]
+
+ST_9: in_load_2 [1/2] 2.39ns
+bb:36  %in_load_2 = load i16* %in_addr_2, align 2      ; <i16> [#uses=1]
+
+ST_9: tmp_13 [2/6] 6.41ns
+bb:48  %tmp_13 = sitofp i64 %tmp_12 to float           ; <float> [#uses=1]
+
+ST_9: tmp_16 [2/6] 6.41ns
+bb:57  %tmp_16 = sitofp i64 %tmp_15 to float           ; <float> [#uses=1]
+
+ST_9: in_load_5 [1/2] 2.39ns
+bb:65  %in_load_5 = load i16* %in_addr_5, align 2      ; <i16> [#uses=1]
+
+
+ <State 10>: 6.41ns
+ST_10: tmp_3 [1/6] 6.41ns
+bb:11  %tmp_3 = sitofp i64 %tmp_2 to float             ; <float> [#uses=1]
+
+ST_10: tmp_7 [1/6] 6.41ns
+bb:24  %tmp_7 = sitofp i64 %tmp_6 to float             ; <float> [#uses=1]
+
+ST_10: tmp_s [1/1] 0.00ns
+bb:37  %tmp_s = zext i16 %in_load_2 to i64             ; <i64> [#uses=1]
+
+ST_10: tmp_10 [6/6] 6.41ns
+bb:38  %tmp_10 = sitofp i64 %tmp_s to float            ; <float> [#uses=1]
+
+ST_10: tmp_13 [1/6] 6.41ns
+bb:48  %tmp_13 = sitofp i64 %tmp_12 to float           ; <float> [#uses=1]
+
+ST_10: tmp_16 [1/6] 6.41ns
+bb:57  %tmp_16 = sitofp i64 %tmp_15 to float           ; <float> [#uses=1]
+
+ST_10: tmp_19 [1/1] 0.00ns
+bb:66  %tmp_19 = zext i16 %in_load_5 to i64            ; <i64> [#uses=1]
+
+ST_10: tmp_20 [6/6] 6.41ns
+bb:67  %tmp_20 = sitofp i64 %tmp_19 to float           ; <float> [#uses=1]
+
+
+ <State 11>: 6.41ns
+ST_11: tmp_4 [4/4] 5.70ns
+bb:12  %tmp_4 = fmul float %tmp_3, 0x3FCF91E640000000  ; <float> [#uses=1]
+
+ST_11: tmp_8 [4/4] 5.70ns
+bb:25  %tmp_8 = fmul float %tmp_7, 0x3FE36A2B20000000  ; <float> [#uses=1]
+
+ST_11: tmp_10 [5/6] 6.41ns
+bb:38  %tmp_10 = sitofp i64 %tmp_s to float            ; <float> [#uses=1]
+
+ST_11: tmp_14 [4/4] 5.70ns
+bb:49  %tmp_14 = fmul float %tmp_13, 0x3FCF91E640000000 ; <float> [#uses=1]
+
+ST_11: tmp_17 [4/4] 5.70ns
+bb:58  %tmp_17 = fmul float %tmp_16, 0x3FE36A2B20000000 ; <float> [#uses=1]
+
+ST_11: tmp_20 [5/6] 6.41ns
+bb:67  %tmp_20 = sitofp i64 %tmp_19 to float           ; <float> [#uses=1]
+
+
+ <State 12>: 6.41ns
+ST_12: tmp_4 [3/4] 5.70ns
+bb:12  %tmp_4 = fmul float %tmp_3, 0x3FCF91E640000000  ; <float> [#uses=1]
+
+ST_12: tmp_8 [3/4] 5.70ns
+bb:25  %tmp_8 = fmul float %tmp_7, 0x3FE36A2B20000000  ; <float> [#uses=1]
+
+ST_12: tmp_10 [4/6] 6.41ns
+bb:38  %tmp_10 = sitofp i64 %tmp_s to float            ; <float> [#uses=1]
+
+ST_12: tmp_14 [3/4] 5.70ns
+bb:49  %tmp_14 = fmul float %tmp_13, 0x3FCF91E640000000 ; <float> [#uses=1]
+
+ST_12: tmp_17 [3/4] 5.70ns
+bb:58  %tmp_17 = fmul float %tmp_16, 0x3FE36A2B20000000 ; <float> [#uses=1]
+
+ST_12: tmp_20 [4/6] 6.41ns
+bb:67  %tmp_20 = sitofp i64 %tmp_19 to float           ; <float> [#uses=1]
+
+
+ <State 13>: 6.41ns
+ST_13: tmp_4 [2/4] 5.70ns
+bb:12  %tmp_4 = fmul float %tmp_3, 0x3FCF91E640000000  ; <float> [#uses=1]
+
+ST_13: tmp_8 [2/4] 5.70ns
+bb:25  %tmp_8 = fmul float %tmp_7, 0x3FE36A2B20000000  ; <float> [#uses=1]
+
+ST_13: tmp_10 [3/6] 6.41ns
+bb:38  %tmp_10 = sitofp i64 %tmp_s to float            ; <float> [#uses=1]
+
+ST_13: tmp_14 [2/4] 5.70ns
+bb:49  %tmp_14 = fmul float %tmp_13, 0x3FCF91E640000000 ; <float> [#uses=1]
+
+ST_13: tmp_17 [2/4] 5.70ns
+bb:58  %tmp_17 = fmul float %tmp_16, 0x3FE36A2B20000000 ; <float> [#uses=1]
+
+ST_13: tmp_20 [3/6] 6.41ns
+bb:67  %tmp_20 = sitofp i64 %tmp_19 to float           ; <float> [#uses=1]
+
+
+ <State 14>: 6.41ns
+ST_14: tmp_4 [1/4] 5.70ns
+bb:12  %tmp_4 = fmul float %tmp_3, 0x3FCF91E640000000  ; <float> [#uses=1]
+
+ST_14: tmp_8 [1/4] 5.70ns
+bb:25  %tmp_8 = fmul float %tmp_7, 0x3FE36A2B20000000  ; <float> [#uses=1]
+
+ST_14: tmp_10 [2/6] 6.41ns
+bb:38  %tmp_10 = sitofp i64 %tmp_s to float            ; <float> [#uses=1]
+
+ST_14: tmp_14 [1/4] 5.70ns
+bb:49  %tmp_14 = fmul float %tmp_13, 0x3FCF91E640000000 ; <float> [#uses=1]
+
+ST_14: tmp_17 [1/4] 5.70ns
+bb:58  %tmp_17 = fmul float %tmp_16, 0x3FE36A2B20000000 ; <float> [#uses=1]
+
+ST_14: tmp_20 [2/6] 6.41ns
+bb:67  %tmp_20 = sitofp i64 %tmp_19 to float           ; <float> [#uses=1]
+
+
+ <State 15>: 7.26ns
+ST_15: tmp_9 [5/5] 7.26ns
+bb:26  %tmp_9 = fadd float %tmp_4, %tmp_8              ; <float> [#uses=1]
+
+ST_15: tmp_10 [1/6] 6.41ns
+bb:38  %tmp_10 = sitofp i64 %tmp_s to float            ; <float> [#uses=1]
+
+ST_15: tmp_18 [5/5] 7.26ns
+bb:59  %tmp_18 = fadd float %tmp_14, %tmp_17           ; <float> [#uses=1]
+
+ST_15: tmp_20 [1/6] 6.41ns
+bb:67  %tmp_20 = sitofp i64 %tmp_19 to float           ; <float> [#uses=1]
+
+
+ <State 16>: 7.26ns
+ST_16: tmp_9 [4/5] 7.26ns
+bb:26  %tmp_9 = fadd float %tmp_4, %tmp_8              ; <float> [#uses=1]
+
+ST_16: tmp_11 [4/4] 5.70ns
+bb:39  %tmp_11 = fmul float %tmp_10, 0x3FCF91E640000000 ; <float> [#uses=1]
+
+ST_16: tmp_18 [4/5] 7.26ns
+bb:59  %tmp_18 = fadd float %tmp_14, %tmp_17           ; <float> [#uses=1]
+
+ST_16: tmp_21 [4/4] 5.70ns
+bb:68  %tmp_21 = fmul float %tmp_20, 0x3FCF91E640000000 ; <float> [#uses=1]
+
+
+ <State 17>: 7.26ns
+ST_17: tmp_9 [3/5] 7.26ns
+bb:26  %tmp_9 = fadd float %tmp_4, %tmp_8              ; <float> [#uses=1]
+
+ST_17: tmp_11 [3/4] 5.70ns
+bb:39  %tmp_11 = fmul float %tmp_10, 0x3FCF91E640000000 ; <float> [#uses=1]
+
+ST_17: tmp_18 [3/5] 7.26ns
+bb:59  %tmp_18 = fadd float %tmp_14, %tmp_17           ; <float> [#uses=1]
+
+ST_17: tmp_21 [3/4] 5.70ns
+bb:68  %tmp_21 = fmul float %tmp_20, 0x3FCF91E640000000 ; <float> [#uses=1]
+
+
+ <State 18>: 7.26ns
+ST_18: tmp_9 [2/5] 7.26ns
+bb:26  %tmp_9 = fadd float %tmp_4, %tmp_8              ; <float> [#uses=1]
+
+ST_18: tmp_11 [2/4] 5.70ns
+bb:39  %tmp_11 = fmul float %tmp_10, 0x3FCF91E640000000 ; <float> [#uses=1]
+
+ST_18: tmp_18 [2/5] 7.26ns
+bb:59  %tmp_18 = fadd float %tmp_14, %tmp_17           ; <float> [#uses=1]
+
+ST_18: tmp_21 [2/4] 5.70ns
+bb:68  %tmp_21 = fmul float %tmp_20, 0x3FCF91E640000000 ; <float> [#uses=1]
+
+
+ <State 19>: 7.26ns
+ST_19: tmp_9 [1/5] 7.26ns
+bb:26  %tmp_9 = fadd float %tmp_4, %tmp_8              ; <float> [#uses=1]
+
+ST_19: tmp_11 [1/4] 5.70ns
+bb:39  %tmp_11 = fmul float %tmp_10, 0x3FCF91E640000000 ; <float> [#uses=1]
+
+ST_19: tmp_18 [1/5] 7.26ns
+bb:59  %tmp_18 = fadd float %tmp_14, %tmp_17           ; <float> [#uses=1]
+
+ST_19: tmp_21 [1/4] 5.70ns
+bb:68  %tmp_21 = fmul float %tmp_20, 0x3FCF91E640000000 ; <float> [#uses=1]
+
+
+ <State 20>: 7.26ns
+ST_20: tmp0 [5/5] 7.26ns
+bb:40  %tmp0 = fadd float %tmp_9, %tmp_11              ; <float> [#uses=1]
+
+ST_20: tmp1 [5/5] 7.26ns
+bb:69  %tmp1 = fadd float %tmp_18, %tmp_21             ; <float> [#uses=1]
+
+
+ <State 21>: 7.26ns
+ST_21: tmp0 [4/5] 7.26ns
+bb:40  %tmp0 = fadd float %tmp_9, %tmp_11              ; <float> [#uses=1]
+
+ST_21: tmp1 [4/5] 7.26ns
+bb:69  %tmp1 = fadd float %tmp_18, %tmp_21             ; <float> [#uses=1]
+
+
+ <State 22>: 7.26ns
+ST_22: tmp0 [3/5] 7.26ns
+bb:40  %tmp0 = fadd float %tmp_9, %tmp_11              ; <float> [#uses=1]
+
+ST_22: tmp1 [3/5] 7.26ns
+bb:69  %tmp1 = fadd float %tmp_18, %tmp_21             ; <float> [#uses=1]
+
+
+ <State 23>: 7.26ns
+ST_23: tmp0 [2/5] 7.26ns
+bb:40  %tmp0 = fadd float %tmp_9, %tmp_11              ; <float> [#uses=1]
+
+ST_23: tmp1 [2/5] 7.26ns
+bb:69  %tmp1 = fadd float %tmp_18, %tmp_21             ; <float> [#uses=1]
+
+
+ <State 24>: 7.26ns
+ST_24: tmp0 [1/5] 7.26ns
+bb:40  %tmp0 = fadd float %tmp_9, %tmp_11              ; <float> [#uses=1]
+
+ST_24: tmp1 [1/5] 7.26ns
+bb:69  %tmp1 = fadd float %tmp_18, %tmp_21             ; <float> [#uses=1]
+
+
+ <State 25>: 1.57ns
+ST_25: p_addr_cast1 [1/1] 0.00ns
+bb:5  %p_addr_cast1 = sext i23 %p_addr to i24         ; <i24> [#uses=1]
+
+ST_25: p_addr2_cast1 [1/1] 0.00ns
+bb:18  %p_addr2_cast1 = sext i23 %p_addr2 to i24       ; <i24> [#uses=2]
+
+ST_25: p_addr3_cast1 [1/1] 0.00ns
+bb:32  %p_addr3_cast1 = sext i23 %p_addr3 to i24       ; <i24> [#uses=1]
+
+ST_25: stg_210 [1/1] 1.57ns
+bb:70  br label %bb2
+
+
+ <State 26>: 6.43ns
+ST_26: indvar [1/1] 0.00ns
+bb2:0  %indvar = phi i11 [ %tmp6, %bb1 ], [ 0, %bb ]   ; <i11> [#uses=3]
+
+ST_26: tmp0_2 [1/1] 0.00ns
+bb2:1  %tmp0_2 = phi float [ %tmp2, %bb1 ], [ %tmp1, %bb ] ; <float> [#uses=2]
+
+ST_26: tmp0_1 [1/1] 0.00ns
+bb2:2  %tmp0_1 = phi float [ %tmp0_2, %bb1 ], [ %tmp0, %bb ] ; <float> [#uses=1]
+
+ST_26: tmp6 [1/1] 1.84ns
+bb2:3  %tmp6 = add i11 %indvar, 1                      ; <i11> [#uses=2]
+
+ST_26: j [1/1] 1.84ns
+bb2:4  %j = add i11 %indvar, 2                         ; <i11> [#uses=1]
+
+ST_26: empty [1/1] 0.00ns
+bb2:5  %empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 1918, i64 1918, i64 1918) nounwind ; <i32> [#uses=0]
+
+ST_26: exitcond1 [1/1] 2.11ns
+bb2:6  %exitcond1 = icmp eq i11 %indvar, -130          ; <i1> [#uses=1]
+
+ST_26: stg_218 [1/1] 0.00ns
+bb2:7  br i1 %exitcond1, label %bb4, label %bb1
+
+ST_26: tmp_23_trn5_cast [1/1] 0.00ns
+bb1:0  %tmp_23_trn5_cast = zext i11 %j to i24          ; <i24> [#uses=3]
+
+ST_26: p_addr7 [1/1] 2.20ns
+bb1:1  %p_addr7 = add i24 %p_addr_cast1, %tmp_23_trn5_cast ; <i24> [#uses=1]
+
+ST_26: p_addr7_cast [1/1] 0.00ns
+bb1:2  %p_addr7_cast = sext i24 %p_addr7 to i32        ; <i32> [#uses=1]
+
+ST_26: tmp_53 [1/1] 0.00ns
+bb1:3  %tmp_53 = zext i32 %p_addr7_cast to i64         ; <i64> [#uses=1]
+
+ST_26: in_addr_6 [1/1] 0.00ns
+bb1:4  %in_addr_6 = getelementptr [2073600 x i16]* %in_r, i64 0, i64 %tmp_53 ; <i16*> [#uses=1]
+
+ST_26: in_load_6 [2/2] 2.39ns
+bb1:5  %in_load_6 = load i16* %in_addr_6, align 2      ; <i16> [#uses=1]
+
+ST_26: p_addr4 [1/1] 2.20ns
+bb1:9  %p_addr4 = add i24 %p_addr2_cast1, %tmp_23_trn5_cast ; <i24> [#uses=1]
+
+ST_26: p_addr4_cast [1/1] 0.00ns
+bb1:10  %p_addr4_cast = sext i24 %p_addr4 to i32        ; <i32> [#uses=1]
+
+ST_26: tmp_54 [1/1] 0.00ns
+bb1:11  %tmp_54 = zext i32 %p_addr4_cast to i64         ; <i64> [#uses=1]
+
+ST_26: in_addr_7 [1/1] 0.00ns
+bb1:12  %in_addr_7 = getelementptr [2073600 x i16]* %in_r, i64 0, i64 %tmp_54 ; <i16*> [#uses=1]
+
+ST_26: in_load_7 [2/2] 2.39ns
+bb1:13  %in_load_7 = load i16* %in_addr_7, align 2      ; <i16> [#uses=1]
+
+ST_26: p_addr1 [1/1] 2.20ns
+bb1:18  %p_addr1 = add i24 %p_addr3_cast1, %tmp_23_trn5_cast ; <i24> [#uses=1]
+
+ST_26: tmp_33 [4/4] 5.70ns
+bb1:27  %tmp_33 = fmul float %tmp0_1, 0x3FCF91E640000000 ; <float> [#uses=1]
+
+ST_26: tmp_34 [4/4] 5.70ns
+bb1:28  %tmp_34 = fmul float %tmp0_2, 0x3FE36A2B20000000 ; <float> [#uses=1]
+
+ST_26: tmp_40_trn_cast [1/1] 0.00ns
+bb1:34  %tmp_40_trn_cast = zext i11 %tmp6 to i24        ; <i24> [#uses=1]
+
+ST_26: p_addr9 [1/1] 2.20ns
+bb1:35  %p_addr9 = add i24 %p_addr2_cast1, %tmp_40_trn_cast ; <i24> [#uses=1]
+
+
+ <State 27>: 5.70ns
+ST_27: in_load_6 [1/2] 2.39ns
+bb1:5  %in_load_6 = load i16* %in_addr_6, align 2      ; <i16> [#uses=1]
+
+ST_27: in_load_7 [1/2] 2.39ns
+bb1:13  %in_load_7 = load i16* %in_addr_7, align 2      ; <i16> [#uses=1]
+
+ST_27: p_addr1_cast [1/1] 0.00ns
+bb1:19  %p_addr1_cast = sext i24 %p_addr1 to i32        ; <i32> [#uses=1]
+
+ST_27: tmp_55 [1/1] 0.00ns
+bb1:20  %tmp_55 = zext i32 %p_addr1_cast to i64         ; <i64> [#uses=1]
+
+ST_27: in_addr_8 [1/1] 0.00ns
+bb1:21  %in_addr_8 = getelementptr [2073600 x i16]* %in_r, i64 0, i64 %tmp_55 ; <i16*> [#uses=1]
+
+ST_27: in_load_8 [2/2] 2.39ns
+bb1:22  %in_load_8 = load i16* %in_addr_8, align 2      ; <i16> [#uses=1]
+
+ST_27: tmp_33 [3/4] 5.70ns
+bb1:27  %tmp_33 = fmul float %tmp0_1, 0x3FCF91E640000000 ; <float> [#uses=1]
+
+ST_27: tmp_34 [3/4] 5.70ns
+bb1:28  %tmp_34 = fmul float %tmp0_2, 0x3FE36A2B20000000 ; <float> [#uses=1]
+
+
+ <State 28>: 6.41ns
+ST_28: tmp_22 [1/1] 0.00ns
+bb1:6  %tmp_22 = zext i16 %in_load_6 to i64            ; <i64> [#uses=1]
+
+ST_28: tmp_24 [6/6] 6.41ns
+bb1:7  %tmp_24 = sitofp i64 %tmp_22 to float           ; <float> [#uses=1]
+
+ST_28: tmp_26 [1/1] 0.00ns
+bb1:14  %tmp_26 = zext i16 %in_load_7 to i64            ; <i64> [#uses=1]
+
+ST_28: tmp_27 [6/6] 6.41ns
+bb1:15  %tmp_27 = sitofp i64 %tmp_26 to float           ; <float> [#uses=1]
+
+ST_28: in_load_8 [1/2] 2.39ns
+bb1:22  %in_load_8 = load i16* %in_addr_8, align 2      ; <i16> [#uses=1]
+
+ST_28: tmp_33 [2/4] 5.70ns
+bb1:27  %tmp_33 = fmul float %tmp0_1, 0x3FCF91E640000000 ; <float> [#uses=1]
+
+ST_28: tmp_34 [2/4] 5.70ns
+bb1:28  %tmp_34 = fmul float %tmp0_2, 0x3FE36A2B20000000 ; <float> [#uses=1]
+
+
+ <State 29>: 6.41ns
+ST_29: tmp_24 [5/6] 6.41ns
+bb1:7  %tmp_24 = sitofp i64 %tmp_22 to float           ; <float> [#uses=1]
+
+ST_29: tmp_27 [5/6] 6.41ns
+bb1:15  %tmp_27 = sitofp i64 %tmp_26 to float           ; <float> [#uses=1]
+
+ST_29: tmp_33 [1/4] 5.70ns
+bb1:27  %tmp_33 = fmul float %tmp0_1, 0x3FCF91E640000000 ; <float> [#uses=1]
+
+ST_29: tmp_34 [1/4] 5.70ns
+bb1:28  %tmp_34 = fmul float %tmp0_2, 0x3FE36A2B20000000 ; <float> [#uses=1]
+
+
+ <State 30>: 7.26ns
+ST_30: tmp_24 [4/6] 6.41ns
+bb1:7  %tmp_24 = sitofp i64 %tmp_22 to float           ; <float> [#uses=1]
+
+ST_30: tmp_27 [4/6] 6.41ns
+bb1:15  %tmp_27 = sitofp i64 %tmp_26 to float           ; <float> [#uses=1]
+
+ST_30: tmp_35 [5/5] 7.26ns
+bb1:29  %tmp_35 = fadd float %tmp_33, %tmp_34           ; <float> [#uses=1]
+
+
+ <State 31>: 7.26ns
+ST_31: tmp_24 [3/6] 6.41ns
+bb1:7  %tmp_24 = sitofp i64 %tmp_22 to float           ; <float> [#uses=1]
+
+ST_31: tmp_27 [3/6] 6.41ns
+bb1:15  %tmp_27 = sitofp i64 %tmp_26 to float           ; <float> [#uses=1]
+
+ST_31: tmp_35 [4/5] 7.26ns
+bb1:29  %tmp_35 = fadd float %tmp_33, %tmp_34           ; <float> [#uses=1]
+
+
+ <State 32>: 7.26ns
+ST_32: tmp_24 [2/6] 6.41ns
+bb1:7  %tmp_24 = sitofp i64 %tmp_22 to float           ; <float> [#uses=1]
+
+ST_32: tmp_27 [2/6] 6.41ns
+bb1:15  %tmp_27 = sitofp i64 %tmp_26 to float           ; <float> [#uses=1]
+
+ST_32: tmp_35 [3/5] 7.26ns
+bb1:29  %tmp_35 = fadd float %tmp_33, %tmp_34           ; <float> [#uses=1]
+
+
+ <State 33>: 7.26ns
+ST_33: tmp_24 [1/6] 6.41ns
+bb1:7  %tmp_24 = sitofp i64 %tmp_22 to float           ; <float> [#uses=1]
+
+ST_33: tmp_27 [1/6] 6.41ns
+bb1:15  %tmp_27 = sitofp i64 %tmp_26 to float           ; <float> [#uses=1]
+
+ST_33: tmp_30 [1/1] 0.00ns
+bb1:23  %tmp_30 = zext i16 %in_load_8 to i64            ; <i64> [#uses=1]
+
+ST_33: tmp_31 [6/6] 6.41ns
+bb1:24  %tmp_31 = sitofp i64 %tmp_30 to float           ; <float> [#uses=1]
+
+ST_33: tmp_35 [2/5] 7.26ns
+bb1:29  %tmp_35 = fadd float %tmp_33, %tmp_34           ; <float> [#uses=1]
+
+
+ <State 34>: 7.26ns
+ST_34: tmp_25 [4/4] 5.70ns
+bb1:8  %tmp_25 = fmul float %tmp_24, 0x3FCF91E640000000 ; <float> [#uses=1]
+
+ST_34: tmp_28 [4/4] 5.70ns
+bb1:16  %tmp_28 = fmul float %tmp_27, 0x3FE36A2B20000000 ; <float> [#uses=1]
+
+ST_34: tmp_31 [5/6] 6.41ns
+bb1:24  %tmp_31 = sitofp i64 %tmp_30 to float           ; <float> [#uses=1]
+
+ST_34: tmp_35 [1/5] 7.26ns
+bb1:29  %tmp_35 = fadd float %tmp_33, %tmp_34           ; <float> [#uses=1]
+
+
+ <State 35>: 6.41ns
+ST_35: tmp_25 [3/4] 5.70ns
+bb1:8  %tmp_25 = fmul float %tmp_24, 0x3FCF91E640000000 ; <float> [#uses=1]
+
+ST_35: tmp_28 [3/4] 5.70ns
+bb1:16  %tmp_28 = fmul float %tmp_27, 0x3FE36A2B20000000 ; <float> [#uses=1]
+
+ST_35: tmp_31 [4/6] 6.41ns
+bb1:24  %tmp_31 = sitofp i64 %tmp_30 to float           ; <float> [#uses=1]
+
+
+ <State 36>: 6.41ns
+ST_36: tmp_25 [2/4] 5.70ns
+bb1:8  %tmp_25 = fmul float %tmp_24, 0x3FCF91E640000000 ; <float> [#uses=1]
+
+ST_36: tmp_28 [2/4] 5.70ns
+bb1:16  %tmp_28 = fmul float %tmp_27, 0x3FE36A2B20000000 ; <float> [#uses=1]
+
+ST_36: tmp_31 [3/6] 6.41ns
+bb1:24  %tmp_31 = sitofp i64 %tmp_30 to float           ; <float> [#uses=1]
+
+
+ <State 37>: 6.41ns
+ST_37: tmp_25 [1/4] 5.70ns
+bb1:8  %tmp_25 = fmul float %tmp_24, 0x3FCF91E640000000 ; <float> [#uses=1]
+
+ST_37: tmp_28 [1/4] 5.70ns
+bb1:16  %tmp_28 = fmul float %tmp_27, 0x3FE36A2B20000000 ; <float> [#uses=1]
+
+ST_37: tmp_31 [2/6] 6.41ns
+bb1:24  %tmp_31 = sitofp i64 %tmp_30 to float           ; <float> [#uses=1]
+
+
+ <State 38>: 7.26ns
+ST_38: tmp_29 [5/5] 7.26ns
+bb1:17  %tmp_29 = fadd float %tmp_25, %tmp_28           ; <float> [#uses=1]
+
+ST_38: tmp_31 [1/6] 6.41ns
+bb1:24  %tmp_31 = sitofp i64 %tmp_30 to float           ; <float> [#uses=1]
+
+
+ <State 39>: 7.26ns
+ST_39: tmp_29 [4/5] 7.26ns
+bb1:17  %tmp_29 = fadd float %tmp_25, %tmp_28           ; <float> [#uses=1]
+
+ST_39: tmp_32 [4/4] 5.70ns
+bb1:25  %tmp_32 = fmul float %tmp_31, 0x3FCF91E640000000 ; <float> [#uses=1]
+
+
+ <State 40>: 7.26ns
+ST_40: tmp_29 [3/5] 7.26ns
+bb1:17  %tmp_29 = fadd float %tmp_25, %tmp_28           ; <float> [#uses=1]
+
+ST_40: tmp_32 [3/4] 5.70ns
+bb1:25  %tmp_32 = fmul float %tmp_31, 0x3FCF91E640000000 ; <float> [#uses=1]
+
+
+ <State 41>: 7.26ns
+ST_41: tmp_29 [2/5] 7.26ns
+bb1:17  %tmp_29 = fadd float %tmp_25, %tmp_28           ; <float> [#uses=1]
+
+ST_41: tmp_32 [2/4] 5.70ns
+bb1:25  %tmp_32 = fmul float %tmp_31, 0x3FCF91E640000000 ; <float> [#uses=1]
+
+
+ <State 42>: 7.26ns
+ST_42: tmp_29 [1/5] 7.26ns
+bb1:17  %tmp_29 = fadd float %tmp_25, %tmp_28           ; <float> [#uses=1]
+
+ST_42: tmp_32 [1/4] 5.70ns
+bb1:25  %tmp_32 = fmul float %tmp_31, 0x3FCF91E640000000 ; <float> [#uses=1]
+
+
+ <State 43>: 7.26ns
+ST_43: tmp2 [5/5] 7.26ns
+bb1:26  %tmp2 = fadd float %tmp_29, %tmp_32             ; <float> [#uses=2]
+
+
+ <State 44>: 7.26ns
+ST_44: tmp2 [4/5] 7.26ns
+bb1:26  %tmp2 = fadd float %tmp_29, %tmp_32             ; <float> [#uses=2]
+
+
+ <State 45>: 7.26ns
+ST_45: tmp2 [3/5] 7.26ns
+bb1:26  %tmp2 = fadd float %tmp_29, %tmp_32             ; <float> [#uses=2]
+
+
+ <State 46>: 7.26ns
+ST_46: tmp2 [2/5] 7.26ns
+bb1:26  %tmp2 = fadd float %tmp_29, %tmp_32             ; <float> [#uses=2]
+
+
+ <State 47>: 7.26ns
+ST_47: tmp2 [1/5] 7.26ns
+bb1:26  %tmp2 = fadd float %tmp_29, %tmp_32             ; <float> [#uses=2]
+
+
+ <State 48>: 5.70ns
+ST_48: tmp_36 [4/4] 5.70ns
+bb1:30  %tmp_36 = fmul float %tmp2, 0x3FCF91E640000000  ; <float> [#uses=1]
+
+
+ <State 49>: 5.70ns
+ST_49: tmp_36 [3/4] 5.70ns
+bb1:30  %tmp_36 = fmul float %tmp2, 0x3FCF91E640000000  ; <float> [#uses=1]
+
+
+ <State 50>: 5.70ns
+ST_50: tmp_36 [2/4] 5.70ns
+bb1:30  %tmp_36 = fmul float %tmp2, 0x3FCF91E640000000  ; <float> [#uses=1]
+
+
+ <State 51>: 5.70ns
+ST_51: tmp_36 [1/4] 5.70ns
+bb1:30  %tmp_36 = fmul float %tmp2, 0x3FCF91E640000000  ; <float> [#uses=1]
+
+
+ <State 52>: 7.26ns
+ST_52: tmp_37 [5/5] 7.26ns
+bb1:31  %tmp_37 = fadd float %tmp_35, %tmp_36           ; <float> [#uses=1]
+
+
+ <State 53>: 7.26ns
+ST_53: tmp_37 [4/5] 7.26ns
+bb1:31  %tmp_37 = fadd float %tmp_35, %tmp_36           ; <float> [#uses=1]
+
+
+ <State 54>: 7.26ns
+ST_54: tmp_37 [3/5] 7.26ns
+bb1:31  %tmp_37 = fadd float %tmp_35, %tmp_36           ; <float> [#uses=1]
+
+
+ <State 55>: 7.26ns
+ST_55: tmp_37 [2/5] 7.26ns
+bb1:31  %tmp_37 = fadd float %tmp_35, %tmp_36           ; <float> [#uses=1]
+
+
+ <State 56>: 7.26ns
+ST_56: tmp_37 [1/5] 7.26ns
+bb1:31  %tmp_37 = fadd float %tmp_35, %tmp_36           ; <float> [#uses=1]
+
+
+ <State 57>: 6.49ns
+ST_57: tmp_38 [4/4] 6.49ns
+bb1:32  %tmp_38 = fptoui float %tmp_37 to i64           ; <i64> [#uses=1]
+
+
+ <State 58>: 6.49ns
+ST_58: tmp_38 [3/4] 6.49ns
+bb1:32  %tmp_38 = fptoui float %tmp_37 to i64           ; <i64> [#uses=1]
+
+
+ <State 59>: 6.49ns
+ST_59: tmp_38 [2/4] 6.49ns
+bb1:32  %tmp_38 = fptoui float %tmp_37 to i64           ; <i64> [#uses=1]
+
+
+ <State 60>: 6.49ns
+ST_60: tmp_38 [1/4] 6.49ns
+bb1:32  %tmp_38 = fptoui float %tmp_37 to i64           ; <i64> [#uses=1]
+
+ST_60: tmp_58 [1/1] 0.00ns
+bb1:33  %tmp_58 = trunc i64 %tmp_38 to i16              ; <i16> [#uses=1]
+
+
+ <State 61>: 2.39ns
+ST_61: p_addr9_cast [1/1] 0.00ns
+bb1:36  %p_addr9_cast = sext i24 %p_addr9 to i32        ; <i32> [#uses=1]
+
+ST_61: tmp_56 [1/1] 0.00ns
+bb1:37  %tmp_56 = zext i32 %p_addr9_cast to i64         ; <i64> [#uses=1]
+
+ST_61: out_addr [1/1] 0.00ns
+bb1:38  %out_addr = getelementptr [2073600 x i16]* %out_r, i64 0, i64 %tmp_56 ; <i16*> [#uses=1]
+
+ST_61: stg_313 [1/1] 2.39ns
+bb1:39  store i16 %tmp_58, i16* %out_addr, align 2
+
+ST_61: stg_314 [1/1] 0.00ns
+bb1:40  br label %bb2
+
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+	State 27
+	State 28
+	State 29
+	State 30
+	State 31
+	State 32
+	State 33
+	State 34
+	State 35
+	State 36
+	State 37
+	State 38
+	State 39
+	State 40
+	State 41
+	State 42
+	State 43
+	State 44
+	State 45
+	State 46
+	State 47
+	State 48
+	State 49
+	State 50
+	State 51
+	State 52
+	State 53
+	State 54
+	State 55
+	State 56
+	State 57
+	State 58
+	State 59
+	State 60
+	State 61
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

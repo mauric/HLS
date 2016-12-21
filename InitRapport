@@ -52,6 +52,8 @@ Vous	pouvez	vous	aider	de	la	perspective	d’analyse	(bouton	«	Analysis	»	en	h
 1. Modifier	votre	implémentation	afin	de	ne	lire	chaque	donnée	qu’une	seule	fois	
 («	gaussian_caching.cpp	»).		On	pourra	utiliser	un	tableau	de	taille	adéquate,	soigneusement	
 géré.	
+en voyant que l'acces memoire est cher on va tout mettre dans une cache pour reduire le temps d'acces 
+pour pouvoir ;;;
 2. Synthétisez	et	analysez	votre	design.	Quelle	est	l’influence	sur	le	pipeline,	et	pourquoi	?	La	
 contrainte	de	performances	semble-t-elle	désormais	respectée	?	A	quoi	attribuez-vous	ce	
 paradoxe	?	
@@ -75,6 +77,8 @@ suivants	:
 3. Relancez	la	synthèse.	Que	constatez-vous	?	
 4. En	analysant	soigneusement	les	rapports	de	synthèse,	l’ordonnancement	et	les	ressources	
 utilisées,	expliquez	l’effet	de	la	directive	«	ARRAY_PARTITION	».	
+Nous permet de mieux gerer l'acces memoire. va mettre intelligement dand DBRAM pour avoir 
+acces simultanees
 5. Quel	est	la	fréquence	maximale	atteignable	sans	risque	de	violation	de	timing	?	Avez-vous	enfin	
 atteint	votre	but	?	
 //---------------------------------------------------------------------------//
