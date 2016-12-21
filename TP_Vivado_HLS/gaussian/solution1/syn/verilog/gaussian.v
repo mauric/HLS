@@ -7,7 +7,7 @@
 
 `timescale 1 ns / 1 ps 
 
-(* CORE_GENERATION_INFO="gaussian,hls_ip_2013_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z010clg400-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=8.092000,HLS_SYN_LAT=89037599,HLS_SYN_TPT=none,HLS_SYN_MEM=4064,HLS_SYN_DSP=8,HLS_SYN_FF=1832,HLS_SYN_LUT=3176}" *)
+(* CORE_GENERATION_INFO="gaussian,hls_ip_2013_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z010clg400-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=7.256000,HLS_SYN_LAT=74529769,HLS_SYN_TPT=none,HLS_SYN_MEM=0,HLS_SYN_DSP=16,HLS_SYN_FF=3346,HLS_SYN_LUT=5336}" *)
 
 module gaussian (
         ap_clk,
@@ -53,21 +53,21 @@ reg in_r_ce1;
 reg out_r_ce0;
 reg out_r_we0;
 reg   [0:0] ap_CS_fsm = 1'b0;
-wire    grp_gaussian_sep_fu_17_ap_start;
-wire    grp_gaussian_sep_fu_17_ap_done;
-wire    grp_gaussian_sep_fu_17_ap_idle;
-wire    grp_gaussian_sep_fu_17_ap_ready;
-wire   [20:0] grp_gaussian_sep_fu_17_in_r_address0;
-wire    grp_gaussian_sep_fu_17_in_r_ce0;
-wire   [15:0] grp_gaussian_sep_fu_17_in_r_q0;
-wire   [20:0] grp_gaussian_sep_fu_17_in_r_address1;
-wire    grp_gaussian_sep_fu_17_in_r_ce1;
-wire   [15:0] grp_gaussian_sep_fu_17_in_r_q1;
-wire   [20:0] grp_gaussian_sep_fu_17_out_r_address0;
-wire    grp_gaussian_sep_fu_17_out_r_ce0;
-wire    grp_gaussian_sep_fu_17_out_r_we0;
-wire   [15:0] grp_gaussian_sep_fu_17_out_r_d0;
-reg    grp_gaussian_sep_fu_17_ap_start_ap_start_reg = 1'b0;
+wire    grp_gaussian_scalarized_fu_15_ap_start;
+wire    grp_gaussian_scalarized_fu_15_ap_done;
+wire    grp_gaussian_scalarized_fu_15_ap_idle;
+wire    grp_gaussian_scalarized_fu_15_ap_ready;
+wire   [20:0] grp_gaussian_scalarized_fu_15_in_r_address0;
+wire    grp_gaussian_scalarized_fu_15_in_r_ce0;
+wire   [15:0] grp_gaussian_scalarized_fu_15_in_r_q0;
+wire   [20:0] grp_gaussian_scalarized_fu_15_in_r_address1;
+wire    grp_gaussian_scalarized_fu_15_in_r_ce1;
+wire   [15:0] grp_gaussian_scalarized_fu_15_in_r_q1;
+wire   [20:0] grp_gaussian_scalarized_fu_15_out_r_address0;
+wire    grp_gaussian_scalarized_fu_15_out_r_ce0;
+wire    grp_gaussian_scalarized_fu_15_out_r_we0;
+wire   [15:0] grp_gaussian_scalarized_fu_15_out_r_d0;
+reg    grp_gaussian_scalarized_fu_15_ap_start_ap_start_reg = 1'b0;
 reg   [0:0] ap_NS_fsm;
 parameter    ap_const_logic_1 = 1'b1;
 parameter    ap_const_logic_0 = 1'b0;
@@ -76,23 +76,23 @@ parameter    ap_ST_st2_fsm_1 = 1'b1;
 parameter    ap_true = 1'b1;
 
 
-gaussian_sep grp_gaussian_sep_fu_17(
+gaussian_scalarized grp_gaussian_scalarized_fu_15(
     .ap_clk( ap_clk ),
     .ap_rst( ap_rst ),
-    .ap_start( grp_gaussian_sep_fu_17_ap_start ),
-    .ap_done( grp_gaussian_sep_fu_17_ap_done ),
-    .ap_idle( grp_gaussian_sep_fu_17_ap_idle ),
-    .ap_ready( grp_gaussian_sep_fu_17_ap_ready ),
-    .in_r_address0( grp_gaussian_sep_fu_17_in_r_address0 ),
-    .in_r_ce0( grp_gaussian_sep_fu_17_in_r_ce0 ),
-    .in_r_q0( grp_gaussian_sep_fu_17_in_r_q0 ),
-    .in_r_address1( grp_gaussian_sep_fu_17_in_r_address1 ),
-    .in_r_ce1( grp_gaussian_sep_fu_17_in_r_ce1 ),
-    .in_r_q1( grp_gaussian_sep_fu_17_in_r_q1 ),
-    .out_r_address0( grp_gaussian_sep_fu_17_out_r_address0 ),
-    .out_r_ce0( grp_gaussian_sep_fu_17_out_r_ce0 ),
-    .out_r_we0( grp_gaussian_sep_fu_17_out_r_we0 ),
-    .out_r_d0( grp_gaussian_sep_fu_17_out_r_d0 )
+    .ap_start( grp_gaussian_scalarized_fu_15_ap_start ),
+    .ap_done( grp_gaussian_scalarized_fu_15_ap_done ),
+    .ap_idle( grp_gaussian_scalarized_fu_15_ap_idle ),
+    .ap_ready( grp_gaussian_scalarized_fu_15_ap_ready ),
+    .in_r_address0( grp_gaussian_scalarized_fu_15_in_r_address0 ),
+    .in_r_ce0( grp_gaussian_scalarized_fu_15_in_r_ce0 ),
+    .in_r_q0( grp_gaussian_scalarized_fu_15_in_r_q0 ),
+    .in_r_address1( grp_gaussian_scalarized_fu_15_in_r_address1 ),
+    .in_r_ce1( grp_gaussian_scalarized_fu_15_in_r_ce1 ),
+    .in_r_q1( grp_gaussian_scalarized_fu_15_in_r_q1 ),
+    .out_r_address0( grp_gaussian_scalarized_fu_15_out_r_address0 ),
+    .out_r_ce0( grp_gaussian_scalarized_fu_15_out_r_ce0 ),
+    .out_r_we0( grp_gaussian_scalarized_fu_15_out_r_we0 ),
+    .out_r_d0( grp_gaussian_scalarized_fu_15_out_r_d0 )
 );
 
 
@@ -107,24 +107,24 @@ begin : ap_ret_ap_CS_fsm
     end
 end
 
-/// grp_gaussian_sep_fu_17_ap_start_ap_start_reg assign process. ///
+/// grp_gaussian_scalarized_fu_15_ap_start_ap_start_reg assign process. ///
 always @ (posedge ap_clk)
-begin : ap_ret_grp_gaussian_sep_fu_17_ap_start_ap_start_reg
+begin : ap_ret_grp_gaussian_scalarized_fu_15_ap_start_ap_start_reg
     if (ap_rst == 1'b1) begin
-        grp_gaussian_sep_fu_17_ap_start_ap_start_reg <= ap_const_logic_0;
+        grp_gaussian_scalarized_fu_15_ap_start_ap_start_reg <= ap_const_logic_0;
     end else begin
         if (((ap_ST_st1_fsm_0 == ap_CS_fsm) & ~(ap_start == ap_const_logic_0))) begin
-            grp_gaussian_sep_fu_17_ap_start_ap_start_reg <= ap_const_logic_1;
-        end else if ((ap_const_logic_1 == grp_gaussian_sep_fu_17_ap_ready)) begin
-            grp_gaussian_sep_fu_17_ap_start_ap_start_reg <= ap_const_logic_0;
+            grp_gaussian_scalarized_fu_15_ap_start_ap_start_reg <= ap_const_logic_1;
+        end else if ((ap_const_logic_1 == grp_gaussian_scalarized_fu_15_ap_ready)) begin
+            grp_gaussian_scalarized_fu_15_ap_start_ap_start_reg <= ap_const_logic_0;
         end
     end
 end
 
 /// ap_done assign process. ///
-always @ (ap_CS_fsm or grp_gaussian_sep_fu_17_ap_done)
+always @ (ap_CS_fsm or grp_gaussian_scalarized_fu_15_ap_done)
 begin
-    if (((ap_ST_st2_fsm_1 == ap_CS_fsm) & ~(ap_const_logic_0 == grp_gaussian_sep_fu_17_ap_done))) begin
+    if (((ap_ST_st2_fsm_1 == ap_CS_fsm) & ~(ap_const_logic_0 == grp_gaussian_scalarized_fu_15_ap_done))) begin
         ap_done = ap_const_logic_1;
     end else begin
         ap_done = ap_const_logic_0;
@@ -142,9 +142,9 @@ begin
 end
 
 /// ap_ready assign process. ///
-always @ (ap_CS_fsm or grp_gaussian_sep_fu_17_ap_done)
+always @ (ap_CS_fsm or grp_gaussian_scalarized_fu_15_ap_done)
 begin
-    if (((ap_ST_st2_fsm_1 == ap_CS_fsm) & ~(ap_const_logic_0 == grp_gaussian_sep_fu_17_ap_done))) begin
+    if (((ap_ST_st2_fsm_1 == ap_CS_fsm) & ~(ap_const_logic_0 == grp_gaussian_scalarized_fu_15_ap_done))) begin
         ap_ready = ap_const_logic_1;
     end else begin
         ap_ready = ap_const_logic_0;
@@ -152,45 +152,45 @@ begin
 end
 
 /// in_r_ce0 assign process. ///
-always @ (ap_CS_fsm or grp_gaussian_sep_fu_17_in_r_ce0)
+always @ (ap_CS_fsm or grp_gaussian_scalarized_fu_15_in_r_ce0)
 begin
     if ((ap_ST_st2_fsm_1 == ap_CS_fsm)) begin
-        in_r_ce0 = grp_gaussian_sep_fu_17_in_r_ce0;
+        in_r_ce0 = grp_gaussian_scalarized_fu_15_in_r_ce0;
     end else begin
         in_r_ce0 = ap_const_logic_0;
     end
 end
 
 /// in_r_ce1 assign process. ///
-always @ (ap_CS_fsm or grp_gaussian_sep_fu_17_in_r_ce1)
+always @ (ap_CS_fsm or grp_gaussian_scalarized_fu_15_in_r_ce1)
 begin
     if ((ap_ST_st2_fsm_1 == ap_CS_fsm)) begin
-        in_r_ce1 = grp_gaussian_sep_fu_17_in_r_ce1;
+        in_r_ce1 = grp_gaussian_scalarized_fu_15_in_r_ce1;
     end else begin
         in_r_ce1 = ap_const_logic_0;
     end
 end
 
 /// out_r_ce0 assign process. ///
-always @ (ap_CS_fsm or grp_gaussian_sep_fu_17_out_r_ce0)
+always @ (ap_CS_fsm or grp_gaussian_scalarized_fu_15_out_r_ce0)
 begin
     if ((ap_ST_st2_fsm_1 == ap_CS_fsm)) begin
-        out_r_ce0 = grp_gaussian_sep_fu_17_out_r_ce0;
+        out_r_ce0 = grp_gaussian_scalarized_fu_15_out_r_ce0;
     end else begin
         out_r_ce0 = ap_const_logic_0;
     end
 end
 
 /// out_r_we0 assign process. ///
-always @ (ap_CS_fsm or grp_gaussian_sep_fu_17_out_r_we0)
+always @ (ap_CS_fsm or grp_gaussian_scalarized_fu_15_out_r_we0)
 begin
     if ((ap_ST_st2_fsm_1 == ap_CS_fsm)) begin
-        out_r_we0 = grp_gaussian_sep_fu_17_out_r_we0;
+        out_r_we0 = grp_gaussian_scalarized_fu_15_out_r_we0;
     end else begin
         out_r_we0 = ap_const_logic_0;
     end
 end
-always @ (ap_start or ap_CS_fsm or grp_gaussian_sep_fu_17_ap_done)
+always @ (ap_start or ap_CS_fsm or grp_gaussian_scalarized_fu_15_ap_done)
 begin
     case (ap_CS_fsm)
         ap_ST_st1_fsm_0 : 
@@ -200,7 +200,7 @@ begin
                 ap_NS_fsm = ap_ST_st1_fsm_0;
             end
         ap_ST_st2_fsm_1 : 
-            if (~(ap_const_logic_0 == grp_gaussian_sep_fu_17_ap_done)) begin
+            if (~(ap_const_logic_0 == grp_gaussian_scalarized_fu_15_ap_done)) begin
                 ap_NS_fsm = ap_ST_st1_fsm_0;
             end else begin
                 ap_NS_fsm = ap_ST_st2_fsm_1;
@@ -209,13 +209,13 @@ begin
             ap_NS_fsm = 'bx;
     endcase
 end
-assign grp_gaussian_sep_fu_17_ap_start = grp_gaussian_sep_fu_17_ap_start_ap_start_reg;
-assign grp_gaussian_sep_fu_17_in_r_q0 = in_r_q0;
-assign grp_gaussian_sep_fu_17_in_r_q1 = in_r_q1;
-assign in_r_address0 = grp_gaussian_sep_fu_17_in_r_address0;
-assign in_r_address1 = grp_gaussian_sep_fu_17_in_r_address1;
-assign out_r_address0 = grp_gaussian_sep_fu_17_out_r_address0;
-assign out_r_d0 = grp_gaussian_sep_fu_17_out_r_d0;
+assign grp_gaussian_scalarized_fu_15_ap_start = grp_gaussian_scalarized_fu_15_ap_start_ap_start_reg;
+assign grp_gaussian_scalarized_fu_15_in_r_q0 = in_r_q0;
+assign grp_gaussian_scalarized_fu_15_in_r_q1 = in_r_q1;
+assign in_r_address0 = grp_gaussian_scalarized_fu_15_in_r_address0;
+assign in_r_address1 = grp_gaussian_scalarized_fu_15_in_r_address1;
+assign out_r_address0 = grp_gaussian_scalarized_fu_15_out_r_address0;
+assign out_r_d0 = grp_gaussian_scalarized_fu_15_out_r_d0;
 
 
 endmodule //gaussian

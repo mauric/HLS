@@ -1,0 +1,1715 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1481626830000">
+  <ports id="1" name="in_r" type="PortType" originalName="in" coreName="RAM" bitwidth="16" iftype="IfTypeRam" arraysize="2073600">
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+  </ports>
+  <ports id="2" name="out_r" type="PortType" originalName="out" coreName="RAM" bitwidth="16" direction="DirOut" iftype="IfTypeRam" arraysize="2073600"/>
+  <edges id="137" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="162" source_obj="//@blocks.2/@node_objs.2" sink_obj="//@blocks.2/@node_objs.3"/>
+  <edges id="184" source_obj="//@blocks.2/@node_objs.6" sink_obj="//@blocks.2/@node_objs.7"/>
+  <edges id="187" source_obj="//@blocks.2/@node_objs.3" sink_obj="//@blocks.2/@node_objs.8"/>
+  <edges id="188" source_obj="//@blocks.2/@node_objs.7" sink_obj="//@blocks.2/@node_objs.8"/>
+  <edges id="208" source_obj="//@blocks.2/@node_objs.11" sink_obj="//@blocks.2/@node_objs.12"/>
+  <edges id="210" source_obj="//@blocks.2/@node_objs.8" sink_obj="//@blocks.2/@node_objs.13"/>
+  <edges id="211" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@blocks.2/@node_objs.13"/>
+  <edges id="232" source_obj="//@blocks.2/@node_objs.15" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="249" source_obj="//@blocks.2/@node_objs.18" sink_obj="//@blocks.2/@node_objs.19"/>
+  <edges id="251" source_obj="//@blocks.2/@node_objs.16" sink_obj="//@blocks.2/@node_objs.20"/>
+  <edges id="252" source_obj="//@blocks.2/@node_objs.19" sink_obj="//@blocks.2/@node_objs.20"/>
+  <edges id="268" source_obj="//@blocks.2/@node_objs.22" sink_obj="//@blocks.2/@node_objs.23"/>
+  <edges id="270" source_obj="//@blocks.2/@node_objs.20" sink_obj="//@blocks.2/@node_objs.24"/>
+  <edges id="271" source_obj="//@blocks.2/@node_objs.23" sink_obj="//@blocks.2/@node_objs.24"/>
+  <edges id="272" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.2/@node_objs.25"/>
+  <edges id="284" source_obj="//@blocks.4/@node_objs.2" sink_obj="//@blocks.4/@node_objs.3"/>
+  <edges id="296" source_obj="//@blocks.4/@node_objs.6" sink_obj="//@blocks.4/@node_objs.7"/>
+  <edges id="298" source_obj="//@blocks.4/@node_objs.3" sink_obj="//@blocks.4/@node_objs.8"/>
+  <edges id="299" source_obj="//@blocks.4/@node_objs.7" sink_obj="//@blocks.4/@node_objs.8"/>
+  <edges id="310" source_obj="//@blocks.4/@node_objs.11" sink_obj="//@blocks.4/@node_objs.12"/>
+  <edges id="312" source_obj="//@blocks.4/@node_objs.8" sink_obj="//@blocks.4/@node_objs.13"/>
+  <edges id="313" source_obj="//@blocks.4/@node_objs.12" sink_obj="//@blocks.4/@node_objs.13"/>
+  <edges id="314" source_obj="//@blocks.3/@node_objs.2" sink_obj="//@blocks.4/@node_objs.14"/>
+  <edges id="316" source_obj="//@blocks.3/@node_objs.1" sink_obj="//@blocks.4/@node_objs.15"/>
+  <edges id="318" source_obj="//@blocks.4/@node_objs.14" sink_obj="//@blocks.4/@node_objs.16"/>
+  <edges id="319" source_obj="//@blocks.4/@node_objs.15" sink_obj="//@blocks.4/@node_objs.16"/>
+  <edges id="320" source_obj="//@blocks.4/@node_objs.13" sink_obj="//@blocks.4/@node_objs.17"/>
+  <edges id="322" source_obj="//@blocks.4/@node_objs.16" sink_obj="//@blocks.4/@node_objs.18"/>
+  <edges id="323" source_obj="//@blocks.4/@node_objs.17" sink_obj="//@blocks.4/@node_objs.18"/>
+  <edges id="324" source_obj="//@blocks.4/@node_objs.18" sink_obj="//@blocks.4/@node_objs.19"/>
+  <edges id="336" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.4/@node_objs.22"/>
+  <edges id="337" source_obj="//@blocks.3/@node_objs.3" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="338" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="340" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="341" source_obj="//@blocks.4/@node_objs.13" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="342" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="343" source_obj="//@blocks.2/@node_objs.24" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="344" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="345" source_obj="//@blocks.3/@node_objs.1" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="346" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="347" source_obj="//@blocks.2/@node_objs.13" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="348" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="349" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.3/@node_objs.3"/>
+  <edges id="352" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.3/@node_objs.4"/>
+  <edges id="355" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.3/@node_objs.5"/>
+  <edges id="358" source_obj="//@blocks.3/@node_objs.5" sink_obj="//@blocks.3/@node_objs.6"/>
+  <edges id="359" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.3/@node_objs.6"/>
+  <edges id="360" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.3/@node_objs.6"/>
+  <edges id="362" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="363" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="364" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="365" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="367" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.2"/>
+  <edges id="369" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="372" source_obj="//@blocks.1/@node_objs.3" sink_obj="//@blocks.1/@node_objs.4"/>
+  <edges id="373" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1/@node_objs.4"/>
+  <edges id="374" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.1/@node_objs.4"/>
+  <edges id="386" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="387" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.5"/>
+  <edges id="388" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2"/>
+  <edges id="389" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.3"/>
+  <edges id="390" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.1"/>
+  <edges id="391" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.4"/>
+  <edges id="392" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.3"/>
+  <edges id="-1" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="-1" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="-1" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="-1" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="-1" source_obj="//@ports.0" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="-1" source_obj="//@blocks.2/@node_objs.1" sink_obj="//@blocks.2/@node_objs.2"/>
+  <edges id="-1" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.2/@node_objs.4"/>
+  <edges id="-1" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.2/@node_objs.4"/>
+  <edges id="-1" source_obj="//@blocks.2/@node_objs.4" sink_obj="//@blocks.4/@node_objs.4"/>
+  <edges id="-1" source_obj="//@blocks.2/@node_objs.4" sink_obj="//@blocks.4/@node_objs.20"/>
+  <edges id="-1" source_obj="//@blocks.2/@node_objs.4" sink_obj="//@blocks.2/@node_objs.5"/>
+  <edges id="-1" source_obj="//@ports.0" sink_obj="//@blocks.2/@node_objs.5"/>
+  <edges id="-1" source_obj="//@blocks.2/@node_objs.5" sink_obj="//@blocks.2/@node_objs.6"/>
+  <edges id="-1" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.2/@node_objs.9"/>
+  <edges id="-1" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.2/@node_objs.9"/>
+  <edges id="-1" source_obj="//@blocks.2/@node_objs.9" sink_obj="//@blocks.4/@node_objs.9"/>
+  <edges id="-1" source_obj="//@blocks.2/@node_objs.9" sink_obj="//@blocks.2/@node_objs.10"/>
+  <edges id="-1" source_obj="//@ports.0" sink_obj="//@blocks.2/@node_objs.10"/>
+  <edges id="-1" source_obj="//@blocks.2/@node_objs.10" sink_obj="//@blocks.2/@node_objs.11"/>
+  <edges id="-1" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.14"/>
+  <edges id="-1" source_obj="//@ports.0" sink_obj="//@blocks.2/@node_objs.14"/>
+  <edges id="-1" source_obj="//@blocks.2/@node_objs.14" sink_obj="//@blocks.2/@node_objs.15"/>
+  <edges id="-1" source_obj="//@blocks.2/@node_objs.4" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="-1" source_obj="//@ports.0" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="-1" source_obj="//@blocks.2/@node_objs.17" sink_obj="//@blocks.2/@node_objs.18"/>
+  <edges id="-1" source_obj="//@blocks.2/@node_objs.9" sink_obj="//@blocks.2/@node_objs.21"/>
+  <edges id="-1" source_obj="//@ports.0" sink_obj="//@blocks.2/@node_objs.21"/>
+  <edges id="-1" source_obj="//@blocks.2/@node_objs.21" sink_obj="//@blocks.2/@node_objs.22"/>
+  <edges id="-1" source_obj="//@blocks.3/@node_objs.4" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="-1" source_obj="//@blocks.3/@node_objs.4" sink_obj="//@blocks.4/@node_objs.4"/>
+  <edges id="-1" source_obj="//@blocks.3/@node_objs.4" sink_obj="//@blocks.4/@node_objs.9"/>
+  <edges id="-1" source_obj="//@blocks.4/@node_objs.0" sink_obj="//@blocks.4/@node_objs.1"/>
+  <edges id="-1" source_obj="//@ports.0" sink_obj="//@blocks.4/@node_objs.1"/>
+  <edges id="-1" source_obj="//@blocks.4/@node_objs.1" sink_obj="//@blocks.4/@node_objs.2"/>
+  <edges id="-1" source_obj="//@blocks.4/@node_objs.4" sink_obj="//@blocks.4/@node_objs.5"/>
+  <edges id="-1" source_obj="//@ports.0" sink_obj="//@blocks.4/@node_objs.5"/>
+  <edges id="-1" source_obj="//@blocks.4/@node_objs.5" sink_obj="//@blocks.4/@node_objs.6"/>
+  <edges id="-1" source_obj="//@blocks.4/@node_objs.9" sink_obj="//@blocks.4/@node_objs.10"/>
+  <edges id="-1" source_obj="//@ports.0" sink_obj="//@blocks.4/@node_objs.10"/>
+  <edges id="-1" source_obj="//@blocks.4/@node_objs.10" sink_obj="//@blocks.4/@node_objs.11"/>
+  <edges id="-1" source_obj="//@blocks.4/@node_objs.19" sink_obj="//@blocks.4/@node_objs.21"/>
+  <edges id="-1" source_obj="//@blocks.3/@node_objs.3" sink_obj="//@blocks.4/@node_objs.20"/>
+  <edges id="-1" source_obj="//@blocks.4/@node_objs.20" sink_obj="//@blocks.4/@node_objs.21"/>
+  <blocks id="4" name="entry" type="BlockType">
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>bb4</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="3" name="node_3" lineNumber="21" fileName="gaussian_scalarized.cpp" fileDirectory="../src" contextFuncName="gaussian_scalarized" opcode="br">
+      <inlineStackInfo fileName="gaussian_scalarized.cpp" linenumber="21" fileDirectory="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src" functionName="gaussian_scalarized"/>
+      <controlInputObjs>bb4</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="gaussian_scalarized.cpp">
+      <validLinenumbers>21</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="11" name="bb4" type="BlockType">
+    <controlInputObjs>entry</controlInputObjs>
+    <controlInputObjs>bb2</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>return</controlOutputObjs>
+    <controlOutputObjs>bb</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="5" name="indvar1" originalName="i" bitwidth="11" opcode="phi" nodeLabel="1">
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+      <controlInputObjs>entry</controlInputObjs>
+      <controlInputObjs>bb2</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="6" name="tmp" lineNumber="22" fileName="gaussian_scalarized.cpp" fileDirectory="../src" rtlName="tmp_fu_278_p2" contextFuncName="gaussian_scalarized" bitwidth="11" opcode="add" nodeLabel="1">
+      <inlineStackInfo fileName="gaussian_scalarized.cpp" linenumber="22" fileDirectory="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src" functionName="gaussian_scalarized"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="7" name="i" lineNumber="21" originalName="i" fileName="gaussian_scalarized.cpp" fileDirectory="../src" rtlName="i_fu_284_p2" contextFuncName="gaussian_scalarized" bitwidth="11" opcode="add" nodeLabel="1">
+      <inlineStackInfo fileName="gaussian_scalarized.cpp" linenumber="21" fileDirectory="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src" functionName="gaussian_scalarized"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="exitcond" lineNumber="21" fileName="gaussian_scalarized.cpp" fileDirectory="../src" rtlName="exitcond_fu_290_p2" contextFuncName="gaussian_scalarized" bitwidth="1" opcode="icmp" nodeLabel="1">
+      <inlineStackInfo fileName="gaussian_scalarized.cpp" linenumber="21" fileDirectory="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src" functionName="gaussian_scalarized"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="10" name="node_10" lineNumber="21" fileName="gaussian_scalarized.cpp" fileDirectory="../src" contextFuncName="gaussian_scalarized" opcode="br" nodeLabel="1">
+      <inlineStackInfo fileName="gaussian_scalarized.cpp" linenumber="21" fileDirectory="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src" functionName="gaussian_scalarized"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>bb</controlInputObjs>
+      <controlInputObjs>return</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="gaussian_scalarized.cpp">
+      <validLinenumbers>22</validLinenumbers>
+      <validLinenumbers>21</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="83" name="bb" type="BlockType">
+    <controlInputObjs>bb4</controlInputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>bb2</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="p_addr" lineNumber="22" fileName="gaussian_scalarized.cpp" fileDirectory="../src" rtlName="p_addr_fu_320_p2" contextFuncName="gaussian_scalarized" bitwidth="23" opcode="sub" nodeLabel="1">
+      <inlineStackInfo fileName="gaussian_scalarized.cpp" linenumber="22" fileDirectory="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src" functionName="gaussian_scalarized"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="in_load" lineNumber="22" fileName="gaussian_scalarized.cpp" fileDirectory="../src" contextFuncName="gaussian_scalarized" bitwidth="16" opcode="load" nodeLabel="1" nodeLatency="1">
+      <inlineStackInfo fileName="gaussian_scalarized.cpp" linenumber="22" fileDirectory="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src" functionName="gaussian_scalarized"/>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataInputObjs>in_r</dataInputObjs>
+      <dataOutputObjs>sitofp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="23" name="tmp_3" lineNumber="22" fileName="gaussian_scalarized.cpp" fileDirectory="../src" rtlName="gaussian_sitofp_64ns_32_6_U8" contextFuncName="gaussian_scalarized" bitwidth="32" opcode="sitofp" nodeLabel="4" nodeLatency="5">
+      <inlineStackInfo fileName="gaussian_scalarized.cpp" linenumber="22" fileDirectory="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src" functionName="gaussian_scalarized"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>fmul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="tmp_4" lineNumber="22" fileName="gaussian_scalarized.cpp" fileDirectory="../src" rtlName="gaussian_fmul_32ns_32ns_32_4_max_dsp_U3" contextFuncName="gaussian_scalarized" bitwidth="32" opcode="fmul" nodeLabel="10" nodeLatency="3">
+      <inlineStackInfo fileName="gaussian_scalarized.cpp" linenumber="22" fileDirectory="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src" functionName="gaussian_scalarized"/>
+      <dataInputObjs>sitofp</dataInputObjs>
+      <dataOutputObjs>fadd</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="p_addr2" lineNumber="22" fileName="gaussian_scalarized.cpp" fileDirectory="../src" rtlName="p_addr2_fu_359_p2" contextFuncName="gaussian_scalarized" bitwidth="23" opcode="sub" nodeLabel="1">
+      <inlineStackInfo fileName="gaussian_scalarized.cpp" linenumber="22" fileDirectory="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src" functionName="gaussian_scalarized"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="34" name="in_load_1" lineNumber="22" fileName="gaussian_scalarized.cpp" fileDirectory="../src" contextFuncName="gaussian_scalarized" bitwidth="16" opcode="load" nodeLabel="1" nodeLatency="1">
+      <inlineStackInfo fileName="gaussian_scalarized.cpp" linenumber="22" fileDirectory="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src" functionName="gaussian_scalarized"/>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataInputObjs>in_r</dataInputObjs>
+      <dataOutputObjs>sitofp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="36" name="tmp_7" lineNumber="22" fileName="gaussian_scalarized.cpp" fileDirectory="../src" rtlName="gaussian_sitofp_64ns_32_6_U9" contextFuncName="gaussian_scalarized" bitwidth="32" opcode="sitofp" nodeLabel="4" nodeLatency="5">
+      <inlineStackInfo fileName="gaussian_scalarized.cpp" linenumber="22" fileDirectory="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src" functionName="gaussian_scalarized"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>fmul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="37" name="tmp_8" lineNumber="22" fileName="gaussian_scalarized.cpp" fileDirectory="../src" rtlName="gaussian_fmul_32ns_32ns_32_4_max_dsp_U4" contextFuncName="gaussian_scalarized" bitwidth="32" opcode="fmul" nodeLabel="10" nodeLatency="3">
+      <inlineStackInfo fileName="gaussian_scalarized.cpp" linenumber="22" fileDirectory="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src" functionName="gaussian_scalarized"/>
+      <dataInputObjs>sitofp</dataInputObjs>
+      <dataOutputObjs>fadd</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="38" name="tmp_9" lineNumber="22" fileName="gaussian_scalarized.cpp" fileDirectory="../src" rtlName="gaussian_fadd_32ns_32ns_32_5_full_dsp_U1" contextFuncName="gaussian_scalarized" bitwidth="32" opcode="fadd" nodeLabel="14" nodeLatency="4">
+      <inlineStackInfo fileName="gaussian_scalarized.cpp" linenumber="22" fileDirectory="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src" functionName="gaussian_scalarized"/>
+      <dataInputObjs>fmul</dataInputObjs>
+      <dataInputObjs>fmul</dataInputObjs>
+      <dataOutputObjs>fadd</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="43" name="p_addr3" lineNumber="22" fileName="gaussian_scalarized.cpp" fileDirectory="../src" rtlName="p_addr3_fu_466_p2" contextFuncName="gaussian_scalarized" bitwidth="23" opcode="sub" nodeLabel="7">
+      <inlineStackInfo fileName="gaussian_scalarized.cpp" linenumber="22" fileDirectory="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src" functionName="gaussian_scalarized"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="48" name="in_load_2" lineNumber="22" fileName="gaussian_scalarized.cpp" fileDirectory="../src" contextFuncName="gaussian_scalarized" bitwidth="16" opcode="load" nodeLabel="7" nodeLatency="1">
+      <inlineStackInfo fileName="gaussian_scalarized.cpp" linenumber="22" fileDirectory="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src" functionName="gaussian_scalarized"/>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataInputObjs>in_r</dataInputObjs>
+      <dataOutputObjs>sitofp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="50" name="tmp_10" lineNumber="22" fileName="gaussian_scalarized.cpp" fileDirectory="../src" rtlName="gaussian_sitofp_64ns_32_6_U8" contextFuncName="gaussian_scalarized" bitwidth="32" opcode="sitofp" nodeLabel="9" nodeLatency="5">
+      <inlineStackInfo fileName="gaussian_scalarized.cpp" linenumber="22" fileDirectory="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src" functionName="gaussian_scalarized"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>fmul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="51" name="tmp_11" lineNumber="22" fileName="gaussian_scalarized.cpp" fileDirectory="../src" rtlName="gaussian_fmul_32ns_32ns_32_4_max_dsp_U3" contextFuncName="gaussian_scalarized" bitwidth="32" opcode="fmul" nodeLabel="15" nodeLatency="3">
+      <inlineStackInfo fileName="gaussian_scalarized.cpp" linenumber="22" fileDirectory="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src" functionName="gaussian_scalarized"/>
+      <dataInputObjs>sitofp</dataInputObjs>
+      <dataOutputObjs>fadd</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="52" name="tmp0" lineNumber="22" originalName="tmp0" fileName="gaussian_scalarized.cpp" fileDirectory="../src" rtlName="gaussian_fadd_32ns_32ns_32_5_full_dsp_U1" contextFuncName="gaussian_scalarized" bitwidth="32" opcode="fadd" nodeLabel="19" nodeLatency="4">
+      <inlineStackInfo fileName="gaussian_scalarized.cpp" linenumber="22" fileDirectory="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src" functionName="gaussian_scalarized"/>
+      <dataInputObjs>fadd</dataInputObjs>
+      <dataInputObjs>fmul</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="58" name="in_load_3" lineNumber="23" fileName="gaussian_scalarized.cpp" fileDirectory="../src" contextFuncName="gaussian_scalarized" bitwidth="16" opcode="load" nodeLabel="2" nodeLatency="1">
+      <inlineStackInfo fileName="gaussian_scalarized.cpp" linenumber="23" fileDirectory="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src" functionName="gaussian_scalarized"/>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataInputObjs>in_r</dataInputObjs>
+      <dataOutputObjs>sitofp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="60" name="tmp_13" lineNumber="23" fileName="gaussian_scalarized.cpp" fileDirectory="../src" rtlName="gaussian_sitofp_64ns_32_6_U10" contextFuncName="gaussian_scalarized" bitwidth="32" opcode="sitofp" nodeLabel="4" nodeLatency="5">
+      <inlineStackInfo fileName="gaussian_scalarized.cpp" linenumber="23" fileDirectory="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src" functionName="gaussian_scalarized"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>fmul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="61" name="tmp_14" lineNumber="23" fileName="gaussian_scalarized.cpp" fileDirectory="../src" rtlName="gaussian_fmul_32ns_32ns_32_4_max_dsp_U5" contextFuncName="gaussian_scalarized" bitwidth="32" opcode="fmul" nodeLabel="10" nodeLatency="3">
+      <inlineStackInfo fileName="gaussian_scalarized.cpp" linenumber="23" fileDirectory="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src" functionName="gaussian_scalarized"/>
+      <dataInputObjs>sitofp</dataInputObjs>
+      <dataOutputObjs>fadd</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="67" name="in_load_4" lineNumber="23" fileName="gaussian_scalarized.cpp" fileDirectory="../src" contextFuncName="gaussian_scalarized" bitwidth="16" opcode="load" nodeLabel="2" nodeLatency="1">
+      <inlineStackInfo fileName="gaussian_scalarized.cpp" linenumber="23" fileDirectory="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src" functionName="gaussian_scalarized"/>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataInputObjs>in_r</dataInputObjs>
+      <dataOutputObjs>sitofp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="69" name="tmp_16" lineNumber="23" fileName="gaussian_scalarized.cpp" fileDirectory="../src" rtlName="gaussian_sitofp_64ns_32_6_U11" contextFuncName="gaussian_scalarized" bitwidth="32" opcode="sitofp" nodeLabel="4" nodeLatency="5">
+      <inlineStackInfo fileName="gaussian_scalarized.cpp" linenumber="23" fileDirectory="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src" functionName="gaussian_scalarized"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>fmul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="70" name="tmp_17" lineNumber="23" fileName="gaussian_scalarized.cpp" fileDirectory="../src" rtlName="gaussian_fmul_32ns_32ns_32_4_max_dsp_U6" contextFuncName="gaussian_scalarized" bitwidth="32" opcode="fmul" nodeLabel="10" nodeLatency="3">
+      <inlineStackInfo fileName="gaussian_scalarized.cpp" linenumber="23" fileDirectory="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src" functionName="gaussian_scalarized"/>
+      <dataInputObjs>sitofp</dataInputObjs>
+      <dataOutputObjs>fadd</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="71" name="tmp_18" lineNumber="23" fileName="gaussian_scalarized.cpp" fileDirectory="../src" rtlName="gaussian_fadd_32ns_32ns_32_5_full_dsp_U2" contextFuncName="gaussian_scalarized" bitwidth="32" opcode="fadd" nodeLabel="14" nodeLatency="4">
+      <inlineStackInfo fileName="gaussian_scalarized.cpp" linenumber="23" fileDirectory="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src" functionName="gaussian_scalarized"/>
+      <dataInputObjs>fmul</dataInputObjs>
+      <dataInputObjs>fmul</dataInputObjs>
+      <dataOutputObjs>fadd</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="77" name="in_load_5" lineNumber="23" fileName="gaussian_scalarized.cpp" fileDirectory="../src" contextFuncName="gaussian_scalarized" bitwidth="16" opcode="load" nodeLabel="7" nodeLatency="1">
+      <inlineStackInfo fileName="gaussian_scalarized.cpp" linenumber="23" fileDirectory="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src" functionName="gaussian_scalarized"/>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataInputObjs>in_r</dataInputObjs>
+      <dataOutputObjs>sitofp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="79" name="tmp_20" lineNumber="23" fileName="gaussian_scalarized.cpp" fileDirectory="../src" rtlName="gaussian_sitofp_64ns_32_6_U9" contextFuncName="gaussian_scalarized" bitwidth="32" opcode="sitofp" nodeLabel="9" nodeLatency="5">
+      <inlineStackInfo fileName="gaussian_scalarized.cpp" linenumber="23" fileDirectory="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src" functionName="gaussian_scalarized"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>fmul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="80" name="tmp_21" lineNumber="23" fileName="gaussian_scalarized.cpp" fileDirectory="../src" rtlName="gaussian_fmul_32ns_32ns_32_4_max_dsp_U4" contextFuncName="gaussian_scalarized" bitwidth="32" opcode="fmul" nodeLabel="15" nodeLatency="3">
+      <inlineStackInfo fileName="gaussian_scalarized.cpp" linenumber="23" fileDirectory="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src" functionName="gaussian_scalarized"/>
+      <dataInputObjs>sitofp</dataInputObjs>
+      <dataOutputObjs>fadd</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="81" name="tmp1" lineNumber="23" originalName="tmp1" fileName="gaussian_scalarized.cpp" fileDirectory="../src" rtlName="gaussian_fadd_32ns_32ns_32_5_full_dsp_U2" contextFuncName="gaussian_scalarized" bitwidth="32" opcode="fadd" nodeLabel="19" nodeLatency="4">
+      <inlineStackInfo fileName="gaussian_scalarized.cpp" linenumber="23" fileDirectory="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src" functionName="gaussian_scalarized"/>
+      <dataInputObjs>fadd</dataInputObjs>
+      <dataInputObjs>fmul</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="82" name="node_82" lineNumber="24" fileName="gaussian_scalarized.cpp" fileDirectory="../src" contextFuncName="gaussian_scalarized" opcode="br" nodeLabel="24">
+      <inlineStackInfo fileName="gaussian_scalarized.cpp" linenumber="24" fileDirectory="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src" functionName="gaussian_scalarized"/>
+      <controlInputObjs>bb2</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="gaussian_scalarized.cpp">
+      <validLinenumbers>22</validLinenumbers>
+      <validLinenumbers>23</validLinenumbers>
+      <validLinenumbers>24</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="92" name="bb2" type="BlockType">
+    <controlInputObjs>bb</controlInputObjs>
+    <controlInputObjs>bb1</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>bb4</controlOutputObjs>
+    <controlOutputObjs>bb1</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="84" name="indvar" lineNumber="26" fileName="gaussian_scalarized.cpp" fileDirectory="../src" contextFuncName="gaussian_scalarized" bitwidth="11" opcode="phi" nodeLabel="25">
+      <inlineStackInfo fileName="gaussian_scalarized.cpp" linenumber="26" fileDirectory="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src" functionName="gaussian_scalarized"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <controlInputObjs>bb1</controlInputObjs>
+      <controlInputObjs>bb</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="85" name="tmp0_2" originalName="tmp1" bitwidth="32" opcode="phi" nodeLabel="25">
+      <dataInputObjs>fadd</dataInputObjs>
+      <dataInputObjs>fadd</dataInputObjs>
+      <dataOutputObjs>fmul</dataOutputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <controlInputObjs>bb1</controlInputObjs>
+      <controlInputObjs>bb</controlInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="86" name="tmp0_1" originalName="tmp0" bitwidth="32" opcode="phi" nodeLabel="25">
+      <dataInputObjs>phi</dataInputObjs>
+      <dataInputObjs>fadd</dataInputObjs>
+      <dataOutputObjs>fmul</dataOutputObjs>
+      <controlInputObjs>bb1</controlInputObjs>
+      <controlInputObjs>bb</controlInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="87" name="tmp6" lineNumber="26" fileName="gaussian_scalarized.cpp" fileDirectory="../src" rtlName="tmp6_fu_527_p2" contextFuncName="gaussian_scalarized" bitwidth="11" opcode="add" nodeLabel="25">
+      <inlineStackInfo fileName="gaussian_scalarized.cpp" linenumber="26" fileDirectory="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src" functionName="gaussian_scalarized"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="88" name="j" lineNumber="24" originalName="j" fileName="gaussian_scalarized.cpp" fileDirectory="../src" rtlName="j_fu_533_p2" contextFuncName="gaussian_scalarized" bitwidth="11" opcode="add" nodeLabel="25">
+      <inlineStackInfo fileName="gaussian_scalarized.cpp" linenumber="24" fileDirectory="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src" functionName="gaussian_scalarized"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="90" name="exitcond1" lineNumber="24" fileName="gaussian_scalarized.cpp" fileDirectory="../src" rtlName="exitcond1_fu_539_p2" contextFuncName="gaussian_scalarized" bitwidth="1" opcode="icmp" nodeLabel="25">
+      <inlineStackInfo fileName="gaussian_scalarized.cpp" linenumber="24" fileDirectory="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src" functionName="gaussian_scalarized"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="91" name="node_91" lineNumber="24" fileName="gaussian_scalarized.cpp" fileDirectory="../src" contextFuncName="gaussian_scalarized" opcode="br" nodeLabel="25">
+      <inlineStackInfo fileName="gaussian_scalarized.cpp" linenumber="24" fileDirectory="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src" functionName="gaussian_scalarized"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>bb1</controlInputObjs>
+      <controlInputObjs>bb4</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="gaussian_scalarized.cpp">
+      <validLinenumbers>26</validLinenumbers>
+      <validLinenumbers>24</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="134" name="bb1" type="BlockType">
+    <controlInputObjs>bb2</controlInputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>bb2</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="94" name="p_addr7" lineNumber="25" fileName="gaussian_scalarized.cpp" fileDirectory="../src" rtlName="p_addr7_fu_549_p2" contextFuncName="gaussian_scalarized" bitwidth="24" opcode="add" nodeLabel="25">
+      <inlineStackInfo fileName="gaussian_scalarized.cpp" linenumber="25" fileDirectory="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src" functionName="gaussian_scalarized"/>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="98" name="in_load_6" lineNumber="25" fileName="gaussian_scalarized.cpp" fileDirectory="../src" contextFuncName="gaussian_scalarized" bitwidth="16" opcode="load" nodeLabel="25" nodeLatency="1">
+      <inlineStackInfo fileName="gaussian_scalarized.cpp" linenumber="25" fileDirectory="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src" functionName="gaussian_scalarized"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>in_r</dataInputObjs>
+      <dataOutputObjs>sitofp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="100" name="tmp_24" lineNumber="25" fileName="gaussian_scalarized.cpp" fileDirectory="../src" rtlName="gaussian_sitofp_64ns_32_6_U8" contextFuncName="gaussian_scalarized" bitwidth="32" opcode="sitofp" nodeLabel="27" nodeLatency="5">
+      <inlineStackInfo fileName="gaussian_scalarized.cpp" linenumber="25" fileDirectory="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src" functionName="gaussian_scalarized"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>fmul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="101" name="tmp_25" lineNumber="25" fileName="gaussian_scalarized.cpp" fileDirectory="../src" rtlName="gaussian_fmul_32ns_32ns_32_4_max_dsp_U3" contextFuncName="gaussian_scalarized" bitwidth="32" opcode="fmul" nodeLabel="33" nodeLatency="3">
+      <inlineStackInfo fileName="gaussian_scalarized.cpp" linenumber="25" fileDirectory="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src" functionName="gaussian_scalarized"/>
+      <dataInputObjs>sitofp</dataInputObjs>
+      <dataOutputObjs>fadd</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="102" name="p_addr4" lineNumber="25" fileName="gaussian_scalarized.cpp" fileDirectory="../src" rtlName="p_addr4_fu_563_p2" contextFuncName="gaussian_scalarized" bitwidth="24" opcode="add" nodeLabel="25">
+      <inlineStackInfo fileName="gaussian_scalarized.cpp" linenumber="25" fileDirectory="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src" functionName="gaussian_scalarized"/>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="106" name="in_load_7" lineNumber="25" fileName="gaussian_scalarized.cpp" fileDirectory="../src" contextFuncName="gaussian_scalarized" bitwidth="16" opcode="load" nodeLabel="25" nodeLatency="1">
+      <inlineStackInfo fileName="gaussian_scalarized.cpp" linenumber="25" fileDirectory="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src" functionName="gaussian_scalarized"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>in_r</dataInputObjs>
+      <dataOutputObjs>sitofp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="108" name="tmp_27" lineNumber="25" fileName="gaussian_scalarized.cpp" fileDirectory="../src" rtlName="gaussian_sitofp_64ns_32_6_U9" contextFuncName="gaussian_scalarized" bitwidth="32" opcode="sitofp" nodeLabel="27" nodeLatency="5">
+      <inlineStackInfo fileName="gaussian_scalarized.cpp" linenumber="25" fileDirectory="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src" functionName="gaussian_scalarized"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>fmul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="109" name="tmp_28" lineNumber="25" fileName="gaussian_scalarized.cpp" fileDirectory="../src" rtlName="gaussian_fmul_32ns_32ns_32_4_max_dsp_U4" contextFuncName="gaussian_scalarized" bitwidth="32" opcode="fmul" nodeLabel="33" nodeLatency="3">
+      <inlineStackInfo fileName="gaussian_scalarized.cpp" linenumber="25" fileDirectory="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src" functionName="gaussian_scalarized"/>
+      <dataInputObjs>sitofp</dataInputObjs>
+      <dataOutputObjs>fadd</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="110" name="tmp_29" lineNumber="25" fileName="gaussian_scalarized.cpp" fileDirectory="../src" rtlName="gaussian_fadd_32ns_32ns_32_5_full_dsp_U1" contextFuncName="gaussian_scalarized" bitwidth="32" opcode="fadd" nodeLabel="37" nodeLatency="4">
+      <inlineStackInfo fileName="gaussian_scalarized.cpp" linenumber="25" fileDirectory="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src" functionName="gaussian_scalarized"/>
+      <dataInputObjs>fmul</dataInputObjs>
+      <dataInputObjs>fmul</dataInputObjs>
+      <dataOutputObjs>fadd</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="111" name="p_addr1" lineNumber="25" fileName="gaussian_scalarized.cpp" fileDirectory="../src" rtlName="p_addr1_fu_577_p2" contextFuncName="gaussian_scalarized" bitwidth="24" opcode="add" nodeLabel="25">
+      <inlineStackInfo fileName="gaussian_scalarized.cpp" linenumber="25" fileDirectory="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src" functionName="gaussian_scalarized"/>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="115" name="in_load_8" lineNumber="25" fileName="gaussian_scalarized.cpp" fileDirectory="../src" contextFuncName="gaussian_scalarized" bitwidth="16" opcode="load" nodeLabel="26" nodeLatency="1">
+      <inlineStackInfo fileName="gaussian_scalarized.cpp" linenumber="25" fileDirectory="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src" functionName="gaussian_scalarized"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>in_r</dataInputObjs>
+      <dataOutputObjs>sitofp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="117" name="tmp_31" lineNumber="25" fileName="gaussian_scalarized.cpp" fileDirectory="../src" rtlName="gaussian_sitofp_64ns_32_6_U8" contextFuncName="gaussian_scalarized" bitwidth="32" opcode="sitofp" nodeLabel="32" nodeLatency="5">
+      <inlineStackInfo fileName="gaussian_scalarized.cpp" linenumber="25" fileDirectory="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src" functionName="gaussian_scalarized"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>fmul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="118" name="tmp_32" lineNumber="25" fileName="gaussian_scalarized.cpp" fileDirectory="../src" rtlName="gaussian_fmul_32ns_32ns_32_4_max_dsp_U3" contextFuncName="gaussian_scalarized" bitwidth="32" opcode="fmul" nodeLabel="38" nodeLatency="3">
+      <inlineStackInfo fileName="gaussian_scalarized.cpp" linenumber="25" fileDirectory="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src" functionName="gaussian_scalarized"/>
+      <dataInputObjs>sitofp</dataInputObjs>
+      <dataOutputObjs>fadd</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="119" name="tmp2" lineNumber="25" originalName="tmp2" fileName="gaussian_scalarized.cpp" fileDirectory="../src" rtlName="gaussian_fadd_32ns_32ns_32_5_full_dsp_U1" contextFuncName="gaussian_scalarized" bitwidth="32" opcode="fadd" nodeLabel="42" nodeLatency="4">
+      <inlineStackInfo fileName="gaussian_scalarized.cpp" linenumber="25" fileDirectory="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src" functionName="gaussian_scalarized"/>
+      <dataInputObjs>fadd</dataInputObjs>
+      <dataInputObjs>fmul</dataInputObjs>
+      <dataOutputObjs>fmul</dataOutputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="120" name="tmp_33" lineNumber="26" fileName="gaussian_scalarized.cpp" fileDirectory="../src" rtlName="gaussian_fmul_32ns_32ns_32_4_max_dsp_U3" contextFuncName="gaussian_scalarized" bitwidth="32" opcode="fmul" nodeLabel="25" nodeLatency="3">
+      <inlineStackInfo fileName="gaussian_scalarized.cpp" linenumber="26" fileDirectory="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src" functionName="gaussian_scalarized"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>fadd</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="121" name="tmp_34" lineNumber="26" fileName="gaussian_scalarized.cpp" fileDirectory="../src" rtlName="gaussian_fmul_32ns_32ns_32_4_max_dsp_U4" contextFuncName="gaussian_scalarized" bitwidth="32" opcode="fmul" nodeLabel="25" nodeLatency="3">
+      <inlineStackInfo fileName="gaussian_scalarized.cpp" linenumber="26" fileDirectory="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src" functionName="gaussian_scalarized"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>fadd</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="122" name="tmp_35" lineNumber="26" fileName="gaussian_scalarized.cpp" fileDirectory="../src" rtlName="gaussian_fadd_32ns_32ns_32_5_full_dsp_U1" contextFuncName="gaussian_scalarized" bitwidth="32" opcode="fadd" nodeLabel="29" nodeLatency="4">
+      <inlineStackInfo fileName="gaussian_scalarized.cpp" linenumber="26" fileDirectory="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src" functionName="gaussian_scalarized"/>
+      <dataInputObjs>fmul</dataInputObjs>
+      <dataInputObjs>fmul</dataInputObjs>
+      <dataOutputObjs>fadd</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="123" name="tmp_36" lineNumber="26" fileName="gaussian_scalarized.cpp" fileDirectory="../src" rtlName="gaussian_fmul_32ns_32ns_32_4_max_dsp_U3" contextFuncName="gaussian_scalarized" bitwidth="32" opcode="fmul" nodeLabel="47" nodeLatency="3">
+      <inlineStackInfo fileName="gaussian_scalarized.cpp" linenumber="26" fileDirectory="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src" functionName="gaussian_scalarized"/>
+      <dataInputObjs>fadd</dataInputObjs>
+      <dataOutputObjs>fadd</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="124" name="tmp_37" lineNumber="26" fileName="gaussian_scalarized.cpp" fileDirectory="../src" rtlName="gaussian_fadd_32ns_32ns_32_5_full_dsp_U1" contextFuncName="gaussian_scalarized" bitwidth="32" opcode="fadd" nodeLabel="51" nodeLatency="4">
+      <inlineStackInfo fileName="gaussian_scalarized.cpp" linenumber="26" fileDirectory="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src" functionName="gaussian_scalarized"/>
+      <dataInputObjs>fadd</dataInputObjs>
+      <dataInputObjs>fmul</dataInputObjs>
+      <dataOutputObjs>fptoui</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="125" name="tmp_38" lineNumber="26" fileName="gaussian_scalarized.cpp" fileDirectory="../src" rtlName="gaussian_fptoui_32ns_64_4_U7" contextFuncName="gaussian_scalarized" bitwidth="64" opcode="fptoui" nodeLabel="56" nodeLatency="3">
+      <inlineStackInfo fileName="gaussian_scalarized.cpp" linenumber="26" fileDirectory="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src" functionName="gaussian_scalarized"/>
+      <dataInputObjs>fadd</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="128" name="p_addr9" lineNumber="26" fileName="gaussian_scalarized.cpp" fileDirectory="../src" rtlName="p_addr9_fu_586_p2" contextFuncName="gaussian_scalarized" bitwidth="24" opcode="add" nodeLabel="25">
+      <inlineStackInfo fileName="gaussian_scalarized.cpp" linenumber="26" fileDirectory="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src" functionName="gaussian_scalarized"/>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="132" name="node_132" lineNumber="26" fileName="gaussian_scalarized.cpp" fileDirectory="../src" contextFuncName="gaussian_scalarized" opcode="store" nodeLabel="60">
+      <inlineStackInfo fileName="gaussian_scalarized.cpp" linenumber="26" fileDirectory="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src" functionName="gaussian_scalarized"/>
+      <dataInputObjs>fptoui</dataInputObjs>
+      <dataInputObjs>add</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="133" name="node_133" lineNumber="24" fileName="gaussian_scalarized.cpp" fileDirectory="../src" contextFuncName="gaussian_scalarized" opcode="br" nodeLabel="60">
+      <inlineStackInfo fileName="gaussian_scalarized.cpp" linenumber="24" fileDirectory="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src" functionName="gaussian_scalarized"/>
+      <controlInputObjs>bb2</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="gaussian_scalarized.cpp">
+      <validLinenumbers>25</validLinenumbers>
+      <validLinenumbers>26</validLinenumbers>
+      <validLinenumbers>24</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="136" name="return" type="BlockType">
+    <controlInputObjs>bb4</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="135" name="node_135" lineNumber="31" fileName="gaussian_scalarized.cpp" fileDirectory="../src" contextFuncName="gaussian_scalarized" opcode="ret" nodeLabel="1">
+      <inlineStackInfo fileName="gaussian_scalarized.cpp" linenumber="31" fileDirectory="/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src" functionName="gaussian_scalarized"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="gaussian_scalarized.cpp">
+      <validLinenumbers>31</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <ScheduleInfo time="7"/>
+  <ScheduleInfo time="8"/>
+  <ScheduleInfo time="9"/>
+  <ScheduleInfo time="10"/>
+  <ScheduleInfo time="11"/>
+  <ScheduleInfo time="12"/>
+  <ScheduleInfo time="13"/>
+  <ScheduleInfo time="14"/>
+  <ScheduleInfo time="15"/>
+  <ScheduleInfo time="16"/>
+  <ScheduleInfo time="17"/>
+  <ScheduleInfo time="18"/>
+  <ScheduleInfo time="19"/>
+  <ScheduleInfo time="20"/>
+  <ScheduleInfo time="21"/>
+  <ScheduleInfo time="22"/>
+  <ScheduleInfo time="23"/>
+  <ScheduleInfo time="24"/>
+  <ScheduleInfo time="25"/>
+  <ScheduleInfo time="26"/>
+  <ScheduleInfo time="27"/>
+  <ScheduleInfo time="28"/>
+  <ScheduleInfo time="29"/>
+  <ScheduleInfo time="30"/>
+  <ScheduleInfo time="31"/>
+  <ScheduleInfo time="32"/>
+  <ScheduleInfo time="33"/>
+  <ScheduleInfo time="34"/>
+  <ScheduleInfo time="35"/>
+  <ScheduleInfo time="36"/>
+  <ScheduleInfo time="37"/>
+  <ScheduleInfo time="38"/>
+  <ScheduleInfo time="39"/>
+  <ScheduleInfo time="40"/>
+  <ScheduleInfo time="41"/>
+  <ScheduleInfo time="42"/>
+  <ScheduleInfo time="43"/>
+  <ScheduleInfo time="44"/>
+  <ScheduleInfo time="45"/>
+  <ScheduleInfo time="46"/>
+  <ScheduleInfo time="47"/>
+  <ScheduleInfo time="48"/>
+  <ScheduleInfo time="49"/>
+  <ScheduleInfo time="50"/>
+  <ScheduleInfo time="51"/>
+  <ScheduleInfo time="52"/>
+  <ScheduleInfo time="53"/>
+  <ScheduleInfo time="54"/>
+  <ScheduleInfo time="55"/>
+  <ScheduleInfo time="56"/>
+  <ScheduleInfo time="57"/>
+  <ScheduleInfo time="58"/>
+  <ScheduleInfo time="59"/>
+  <ScheduleInfo time="60"/>
+  <regnodes realName="p_addr2_cast1_reg_760">
+    <nodeIds>30</nodeIds>
+  </regnodes>
+  <regnodes realName="in_addr_3_reg_670">
+    <nodeIds>57</nodeIds>
+  </regnodes>
+  <regnodes realName="in_addr_4_reg_675">
+    <nodeIds>66</nodeIds>
+  </regnodes>
+  <regnodes realName="p_addr_cast1_reg_755">
+    <nodeIds>17</nodeIds>
+  </regnodes>
+  <regnodes realName="p_addr9_reg_794">
+    <nodeIds>128</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp6_reg_771">
+    <nodeIds>87</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_12_reg_700">
+    <nodeIds>59</nodeIds>
+  </regnodes>
+  <regnodes realName="i_reg_632">
+    <nodeIds>7</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_s_reg_725">
+    <nodeIds>49</nodeIds>
+  </regnodes>
+  <regnodes realName="reg_241">
+    <nodeIds>24</nodeIds>
+    <nodeIds>51</nodeIds>
+    <nodeIds>120</nodeIds>
+    <nodeIds>101</nodeIds>
+    <nodeIds>118</nodeIds>
+    <nodeIds>123</nodeIds>
+  </regnodes>
+  <regnodes realName="p_addr_reg_640">
+    <nodeIds>16</nodeIds>
+  </regnodes>
+  <regnodes realName="p_addr3_reg_710">
+    <nodeIds>43</nodeIds>
+  </regnodes>
+  <regnodes realName="reg_247">
+    <nodeIds>37</nodeIds>
+    <nodeIds>80</nodeIds>
+    <nodeIds>121</nodeIds>
+    <nodeIds>109</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_14_reg_745">
+    <nodeIds>61</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp0_1_reg_165">
+    <nodeIds>86</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_2_reg_690">
+    <nodeIds>22</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_15_reg_705">
+    <nodeIds>68</nodeIds>
+  </regnodes>
+  <regnodes realName="reg_253">
+    <nodeIds>38</nodeIds>
+    <nodeIds>52</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_13_reg_730">
+    <nodeIds>60</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_58_reg_819">
+    <nodeIds>126</nodeIds>
+  </regnodes>
+  <regnodes realName="in_addr_5_reg_720">
+    <nodeIds>76</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_19_reg_740">
+    <nodeIds>78</nodeIds>
+  </regnodes>
+  <regnodes realName="in_load_3_reg_680">
+    <nodeIds>58</nodeIds>
+  </regnodes>
+  <regnodes realName="in_addr_8_reg_799">
+    <nodeIds>114</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_22_reg_804">
+    <nodeIds>99</nodeIds>
+  </regnodes>
+  <regnodes realName="reg_259">
+    <nodeIds>71</nodeIds>
+    <nodeIds>81</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_reg_626">
+    <nodeIds>6</nodeIds>
+  </regnodes>
+  <regnodes realName="in_addr_2_reg_715">
+    <nodeIds>47</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_17_reg_750">
+    <nodeIds>70</nodeIds>
+  </regnodes>
+  <regnodes realName="in_addr_reg_645">
+    <nodeIds>20</nodeIds>
+  </regnodes>
+  <regnodes realName="reg_265">
+    <nodeIds>122</nodeIds>
+    <nodeIds>124</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_26_reg_809">
+    <nodeIds>107</nodeIds>
+  </regnodes>
+  <regnodes realName="reg_223">
+    <nodeIds>21</nodeIds>
+    <nodeIds>48</nodeIds>
+    <nodeIds>98</nodeIds>
+    <nodeIds>115</nodeIds>
+  </regnodes>
+  <regnodes realName="in_addr_7_reg_784">
+    <nodeIds>105</nodeIds>
+  </regnodes>
+  <regnodes realName="in_addr_6_reg_779">
+    <nodeIds>97</nodeIds>
+  </regnodes>
+  <regnodes realName="reg_227">
+    <nodeIds>34</nodeIds>
+    <nodeIds>77</nodeIds>
+    <nodeIds>106</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_6_reg_695">
+    <nodeIds>35</nodeIds>
+  </regnodes>
+  <regnodes realName="indvar_reg_144">
+    <nodeIds>84</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_16_reg_735">
+    <nodeIds>69</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_30_reg_814">
+    <nodeIds>116</nodeIds>
+  </regnodes>
+  <regnodes realName="p_addr1_reg_789">
+    <nodeIds>111</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_48_reg_665">
+    <nodeIds>62</nodeIds>
+  </regnodes>
+  <regnodes realName="indvar1_reg_133">
+    <nodeIds>5</nodeIds>
+  </regnodes>
+  <regnodes realName="in_load_4_reg_685">
+    <nodeIds>67</nodeIds>
+  </regnodes>
+  <regnodes realName="reg_271">
+    <nodeIds>110</nodeIds>
+    <nodeIds>119</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp0_2_reg_155">
+    <nodeIds>85</nodeIds>
+  </regnodes>
+  <regnodes realName="p_addr3_cast1_reg_766">
+    <nodeIds>44</nodeIds>
+  </regnodes>
+  <regnodes realName="reg_231">
+    <nodeIds>23</nodeIds>
+    <nodeIds>50</nodeIds>
+    <nodeIds>100</nodeIds>
+    <nodeIds>117</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_45_reg_660">
+    <nodeIds>53</nodeIds>
+  </regnodes>
+  <regnodes realName="reg_236">
+    <nodeIds>36</nodeIds>
+    <nodeIds>79</nodeIds>
+    <nodeIds>108</nodeIds>
+  </regnodes>
+  <regnodes realName="in_addr_1_reg_655">
+    <nodeIds>33</nodeIds>
+  </regnodes>
+  <regnodes realName="p_addr2_reg_650">
+    <nodeIds>29</nodeIds>
+  </regnodes>
+  <expressionNodes realName="p_addr4_cast_fu_568">
+    <nodeIds>103</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_39_fu_335">
+    <nodeIds>25</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_addr3_cast_fu_472">
+    <nodeIds>45</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_58_fu_614">
+    <nodeIds>126</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_addr3_cast1_fu_524">
+    <nodeIds>44</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_addr7_fu_549">
+    <nodeIds>94</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_shl4_cast_fu_451">
+    <nodeIds>40</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_43_fu_455">
+    <nodeIds>41</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_44_fu_476">
+    <nodeIds>46</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="in_addr_3_gep_fu_65">
+    <nodeIds>57</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_addr2_cast1_fu_521">
+    <nodeIds>30</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="j_fu_533">
+    <nodeIds>88</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp6_fu_527">
+    <nodeIds>87</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="exitcond_fu_290">
+    <nodeIds>9</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="in_addr_5_gep_fu_89">
+    <nodeIds>76</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_shl3_cast_fu_355">
+    <nodeIds>28</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="indvar_phi_fu_148">
+    <nodeIds>84</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_addr_cast_fu_326">
+    <nodeIds>18</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_52_fu_503">
+    <nodeIds>75</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_addr_cast1_fu_518">
+    <nodeIds>17</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_addr6_fu_417">
+    <nodeIds>64</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_19_fu_513">
+    <nodeIds>78</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_addr9_fu_586">
+    <nodeIds>128</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp0_2_phi_fu_158">
+    <nodeIds>85</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_41_fu_369">
+    <nodeIds>32</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_addr9_cast_fu_618">
+    <nodeIds>129</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_42_fu_444">
+    <nodeIds>39</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_56_fu_621">
+    <nodeIds>130</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_49_fu_410">
+    <nodeIds>63</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_23_trn5_cast_fu_545">
+    <nodeIds>93</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="indvar1_phi_fu_137">
+    <nodeIds>5</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_50_fu_421">
+    <nodeIds>65</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_23_fu_330">
+    <nodeIds>19</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_46_fu_394">
+    <nodeIds>54</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_48_fu_384">
+    <nodeIds>62</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_5_fu_308">
+    <nodeIds>14</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="in_addr_8_gep_fu_113">
+    <nodeIds>114</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_26_fu_604">
+    <nodeIds>107</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_addr_fu_320">
+    <nodeIds>16</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_addr7_cast_fu_554">
+    <nodeIds>95</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_6_fu_431">
+    <nodeIds>35</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_s_fu_508">
+    <nodeIds>49</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="in_addr_2_gep_fu_81">
+    <nodeIds>47</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_57_fu_491">
+    <nodeIds>73</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_1_fu_296">
+    <nodeIds>12</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_addr4_fu_563">
+    <nodeIds>102</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="in_addr_4_gep_fu_73">
+    <nodeIds>66</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_addr2_fu_359">
+    <nodeIds>29</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_shl1_cast_fu_316">
+    <nodeIds>15</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_15_fu_440">
+    <nodeIds>68</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="in_addr_gep_fu_42">
+    <nodeIds>20</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_addr1_fu_577">
+    <nodeIds>111</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp0_1_phi_fu_168">
+    <nodeIds>86</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_addr1_cast_fu_591">
+    <nodeIds>112</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_22_fu_599">
+    <nodeIds>99</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="in_addr_1_gep_fu_54">
+    <nodeIds>33</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_55_fu_594">
+    <nodeIds>113</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_2_fu_426">
+    <nodeIds>22</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_shl_cast_fu_304">
+    <nodeIds>13</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_12_fu_436">
+    <nodeIds>59</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_40_fu_347">
+    <nodeIds>27</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="out_addr_gep_fu_121">
+    <nodeIds>131</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_addr5_fu_401">
+    <nodeIds>55</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_45_fu_374">
+    <nodeIds>53</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_fu_284">
+    <nodeIds>7</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_addr3_fu_466">
+    <nodeIds>43</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_shl5_cast_fu_462">
+    <nodeIds>42</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_addr2_cast_fu_365">
+    <nodeIds>31</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_54_fu_572">
+    <nodeIds>104</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_30_fu_609">
+    <nodeIds>116</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_51_fu_481">
+    <nodeIds>72</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_40_trn_cast_fu_582">
+    <nodeIds>127</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="in_addr_6_gep_fu_97">
+    <nodeIds>97</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="in_addr_7_gep_fu_105">
+    <nodeIds>105</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="exitcond1_fu_539">
+    <nodeIds>90</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_47_fu_405">
+    <nodeIds>56</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_fu_278">
+    <nodeIds>6</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_shl2_cast_fu_343">
+    <nodeIds>26</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_53_fu_558">
+    <nodeIds>96</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_addr8_fu_499">
+    <nodeIds>74</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_fu_190">
+    <nodeIds>37</nodeIds>
+    <nodeIds>80</nodeIds>
+    <nodeIds>121</nodeIds>
+    <nodeIds>109</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_214">
+    <nodeIds>36</nodeIds>
+    <nodeIds>79</nodeIds>
+    <nodeIds>108</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_181">
+    <nodeIds>71</nodeIds>
+    <nodeIds>81</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_217">
+    <nodeIds>60</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_200">
+    <nodeIds>70</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_195">
+    <nodeIds>61</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_211">
+    <nodeIds>23</nodeIds>
+    <nodeIds>50</nodeIds>
+    <nodeIds>100</nodeIds>
+    <nodeIds>117</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_185">
+    <nodeIds>24</nodeIds>
+    <nodeIds>51</nodeIds>
+    <nodeIds>120</nodeIds>
+    <nodeIds>101</nodeIds>
+    <nodeIds>118</nodeIds>
+    <nodeIds>123</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_177">
+    <nodeIds>38</nodeIds>
+    <nodeIds>52</nodeIds>
+    <nodeIds>122</nodeIds>
+    <nodeIds>110</nodeIds>
+    <nodeIds>119</nodeIds>
+    <nodeIds>124</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_220">
+    <nodeIds>69</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_208">
+    <nodeIds>125</nodeIds>
+  </moduleNodes>
+  <memoryPorts dataString="in_r">
+    <nodeIds>21</nodeIds>
+    <nodeIds>58</nodeIds>
+    <nodeIds>48</nodeIds>
+    <nodeIds>98</nodeIds>
+    <nodeIds>115</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="in_r" portID="1">
+    <nodeIds>34</nodeIds>
+    <nodeIds>67</nodeIds>
+    <nodeIds>77</nodeIds>
+    <nodeIds>106</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="out_r">
+    <nodeIds>132</nodeIds>
+  </memoryPorts>
+  <ioPorts name="in_r"/>
+  <ioPorts name="out_r"/>
+  <fsm>
+    <states id="1">
+      <operations id="3" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="2" latency="2"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="2" latency="2"/>
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="62" stage="1" latency="1"/>
+      <operations id="135" stage="1" latency="1"/>
+    </states>
+    <states id="3">
+      <operations id="21" stage="1" latency="2"/>
+      <operations id="34" stage="1" latency="2"/>
+      <operations id="54" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="1"/>
+      <operations id="56" stage="1" latency="1"/>
+      <operations id="57" stage="1" latency="1"/>
+      <operations id="58" stage="2" latency="2"/>
+      <operations id="63" stage="1" latency="1"/>
+      <operations id="64" stage="1" latency="1"/>
+      <operations id="65" stage="1" latency="1"/>
+      <operations id="66" stage="1" latency="1"/>
+      <operations id="67" stage="2" latency="2"/>
+    </states>
+    <states id="4">
+      <operations id="58" stage="1" latency="2"/>
+      <operations id="67" stage="1" latency="2"/>
+    </states>
+    <states id="5">
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="6" latency="6"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="6" latency="6"/>
+      <operations id="59" stage="1" latency="1"/>
+      <operations id="60" stage="6" latency="6"/>
+      <operations id="68" stage="1" latency="1"/>
+      <operations id="69" stage="6" latency="6"/>
+    </states>
+    <states id="6">
+      <operations id="23" stage="5" latency="6"/>
+      <operations id="36" stage="5" latency="6"/>
+      <operations id="60" stage="5" latency="6"/>
+      <operations id="69" stage="5" latency="6"/>
+    </states>
+    <states id="7">
+      <operations id="23" stage="4" latency="6"/>
+      <operations id="36" stage="4" latency="6"/>
+      <operations id="60" stage="4" latency="6"/>
+      <operations id="69" stage="4" latency="6"/>
+    </states>
+    <states id="8">
+      <operations id="23" stage="3" latency="6"/>
+      <operations id="36" stage="3" latency="6"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="48" stage="2" latency="2"/>
+      <operations id="60" stage="3" latency="6"/>
+      <operations id="69" stage="3" latency="6"/>
+      <operations id="72" stage="1" latency="1"/>
+      <operations id="73" stage="1" latency="1"/>
+      <operations id="74" stage="1" latency="1"/>
+      <operations id="75" stage="1" latency="1"/>
+      <operations id="76" stage="1" latency="1"/>
+      <operations id="77" stage="2" latency="2"/>
+    </states>
+    <states id="9">
+      <operations id="23" stage="2" latency="6"/>
+      <operations id="36" stage="2" latency="6"/>
+      <operations id="48" stage="1" latency="2"/>
+      <operations id="60" stage="2" latency="6"/>
+      <operations id="69" stage="2" latency="6"/>
+      <operations id="77" stage="1" latency="2"/>
+    </states>
+    <states id="10">
+      <operations id="23" stage="1" latency="6"/>
+      <operations id="36" stage="1" latency="6"/>
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="50" stage="6" latency="6"/>
+      <operations id="60" stage="1" latency="6"/>
+      <operations id="69" stage="1" latency="6"/>
+      <operations id="78" stage="1" latency="1"/>
+      <operations id="79" stage="6" latency="6"/>
+    </states>
+    <states id="11">
+      <operations id="24" stage="4" latency="4"/>
+      <operations id="37" stage="4" latency="4"/>
+      <operations id="50" stage="5" latency="6"/>
+      <operations id="61" stage="4" latency="4"/>
+      <operations id="70" stage="4" latency="4"/>
+      <operations id="79" stage="5" latency="6"/>
+    </states>
+    <states id="12">
+      <operations id="24" stage="3" latency="4"/>
+      <operations id="37" stage="3" latency="4"/>
+      <operations id="50" stage="4" latency="6"/>
+      <operations id="61" stage="3" latency="4"/>
+      <operations id="70" stage="3" latency="4"/>
+      <operations id="79" stage="4" latency="6"/>
+    </states>
+    <states id="13">
+      <operations id="24" stage="2" latency="4"/>
+      <operations id="37" stage="2" latency="4"/>
+      <operations id="50" stage="3" latency="6"/>
+      <operations id="61" stage="2" latency="4"/>
+      <operations id="70" stage="2" latency="4"/>
+      <operations id="79" stage="3" latency="6"/>
+    </states>
+    <states id="14">
+      <operations id="24" stage="1" latency="4"/>
+      <operations id="37" stage="1" latency="4"/>
+      <operations id="50" stage="2" latency="6"/>
+      <operations id="61" stage="1" latency="4"/>
+      <operations id="70" stage="1" latency="4"/>
+      <operations id="79" stage="2" latency="6"/>
+    </states>
+    <states id="15">
+      <operations id="38" stage="5" latency="5"/>
+      <operations id="50" stage="1" latency="6"/>
+      <operations id="71" stage="5" latency="5"/>
+      <operations id="79" stage="1" latency="6"/>
+    </states>
+    <states id="16">
+      <operations id="38" stage="4" latency="5"/>
+      <operations id="51" stage="4" latency="4"/>
+      <operations id="71" stage="4" latency="5"/>
+      <operations id="80" stage="4" latency="4"/>
+    </states>
+    <states id="17">
+      <operations id="38" stage="3" latency="5"/>
+      <operations id="51" stage="3" latency="4"/>
+      <operations id="71" stage="3" latency="5"/>
+      <operations id="80" stage="3" latency="4"/>
+    </states>
+    <states id="18">
+      <operations id="38" stage="2" latency="5"/>
+      <operations id="51" stage="2" latency="4"/>
+      <operations id="71" stage="2" latency="5"/>
+      <operations id="80" stage="2" latency="4"/>
+    </states>
+    <states id="19">
+      <operations id="38" stage="1" latency="5"/>
+      <operations id="51" stage="1" latency="4"/>
+      <operations id="71" stage="1" latency="5"/>
+      <operations id="80" stage="1" latency="4"/>
+    </states>
+    <states id="20">
+      <operations id="52" stage="5" latency="5"/>
+      <operations id="81" stage="5" latency="5"/>
+    </states>
+    <states id="21">
+      <operations id="52" stage="4" latency="5"/>
+      <operations id="81" stage="4" latency="5"/>
+    </states>
+    <states id="22">
+      <operations id="52" stage="3" latency="5"/>
+      <operations id="81" stage="3" latency="5"/>
+    </states>
+    <states id="23">
+      <operations id="52" stage="2" latency="5"/>
+      <operations id="81" stage="2" latency="5"/>
+    </states>
+    <states id="24">
+      <operations id="52" stage="1" latency="5"/>
+      <operations id="81" stage="1" latency="5"/>
+    </states>
+    <states id="25">
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="82" stage="1" latency="1"/>
+    </states>
+    <states id="26">
+      <operations id="84" stage="1" latency="1"/>
+      <operations id="85" stage="1" latency="1"/>
+      <operations id="86" stage="1" latency="1"/>
+      <operations id="87" stage="1" latency="1"/>
+      <operations id="88" stage="1" latency="1"/>
+      <operations id="89" stage="1" latency="1"/>
+      <operations id="90" stage="1" latency="1"/>
+      <operations id="91" stage="1" latency="1"/>
+      <operations id="93" stage="1" latency="1"/>
+      <operations id="94" stage="1" latency="1"/>
+      <operations id="95" stage="1" latency="1"/>
+      <operations id="96" stage="1" latency="1"/>
+      <operations id="97" stage="1" latency="1"/>
+      <operations id="98" stage="2" latency="2"/>
+      <operations id="102" stage="1" latency="1"/>
+      <operations id="103" stage="1" latency="1"/>
+      <operations id="104" stage="1" latency="1"/>
+      <operations id="105" stage="1" latency="1"/>
+      <operations id="106" stage="2" latency="2"/>
+      <operations id="111" stage="1" latency="1"/>
+      <operations id="120" stage="4" latency="4"/>
+      <operations id="121" stage="4" latency="4"/>
+      <operations id="127" stage="1" latency="1"/>
+      <operations id="128" stage="1" latency="1"/>
+    </states>
+    <states id="27">
+      <operations id="98" stage="1" latency="2"/>
+      <operations id="106" stage="1" latency="2"/>
+      <operations id="112" stage="1" latency="1"/>
+      <operations id="113" stage="1" latency="1"/>
+      <operations id="114" stage="1" latency="1"/>
+      <operations id="115" stage="2" latency="2"/>
+      <operations id="120" stage="3" latency="4"/>
+      <operations id="121" stage="3" latency="4"/>
+    </states>
+    <states id="28">
+      <operations id="99" stage="1" latency="1"/>
+      <operations id="100" stage="6" latency="6"/>
+      <operations id="107" stage="1" latency="1"/>
+      <operations id="108" stage="6" latency="6"/>
+      <operations id="115" stage="1" latency="2"/>
+      <operations id="120" stage="2" latency="4"/>
+      <operations id="121" stage="2" latency="4"/>
+    </states>
+    <states id="29">
+      <operations id="100" stage="5" latency="6"/>
+      <operations id="108" stage="5" latency="6"/>
+      <operations id="120" stage="1" latency="4"/>
+      <operations id="121" stage="1" latency="4"/>
+    </states>
+    <states id="30">
+      <operations id="100" stage="4" latency="6"/>
+      <operations id="108" stage="4" latency="6"/>
+      <operations id="122" stage="5" latency="5"/>
+    </states>
+    <states id="31">
+      <operations id="100" stage="3" latency="6"/>
+      <operations id="108" stage="3" latency="6"/>
+      <operations id="122" stage="4" latency="5"/>
+    </states>
+    <states id="32">
+      <operations id="100" stage="2" latency="6"/>
+      <operations id="108" stage="2" latency="6"/>
+      <operations id="122" stage="3" latency="5"/>
+    </states>
+    <states id="33">
+      <operations id="100" stage="1" latency="6"/>
+      <operations id="108" stage="1" latency="6"/>
+      <operations id="116" stage="1" latency="1"/>
+      <operations id="117" stage="6" latency="6"/>
+      <operations id="122" stage="2" latency="5"/>
+    </states>
+    <states id="34">
+      <operations id="101" stage="4" latency="4"/>
+      <operations id="109" stage="4" latency="4"/>
+      <operations id="117" stage="5" latency="6"/>
+      <operations id="122" stage="1" latency="5"/>
+    </states>
+    <states id="35">
+      <operations id="101" stage="3" latency="4"/>
+      <operations id="109" stage="3" latency="4"/>
+      <operations id="117" stage="4" latency="6"/>
+    </states>
+    <states id="36">
+      <operations id="101" stage="2" latency="4"/>
+      <operations id="109" stage="2" latency="4"/>
+      <operations id="117" stage="3" latency="6"/>
+    </states>
+    <states id="37">
+      <operations id="101" stage="1" latency="4"/>
+      <operations id="109" stage="1" latency="4"/>
+      <operations id="117" stage="2" latency="6"/>
+    </states>
+    <states id="38">
+      <operations id="110" stage="5" latency="5"/>
+      <operations id="117" stage="1" latency="6"/>
+    </states>
+    <states id="39">
+      <operations id="110" stage="4" latency="5"/>
+      <operations id="118" stage="4" latency="4"/>
+    </states>
+    <states id="40">
+      <operations id="110" stage="3" latency="5"/>
+      <operations id="118" stage="3" latency="4"/>
+    </states>
+    <states id="41">
+      <operations id="110" stage="2" latency="5"/>
+      <operations id="118" stage="2" latency="4"/>
+    </states>
+    <states id="42">
+      <operations id="110" stage="1" latency="5"/>
+      <operations id="118" stage="1" latency="4"/>
+    </states>
+    <states id="43">
+      <operations id="119" stage="5" latency="5"/>
+    </states>
+    <states id="44">
+      <operations id="119" stage="4" latency="5"/>
+    </states>
+    <states id="45">
+      <operations id="119" stage="3" latency="5"/>
+    </states>
+    <states id="46">
+      <operations id="119" stage="2" latency="5"/>
+    </states>
+    <states id="47">
+      <operations id="119" stage="1" latency="5"/>
+    </states>
+    <states id="48">
+      <operations id="123" stage="4" latency="4"/>
+    </states>
+    <states id="49">
+      <operations id="123" stage="3" latency="4"/>
+    </states>
+    <states id="50">
+      <operations id="123" stage="2" latency="4"/>
+    </states>
+    <states id="51">
+      <operations id="123" stage="1" latency="4"/>
+    </states>
+    <states id="52">
+      <operations id="124" stage="5" latency="5"/>
+    </states>
+    <states id="53">
+      <operations id="124" stage="4" latency="5"/>
+    </states>
+    <states id="54">
+      <operations id="124" stage="3" latency="5"/>
+    </states>
+    <states id="55">
+      <operations id="124" stage="2" latency="5"/>
+    </states>
+    <states id="56">
+      <operations id="124" stage="1" latency="5"/>
+    </states>
+    <states id="57">
+      <operations id="125" stage="4" latency="4"/>
+    </states>
+    <states id="58">
+      <operations id="125" stage="3" latency="4"/>
+    </states>
+    <states id="59">
+      <operations id="125" stage="2" latency="4"/>
+    </states>
+    <states id="60">
+      <operations id="125" stage="1" latency="4"/>
+      <operations id="126" stage="1" latency="1"/>
+    </states>
+    <states id="61">
+      <operations id="129" stage="1" latency="1"/>
+      <operations id="130" stage="1" latency="1"/>
+      <operations id="131" stage="1" latency="1"/>
+      <operations id="132" stage="1" latency="1"/>
+      <operations id="133" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="68"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="69"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="71"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="72"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="73"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="74"/>
+    </transitions>
+    <transitions inState="7" outState="8">
+      <condition id="75"/>
+    </transitions>
+    <transitions inState="8" outState="9">
+      <condition id="76"/>
+    </transitions>
+    <transitions inState="9" outState="10">
+      <condition id="77"/>
+    </transitions>
+    <transitions inState="10" outState="11">
+      <condition id="78"/>
+    </transitions>
+    <transitions inState="11" outState="12">
+      <condition id="79"/>
+    </transitions>
+    <transitions inState="12" outState="13">
+      <condition id="80"/>
+    </transitions>
+    <transitions inState="13" outState="14">
+      <condition id="81"/>
+    </transitions>
+    <transitions inState="14" outState="15">
+      <condition id="82"/>
+    </transitions>
+    <transitions inState="15" outState="16">
+      <condition id="83"/>
+    </transitions>
+    <transitions inState="16" outState="17">
+      <condition id="84"/>
+    </transitions>
+    <transitions inState="17" outState="18">
+      <condition id="85"/>
+    </transitions>
+    <transitions inState="18" outState="19">
+      <condition id="86"/>
+    </transitions>
+    <transitions inState="19" outState="20">
+      <condition id="87"/>
+    </transitions>
+    <transitions inState="20" outState="21">
+      <condition id="88"/>
+    </transitions>
+    <transitions inState="21" outState="22">
+      <condition id="89"/>
+    </transitions>
+    <transitions inState="22" outState="23">
+      <condition id="90"/>
+    </transitions>
+    <transitions inState="23" outState="24">
+      <condition id="91"/>
+    </transitions>
+    <transitions inState="24" outState="25">
+      <condition id="92"/>
+    </transitions>
+    <transitions inState="25" outState="26">
+      <condition id="94"/>
+    </transitions>
+    <transitions inState="26" outState="2">
+      <condition id="96"/>
+    </transitions>
+    <transitions inState="26" outState="27">
+      <condition id="97"/>
+    </transitions>
+    <transitions inState="27" outState="28">
+      <condition id="99"/>
+    </transitions>
+    <transitions inState="28" outState="29">
+      <condition id="100"/>
+    </transitions>
+    <transitions inState="29" outState="30">
+      <condition id="101"/>
+    </transitions>
+    <transitions inState="30" outState="31">
+      <condition id="102"/>
+    </transitions>
+    <transitions inState="31" outState="32">
+      <condition id="103"/>
+    </transitions>
+    <transitions inState="32" outState="33">
+      <condition id="104"/>
+    </transitions>
+    <transitions inState="33" outState="34">
+      <condition id="105"/>
+    </transitions>
+    <transitions inState="34" outState="35">
+      <condition id="106"/>
+    </transitions>
+    <transitions inState="35" outState="36">
+      <condition id="107"/>
+    </transitions>
+    <transitions inState="36" outState="37">
+      <condition id="108"/>
+    </transitions>
+    <transitions inState="37" outState="38">
+      <condition id="109"/>
+    </transitions>
+    <transitions inState="38" outState="39">
+      <condition id="110"/>
+    </transitions>
+    <transitions inState="39" outState="40">
+      <condition id="111"/>
+    </transitions>
+    <transitions inState="40" outState="41">
+      <condition id="112"/>
+    </transitions>
+    <transitions inState="41" outState="42">
+      <condition id="113"/>
+    </transitions>
+    <transitions inState="42" outState="43">
+      <condition id="114"/>
+    </transitions>
+    <transitions inState="43" outState="44">
+      <condition id="115"/>
+    </transitions>
+    <transitions inState="44" outState="45">
+      <condition id="116"/>
+    </transitions>
+    <transitions inState="45" outState="46">
+      <condition id="117"/>
+    </transitions>
+    <transitions inState="46" outState="47">
+      <condition id="118"/>
+    </transitions>
+    <transitions inState="47" outState="48">
+      <condition id="119"/>
+    </transitions>
+    <transitions inState="48" outState="49">
+      <condition id="120"/>
+    </transitions>
+    <transitions inState="49" outState="50">
+      <condition id="121"/>
+    </transitions>
+    <transitions inState="50" outState="51">
+      <condition id="122"/>
+    </transitions>
+    <transitions inState="51" outState="52">
+      <condition id="123"/>
+    </transitions>
+    <transitions inState="52" outState="53">
+      <condition id="124"/>
+    </transitions>
+    <transitions inState="53" outState="54">
+      <condition id="125"/>
+    </transitions>
+    <transitions inState="54" outState="55">
+      <condition id="126"/>
+    </transitions>
+    <transitions inState="55" outState="56">
+      <condition id="127"/>
+    </transitions>
+    <transitions inState="56" outState="57">
+      <condition id="128"/>
+    </transitions>
+    <transitions inState="57" outState="58">
+      <condition id="129"/>
+    </transitions>
+    <transitions inState="58" outState="59">
+      <condition id="130"/>
+    </transitions>
+    <transitions inState="59" outState="60">
+      <condition id="131"/>
+    </transitions>
+    <transitions inState="60" outState="61">
+      <condition id="132"/>
+    </transitions>
+    <transitions inState="61" outState="26">
+      <condition id="134"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="gaussian_scalarized" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="74529768" mMaxLatency="-1">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>6</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMaxLatency="-1">
+      <basicBlocks>4</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="Loop 1" mII="-1" mDepth="-1" mMinTripCount="1079" mMaxTripCount="1079" mMinLatency="74529767" mMaxLatency="-1" mType="1">
+      <subRegions>4</subRegions>
+      <subRegions>5</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Region 1" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="23" mMaxLatency="-1">
+      <basicBlocks>11</basicBlocks>
+      <basicBlocks>83</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="5" mTag="Loop 1.1" mII="-1" mDepth="-1" mMinTripCount="1918" mMaxTripCount="1918" mMinLatency="69048" mMaxLatency="-1" mType="1">
+      <basicBlocks>92</basicBlocks>
+      <basicBlocks>134</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="6" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMaxLatency="-1">
+      <basicBlocks>136</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'gaussian'" level="0">
-<item name = "Date">Mon Dec  5 12:31:12 2016
+<item name = "Date">Tue Dec 13 13:04:11 2016
 </item>
 <item name = "Version">2013.2 (build date: Thu Jun 13 16:07:59 PM 2013)</item>
 <item name = "Project">gaussian</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="default">10.00, 8.09, 1.25</column>
+<column name="default">10.00, 7.26, 1.25</column>
 </table>
 </item>
 </section>
@@ -31,7 +31,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="7">Instance, Module, min, max, min, max, Type</keys>
-<column name="grp_gaussian_1line_fu_17">gaussian_1line, 74529768, 74529768, 74529768, 74529768, none</column>
+<column name="grp_gaussian_scalarized_fu_15">gaussian_scalarized, 74529768, 74529768, 74529768, 74529768, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -49,20 +49,20 @@
 <keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
 <column name="Expression">-, -, -, -</column>
 <column name="FIFO">-, -, -, -</column>
-<column name="Instance">4, 16, 3259, 5294</column>
+<column name="Instance">-, 16, 3344, 5336</column>
 <column name="Memory">-, -, -, -</column>
 <column name="Multiplexer">-, -, -, -</column>
 <column name="Register">-, -, 2, -</column>
 <column name="ShiftMemory">-, -, -, -</column>
 <specialColumn name="Available">120, 80, 35200, 17600</specialColumn>
-<specialColumn name="Utilization (%)">3, 20, 9, 30</specialColumn>
+<specialColumn name="Utilization (%)">0, 20, 9, 30</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
-<column name="grp_gaussian_1line_fu_17">gaussian_1line, 4, 16, 3259, 5294</column>
+<column name="grp_gaussian_scalarized_fu_15">gaussian_scalarized, 0, 16, 3344, 5336</column>
 </table>
 </item>
 <item name = "Memory"><table name="" hasTotal="1">
@@ -88,7 +88,7 @@
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="4">Name, FF, Bits, Const Bits</keys>
 <column name="ap_CS_fsm">1, 1, 0</column>
-<column name="grp_gaussian_1line_fu_17_ap_start_ap_start_reg">1, 1, 0</column>
+<column name="grp_gaussian_scalarized_fu_15_ap_start_ap_start_reg">1, 1, 0</column>
 </table>
 </item>
 </section>

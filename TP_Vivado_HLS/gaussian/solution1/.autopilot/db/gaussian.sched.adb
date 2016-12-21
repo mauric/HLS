@@ -74,11 +74,11 @@
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>6</id>
+						<id>5</id>
 						<name></name>
 						<fileName>gaussian.cpp</fileName>
 						<fileDirectory>/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src</fileDirectory>
-						<lineNumber>11</lineNumber>
+						<lineNumber>12</lineNumber>
 						<contextFuncName>gaussian</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -93,7 +93,7 @@
 											<first>gaussian.cpp</first>
 											<second>gaussian</second>
 										</first>
-										<second>11</second>
+										<second>12</second>
 									</item>
 								</second>
 							</item>
@@ -105,12 +105,11 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<oprand_edges>
-					<count>4</count>
+					<count>3</count>
 					<item_version>0</item_version>
+					<item>9</item>
 					<item>10</item>
 					<item>11</item>
-					<item>12</item>
-					<item>13</item>
 				</oprand_edges>
 				<opcode>call</opcode>
 			</item>
@@ -118,7 +117,7 @@
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>7</id>
+						<id>6</id>
 						<name></name>
 						<fileName>gaussian.cpp</fileName>
 						<fileDirectory>/users/deastir/mcaceres/Documents/VIVADO/TP_Vivado_HLS/TP_Vivado_HLS/src</fileDirectory>
@@ -162,8 +161,8 @@
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>9</id>
-						<name>gaussian_1line</name>
+						<id>8</id>
+						<name>gaussian_scalarized</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -179,7 +178,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:gaussian_1line&gt;</content>
+				<content>&lt;constant:gaussian_scalarized&gt;</content>
 			</item>
 		</consts>
 		<blocks class_id="17" tracking_level="0" version="0">
@@ -188,7 +187,7 @@
 			<item class_id="18" tracking_level="1" version="0" object_id="_6">
 				<Obj>
 					<type>3</type>
-					<id>8</id>
+					<id>7</id>
 					<name>gaussian</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
@@ -205,44 +204,38 @@
 				<node_objs>
 					<count>2</count>
 					<item_version>0</item_version>
+					<item>5</item>
 					<item>6</item>
-					<item>7</item>
 				</node_objs>
 			</item>
 		</blocks>
 		<edges class_id="19" tracking_level="0" version="0">
-			<count>4</count>
+			<count>3</count>
 			<item_version>0</item_version>
 			<item class_id="20" tracking_level="1" version="0" object_id="_7">
-				<id>10</id>
+				<id>9</id>
 				<edge_type>1</edge_type>
-				<source_obj>9</source_obj>
-				<sink_obj>6</sink_obj>
+				<source_obj>8</source_obj>
+				<sink_obj>5</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_8">
-				<id>11</id>
+				<id>10</id>
 				<edge_type>1</edge_type>
 				<source_obj>1</source_obj>
-				<sink_obj>6</sink_obj>
+				<sink_obj>5</sink_obj>
 			</item>
 			<item class_id_reference="20" object_id="_9">
-				<id>12</id>
+				<id>11</id>
 				<edge_type>1</edge_type>
 				<source_obj>2</source_obj>
-				<sink_obj>6</sink_obj>
-			</item>
-			<item class_id_reference="20" object_id="_10">
-				<id>13</id>
-				<edge_type>1</edge_type>
-				<source_obj>3</source_obj>
-				<sink_obj>6</sink_obj>
+				<sink_obj>5</sink_obj>
 			</item>
 		</edges>
 	</cdfg>
 	<cdfg_regions class_id="21" tracking_level="0" version="0">
 		<count>1</count>
 		<item_version>0</item_version>
-		<item class_id="22" tracking_level="1" version="0" object_id="_11">
+		<item class_id="22" tracking_level="1" version="0" object_id="_10">
 			<mId>1</mId>
 			<mTag>gaussian</mTag>
 			<mType>0</mType>
@@ -253,7 +246,7 @@
 			<basic_blocks>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>8</item>
+				<item>7</item>
 			</basic_blocks>
 			<mII>-1</mII>
 			<mDepth>-1</mDepth>
@@ -266,7 +259,7 @@
 		</item>
 	</cdfg_regions>
 	<fsm class_id="-1"></fsm>
-	<res class_id="25" tracking_level="1" version="0" object_id="_12">
+	<res class_id="25" tracking_level="1" version="0" object_id="_11">
 		<dp_component_resource class_id="26" tracking_level="0" version="0">
 			<count>0</count>
 			<item_version>0</item_version>
@@ -312,14 +305,14 @@
 		<count>2</count>
 		<item_version>0</item_version>
 		<item class_id="29" tracking_level="0" version="0">
-			<first>6</first>
+			<first>5</first>
 			<second class_id="30" tracking_level="0" version="0">
 				<first>0</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
-			<first>7</first>
+			<first>6</first>
 			<second>
 				<first>1</first>
 				<second>0</second>
@@ -330,7 +323,7 @@
 		<count>1</count>
 		<item_version>0</item_version>
 		<item class_id="32" tracking_level="0" version="0">
-			<first>8</first>
+			<first>7</first>
 			<second class_id="33" tracking_level="0" version="0">
 				<first>0</first>
 				<second>1</second>
